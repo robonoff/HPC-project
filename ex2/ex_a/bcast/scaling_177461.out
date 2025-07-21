@@ -1,0 +1,4 @@
+rm -rf build bcast
+mkdir -p build
+mpicc -O3 -Wall -Isrc/include -c src/main.c -o build/main.o
+Done: generated strong_scaling.csv & weak_scaling.csv
