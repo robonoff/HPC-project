@@ -9,6 +9,7 @@
 
 module load openMPI/5.0.5
 export MPI_INIT_THREAD_REQUIRED=multiple
+export SLURM_SUBMIT_DIR=$(pwd)
 
 cd $SLURM_SUBMIT_DIR
 make clean && make all
