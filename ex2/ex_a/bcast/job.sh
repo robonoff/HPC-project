@@ -1,9 +1,9 @@
 #!/bin/bash
-#SBATCH --job-name=bcG
+#SBATCH --job-name=bcast_scaling
 #SBATCH --nodes=2
-#SBATCH --ntasks-per-node=64      # 1 task per core, 128 core per nodo
+#SBATCH --ntasks-per-node=128
 #SBATCH --time=01:59:59
-#SBATCH --partition=GENOA
+#SBATCH --partition=EPYC
 #SBATCH --output=scaling_%j.out
 #SBATCH --error=scaling_%j.err
 
@@ -14,33 +14,57 @@ export SLURM_SUBMIT_DIR=$(pwd)
 cd $SLURM_SUBMIT_DIR
 make clean && make all
 
-# binding esplicito per minimizzare jitter
+# crea la cartella per i CSV
+mkdir -p csv
+
+# srun options
 SRUN_OPTS="--mpi=pmix --cpu-bind=cores --distribution=block:cyclic"
 
-# algoritmi: 1=basic, 2=chain, 3=pipeline, 4=pipeline_nb, 6=binomial, 5=RMA
-ALGS="1 2 3 4 6 "
+# algoritmi
+ALGS="1 2 3 4 6"
+# valori di P
+P_VALUES="2 4 8 16 32 64 128 256"
 
-# valori di P fino al massimo allocabile (2 nodi × 64 tasks = 128)
-P_VALUES="1 2 4 8 16 32 64 128"
+# taglie per strong scaling (count per process)
+STRONG_N_VALUES=(1 2 4 8 16 32 64 128 256 512 \
+                 1024 2048 4096 8192 16384 32768 \
+                 65536 131072 262144 524288 1048576 2097152 4194304)
 
-for MODE in strong weak; do
-  OUT=${MODE}_scaling.csv
-  echo "alg,P,count,time" > $OUT
+# weak: carico costante per rank
+COUNT_PER_RANK=100000
 
-  for ALG in $ALGS; do
-    for P in $P_VALUES; do
-      # problema fisso per strong, proporzionale a P per weak
-      if [ "$MODE" = "strong" ]; then
-        N=1000000
+for ALG in $ALGS; do
+  for P in $P_VALUES; do
+
+    # --- STRONG scaling per (ALG,P) ---
+    OUT_STRONG=csv/${ALG}_strong_P${P}.csv
+    echo "P,count,time" > $OUT_STRONG
+
+    for N in "${STRONG_N_VALUES[@]}"; do
+      if [ "$P" -eq 1 ]; then
+        RAW=$( ./bcast -a $ALG -n $N )
       else
-        N=$((100000 * P))
+        RAW=$( srun $SRUN_OPTS -n $P ./bcast -a $ALG -n $N )
       fi
-
-      # lancia P rank (P deve essere ≤ 256)
-      LINE=$( srun $SRUN_OPTS -n $P ./bcast -a $ALG -n $N )
-      echo $LINE >> $OUT
+      TIME=${RAW##*,}
+      echo "${P},${N},${TIME}" >> $OUT_STRONG
     done
+
+    # --- WEAK scaling per (ALG,P) ---
+    OUT_WEAK=csv/${ALG}_weak_P${P}.csv
+    echo "P,count,time" > $OUT_WEAK
+
+    # count totale = COUNT_PER_RANK * P
+    N=$(( COUNT_PER_RANK * P ))
+    if [ "$P" -eq 1 ]; then
+      RAW=$( ./bcast -a $ALG -n $N )
+    else
+      RAW=$( srun $SRUN_OPTS -n $P ./bcast -a $ALG -n $N )
+    fi
+    TIME=${RAW##*,}
+    echo "${P},${N},${TIME}" >> $OUT_WEAK
+
   done
 done
 
-echo "Done: generated strong_scaling.csv & weak_scaling.csv"
+echo "Done: tutti i CSV sono in ./csv/"
