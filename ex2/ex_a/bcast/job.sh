@@ -1,9 +1,9 @@
 #!/bin/bash
-#SBATCH --job-name=bcast_scaling
+#SBATCH --job-name=bcG
 #SBATCH --nodes=2
-#SBATCH --ntasks-per-node=128      # 1 task per core, 128 core per nodo
+#SBATCH --ntasks-per-node=64      # 1 task per core, 128 core per nodo
 #SBATCH --time=01:59:59
-#SBATCH --partition=EPYC
+#SBATCH --partition=GENOA
 #SBATCH --output=scaling_%j.out
 #SBATCH --error=scaling_%j.err
 
@@ -18,10 +18,10 @@ make clean && make all
 SRUN_OPTS="--mpi=pmix --cpu-bind=cores --distribution=block:cyclic"
 
 # algoritmi: 1=basic, 2=chain, 3=pipeline, 4=pipeline_nb, 6=binomial, 5=RMA
-ALGS="1 2 3 4 6 5"
+ALGS="1 2 3 4 6 "
 
-# valori di P fino al massimo allocabile (2 nodi × 128 tasks = 256)
-P_VALUES="1 2 4 8 16 32 64 128 256"
+# valori di P fino al massimo allocabile (2 nodi × 64 tasks = 128)
+P_VALUES="1 2 4 8 16 32 64 128"
 
 for MODE in strong weak; do
   OUT=${MODE}_scaling.csv
