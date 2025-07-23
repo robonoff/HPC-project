@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=forzanapoli
+#SBATCH --job-name=bcaweak900MB
 #SBATCH --nodes=2
 #SBATCH --ntasks-per-node=128
 #SBATCH --time=01:59:59
@@ -31,27 +31,14 @@ STRONG_N_VALUES=(1 2 4 8 16 32 64 128 256 512 \
                  1024 2048 4096 8192 16384 32768 \
                  65536 131072 262144 524288 1048576 2097152 4194304)
 
-# weak: carico costante per rank 1mb
-COUNT_PER_RANK=1048576
+# weak: carico costante per rank 900MB
+COUNT_PER_RANK=921600	
 
 for ALG in $ALGS; do
   for P in $P_VALUES; do
-    # --- STRONG scaling per (ALG,P) ---
-    OUT_STRONG=csv2/${ALG}_strong_P${P}.csv
-    echo "P,count,time" > $OUT_STRONG
-    
-    for N in "${STRONG_N_VALUES[@]}"; do
-      if [ "$P" -eq 1 ]; then
-        RAW=$( ./bcast -a $ALG -n $N )
-      else
-        RAW=$( srun $SRUN_OPTS -n $P ./bcast -a $ALG -n $N )
-      fi
-      TIME=${RAW##*,}
-      echo "${P},${N},${TIME}" >> $OUT_STRONG
-    done
     
     # --- WEAK scaling per (ALG,P) ---
-    OUT_WEAK=csv2/${ALG}_weak_P${P}.csv
+    OUT_WEAK=csv3/${ALG}_weak_P${P}.csv
     echo "P,count,time" > $OUT_WEAK
     
     # count totale = COUNT_PER_RANK * P
