@@ -1,0 +1,9 @@
+rm -rf build bcast
+mpicc -O3 -Wall -Iinclude -c src/main.c -o build/main.o
+mpicc -O3 -Wall -Iinclude -c src/basic_linear.c -o build/basic_linear.o
+mpicc -O3 -Wall -Iinclude -c src/chain.c -o build/chain.o
+mpicc -O3 -Wall -Iinclude -c src/pipeline.c -o build/pipeline.o
+mpicc -O3 -Wall -Iinclude -c src/pipeline_nb.c -o build/pipeline_nb.o
+mpicc -O3 -Wall -Iinclude -c src/binomial.c -o build/binomial.o
+mpicc -O3 -Wall -Iinclude -o bcast build/main.o build/basic_linear.o build/chain.o build/pipeline.o build/pipeline_nb.o build/binomial.o
+Done: tutti i CSV sono in ./csv2/

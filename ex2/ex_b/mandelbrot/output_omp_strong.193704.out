@@ -1,0 +1,22 @@
+Running with 1 threads, image size 10000x10000
+Running with 2 threads, image size 10000x10000
+Running with 4 threads, image size 10000x10000
+Running with 8 threads, image size 10000x10000
+Running with 16 threads, image size 10000x10000
+Running with 32 threads, image size 10000x10000
+Running with 64 threads, image size 10000x10000
+Running with 128 threads, image size 10000x10000
+
+Job Statistics for Job ID 193704:
+JobID           JobName  Partition     MaxRSS  MaxVMSize    Elapsed      State 
+------------ ---------- ---------- ---------- ---------- ---------- ---------- 
+193704       mandelbro+       EPYC                         00:01:17    RUNNING 
+193704.batch      batch                                    00:01:17    RUNNING 
+193704.exte+     extern                                    00:01:17    RUNNING 
+
+Scaling Results Summary:
+=========================
+Results saved in: ../results/strong_scaling_omp.csv
+Number of tests completed: 8
+Fixed image size: 10000x10000
+Maximum number of threads: 128

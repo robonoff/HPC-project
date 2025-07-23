@@ -1,0 +1,11 @@
+Running with 1 threads, image size 1000x1000
+Running with 2 threads, image size 1414x1414
+Running with 4 threads, image size 2000x2000
+Running with 8 threads, image size 2828x2828
+Running with 16 threads, image size 4000x4000
+Running with 32 threads, image size 5657x5657
+Running with 64 threads, image size 8000x8000
+Running with 128 threads, image size 11314x11314
+
+[INFO] Weak scaling test completed
+[INFO] Results: ../results/weak_scaling_omp.csv
