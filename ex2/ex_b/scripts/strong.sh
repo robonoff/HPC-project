@@ -32,9 +32,9 @@ fi
 
 # Parametri fissi per strong scaling
 CORES=1
-WIDTH=10000
-HEIGHT=10000
-MAX_ITER=1000
+WIDTH=6000
+HEIGHT=6000
+MAX_ITER=500
 
 # File di output
 OUTPUT_FILE="results/omp_strong_scaling.csv"

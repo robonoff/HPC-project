@@ -1,0 +1,1297 @@
+=== MANDELBROT WEAK SCALING TEST ===
+Data: Wed Jul 23 09:58:24 PM CEST 2025
+Nodo: epyc001.hpc.rd.areasciencepark.it
+CPU disponibili: 128
+
+Parametri test:
+- Dimensione base: 1000x1000 per 1 thread
+- Max iterazioni: 500
+- Thread testati: 128 configurazioni
+- Output: results/omp_weak_scaling.csv
+
+Inizio test weak scaling...
+[1/128] Testing 1 threads, size: 1000x1000
+  Carico totale: 1000000 punti
+  Carico per thread: 1000000 punti
+  Run 1/3...
+    ✓ Tempo: 0.251025
+  Run 2/3...
+    ✓ Tempo: 0.249875
+  Run 3/3...
+    ✓ Tempo: 0.249828
+  ✓ Tempo medio: 0.250243 s (3 run validi)
+[2/128] Testing 2 threads, size: 1414x1414
+  Carico totale: 1999396 punti
+  Carico per thread: 999698 punti
+  Run 1/3...
+    ✓ Tempo: 0.250574
+  Run 2/3...
+    ✓ Tempo: 0.250496
+  Run 3/3...
+    ✓ Tempo: 0.250181
+  ✓ Tempo medio: 0.250417 s (3 run validi)
+[3/128] Testing 3 threads, size: 1732x1732
+  Carico totale: 2999824 punti
+  Carico per thread: 999941 punti
+  Run 1/3...
+    ✓ Tempo: 0.274353
+  Run 2/3...
+    ✓ Tempo: 0.274264
+  Run 3/3...
+    ✓ Tempo: 0.274546
+  ✓ Tempo medio: 0.274388 s (3 run validi)
+[4/128] Testing 4 threads, size: 2000x2000
+  Carico totale: 4000000 punti
+  Carico per thread: 1000000 punti
+  Run 1/3...
+    ✓ Tempo: 0.293514
+  Run 2/3...
+    ✓ Tempo: 0.292782
+  Run 3/3...
+    ✓ Tempo: 0.292840
+  ✓ Tempo medio: 0.293045 s (3 run validi)
+[5/128] Testing 5 threads, size: 2236x2236
+  Carico totale: 4999696 punti
+  Carico per thread: 999939 punti
+  Run 1/3...
+    ✓ Tempo: 0.309606
+  Run 2/3...
+    ✓ Tempo: 0.309943
+  Run 3/3...
+    ✓ Tempo: 0.309339
+  ✓ Tempo medio: 0.309629 s (3 run validi)
+[6/128] Testing 6 threads, size: 2449x2449
+  Carico totale: 5997601 punti
+  Carico per thread: 999600 punti
+  Run 1/3...
+    ✓ Tempo: 0.315305
+  Run 2/3...
+    ✓ Tempo: 0.315373
+  Run 3/3...
+    ✓ Tempo: 0.314585
+  ✓ Tempo medio: 0.315088 s (3 run validi)
+[7/128] Testing 7 threads, size: 2645x2645
+  Carico totale: 6996025 punti
+  Carico per thread: 999432 punti
+  Run 1/3...
+    ✓ Tempo: 0.319314
+  Run 2/3...
+    ✓ Tempo: 0.318885
+  Run 3/3...
+    ✓ Tempo: 0.319951
+  ✓ Tempo medio: 0.319383 s (3 run validi)
+[8/128] Testing 8 threads, size: 2828x2828
+  Carico totale: 7997584 punti
+  Carico per thread: 999698 punti
+  Run 1/3...
+    ✓ Tempo: 0.320965
+  Run 2/3...
+    ✓ Tempo: 0.321642
+  Run 3/3...
+    ✓ Tempo: 0.321811
+  ✓ Tempo medio: 0.321473 s (3 run validi)
+[9/128] Testing 9 threads, size: 3000x3000
+  Carico totale: 9000000 punti
+  Carico per thread: 1000000 punti
+  Run 1/3...
+    ✓ Tempo: 0.261088
+  Run 2/3...
+    ✓ Tempo: 0.260865
+  Run 3/3...
+    ✓ Tempo: 0.261436
+  ✓ Tempo medio: 0.261130 s (3 run validi)
+[10/128] Testing 10 threads, size: 3162x3162
+  Carico totale: 9998244 punti
+  Carico per thread: 999824 punti
+  Run 1/3...
+    ✓ Tempo: 0.262278
+  Run 2/3...
+    ✓ Tempo: 0.262376
+  Run 3/3...
+    ✓ Tempo: 0.261638
+  ✓ Tempo medio: 0.262097 s (3 run validi)
+[11/128] Testing 11 threads, size: 3316x3316
+  Carico totale: 10995856 punti
+  Carico per thread: 999623 punti
+  Run 1/3...
+    ✓ Tempo: 0.261305
+  Run 2/3...
+    ✓ Tempo: 0.261275
+  Run 3/3...
+    ✓ Tempo: 0.261397
+  ✓ Tempo medio: 0.261326 s (3 run validi)
+[12/128] Testing 12 threads, size: 3464x3464
+  Carico totale: 11999296 punti
+  Carico per thread: 999941 punti
+  Run 1/3...
+    ✓ Tempo: 0.262606
+  Run 2/3...
+    ✓ Tempo: 0.262421
+  Run 3/3...
+    ✓ Tempo: 0.263083
+  ✓ Tempo medio: 0.262703 s (3 run validi)
+[13/128] Testing 13 threads, size: 3605x3605
+  Carico totale: 12996025 punti
+  Carico per thread: 999694 punti
+  Run 1/3...
+    ✓ Tempo: 0.262579
+  Run 2/3...
+    ✓ Tempo: 0.262395
+  Run 3/3...
+    ✓ Tempo: 0.262602
+  ✓ Tempo medio: 0.262525 s (3 run validi)
+[14/128] Testing 14 threads, size: 3741x3741
+  Carico totale: 13995081 punti
+  Carico per thread: 999648 punti
+  Run 1/3...
+    ✓ Tempo: 0.262101
+  Run 2/3...
+    ✓ Tempo: 0.262843
+  Run 3/3...
+    ✓ Tempo: 0.262348
+  ✓ Tempo medio: 0.262431 s (3 run validi)
+[15/128] Testing 15 threads, size: 3872x3872
+  Carico totale: 14992384 punti
+  Carico per thread: 999492 punti
+  Run 1/3...
+    ✓ Tempo: 0.261824
+  Run 2/3...
+    ✓ Tempo: 0.261603
+  Run 3/3...
+    ✓ Tempo: 0.262783
+  ✓ Tempo medio: 0.262070 s (3 run validi)
+[16/128] Testing 16 threads, size: 4000x4000
+  Carico totale: 16000000 punti
+  Carico per thread: 1000000 punti
+  Run 1/3...
+    ✓ Tempo: 0.262222
+  Run 2/3...
+    ✓ Tempo: 0.262258
+  Run 3/3...
+    ✓ Tempo: 0.262238
+  ✓ Tempo medio: 0.262239 s (3 run validi)
+[17/128] Testing 17 threads, size: 4123x4123
+  Carico totale: 16999129 punti
+  Carico per thread: 999948 punti
+  Run 1/3...
+    ✓ Tempo: 0.264172
+  Run 2/3...
+    ✓ Tempo: 0.264420
+  Run 3/3...
+    ✓ Tempo: 0.264257
+  ✓ Tempo medio: 0.264283 s (3 run validi)
+[18/128] Testing 18 threads, size: 4242x4242
+  Carico totale: 17994564 punti
+  Carico per thread: 999698 punti
+  Run 1/3...
+    ✓ Tempo: 0.268221
+  Run 2/3...
+    ✓ Tempo: 0.268309
+  Run 3/3...
+    ✓ Tempo: 0.267853
+  ✓ Tempo medio: 0.268128 s (3 run validi)
+[19/128] Testing 19 threads, size: 4358x4358
+  Carico totale: 18992164 punti
+  Carico per thread: 999587 punti
+  Run 1/3...
+    ✓ Tempo: 0.261386
+  Run 2/3...
+    ✓ Tempo: 0.261427
+  Run 3/3...
+    ✓ Tempo: 0.261655
+  ✓ Tempo medio: 0.261489 s (3 run validi)
+[20/128] Testing 20 threads, size: 4472x4472
+  Carico totale: 19998784 punti
+  Carico per thread: 999939 punti
+  Run 1/3...
+    ✓ Tempo: 0.269138
+  Run 2/3...
+    ✓ Tempo: 0.269101
+  Run 3/3...
+    ✓ Tempo: 0.269225
+  ✓ Tempo medio: 0.269155 s (3 run validi)
+[21/128] Testing 21 threads, size: 4582x4582
+  Carico totale: 20994724 punti
+  Carico per thread: 999748 punti
+  Run 1/3...
+    ✓ Tempo: 0.266274
+  Run 2/3...
+    ✓ Tempo: 0.266003
+  Run 3/3...
+    ✓ Tempo: 0.266097
+  ✓ Tempo medio: 0.266125 s (3 run validi)
+[22/128] Testing 22 threads, size: 4690x4690
+  Carico totale: 21996100 punti
+  Carico per thread: 999822 punti
+  Run 1/3...
+    ✓ Tempo: 0.262392
+  Run 2/3...
+    ✓ Tempo: 0.262751
+  Run 3/3...
+    ✓ Tempo: 0.262661
+  ✓ Tempo medio: 0.262601 s (3 run validi)
+[23/128] Testing 23 threads, size: 4795x4795
+  Carico totale: 22992025 punti
+  Carico per thread: 999653 punti
+  Run 1/3...
+    ✓ Tempo: 0.262576
+  Run 2/3...
+    ✓ Tempo: 0.262749
+  Run 3/3...
+    ✓ Tempo: 0.262573
+  ✓ Tempo medio: 0.262633 s (3 run validi)
+[24/128] Testing 24 threads, size: 4898x4898
+  Carico totale: 23990404 punti
+  Carico per thread: 999600 punti
+  Run 1/3...
+    ✓ Tempo: 0.262685
+  Run 2/3...
+    ✓ Tempo: 0.262957
+  Run 3/3...
+    ✓ Tempo: 0.263337
+  ✓ Tempo medio: 0.262993 s (3 run validi)
+[25/128] Testing 25 threads, size: 5000x5000
+  Carico totale: 25000000 punti
+  Carico per thread: 1000000 punti
+  Run 1/3...
+    ✓ Tempo: 0.263465
+  Run 2/3...
+    ✓ Tempo: 0.263185
+  Run 3/3...
+    ✓ Tempo: 0.263501
+  ✓ Tempo medio: 0.263384 s (3 run validi)
+[26/128] Testing 26 threads, size: 5099x5099
+  Carico totale: 25999801 punti
+  Carico per thread: 999992 punti
+  Run 1/3...
+    ✓ Tempo: 0.263366
+  Run 2/3...
+    ✓ Tempo: 0.263418
+  Run 3/3...
+    ✓ Tempo: 0.263293
+  ✓ Tempo medio: 0.263359 s (3 run validi)
+[27/128] Testing 27 threads, size: 5196x5196
+  Carico totale: 26998416 punti
+  Carico per thread: 999941 punti
+  Run 1/3...
+    ✓ Tempo: 0.263258
+  Run 2/3...
+    ✓ Tempo: 0.263087
+  Run 3/3...
+    ✓ Tempo: 0.263282
+  ✓ Tempo medio: 0.263209 s (3 run validi)
+[28/128] Testing 28 threads, size: 5291x5291
+  Carico totale: 27994681 punti
+  Carico per thread: 999810 punti
+  Run 1/3...
+    ✓ Tempo: 0.264674
+  Run 2/3...
+    ✓ Tempo: 0.263099
+  Run 3/3...
+    ✓ Tempo: 0.263157
+  ✓ Tempo medio: 0.263643 s (3 run validi)
+[29/128] Testing 29 threads, size: 5385x5385
+  Carico totale: 28998225 punti
+  Carico per thread: 999938 punti
+  Run 1/3...
+    ✓ Tempo: 0.267825
+  Run 2/3...
+    ✓ Tempo: 0.268405
+  Run 3/3...
+    ✓ Tempo: 0.267463
+  ✓ Tempo medio: 0.267898 s (3 run validi)
+[30/128] Testing 30 threads, size: 5477x5477
+  Carico totale: 29997529 punti
+  Carico per thread: 999917 punti
+  Run 1/3...
+    ✓ Tempo: 0.269331
+  Run 2/3...
+    ✓ Tempo: 0.269481
+  Run 3/3...
+    ✓ Tempo: 0.268688
+  ✓ Tempo medio: 0.269167 s (3 run validi)
+[31/128] Testing 31 threads, size: 5567x5567
+  Carico totale: 30991489 punti
+  Carico per thread: 999725 punti
+  Run 1/3...
+    ✓ Tempo: 0.267496
+  Run 2/3...
+    ✓ Tempo: 0.267473
+  Run 3/3...
+    ✓ Tempo: 0.268168
+  ✓ Tempo medio: 0.267712 s (3 run validi)
+[32/128] Testing 32 threads, size: 5656x5656
+  Carico totale: 31990336 punti
+  Carico per thread: 999698 punti
+  Run 1/3...
+    ✓ Tempo: 0.265790
+  Run 2/3...
+    ✓ Tempo: 0.265711
+  Run 3/3...
+    ✓ Tempo: 0.265951
+  ✓ Tempo medio: 0.265817 s (3 run validi)
+[33/128] Testing 33 threads, size: 5744x5744
+  Carico totale: 32993536 punti
+  Carico per thread: 999804 punti
+  Run 1/3...
+    ✓ Tempo: 0.257921
+  Run 2/3...
+    ✓ Tempo: 0.257557
+  Run 3/3...
+    ✓ Tempo: 0.257736
+  ✓ Tempo medio: 0.257738 s (3 run validi)
+[34/128] Testing 34 threads, size: 5830x5830
+  Carico totale: 33988900 punti
+  Carico per thread: 999673 punti
+  Run 1/3...
+    ✓ Tempo: 0.256934
+  Run 2/3...
+    ✓ Tempo: 0.256835
+  Run 3/3...
+    ✓ Tempo: 0.256726
+  ✓ Tempo medio: 0.256832 s (3 run validi)
+[35/128] Testing 35 threads, size: 5916x5916
+  Carico totale: 34999056 punti
+  Carico per thread: 999973 punti
+  Run 1/3...
+    ✓ Tempo: 0.256493
+  Run 2/3...
+    ✓ Tempo: 0.255930
+  Run 3/3...
+    ✓ Tempo: 0.255620
+  ✓ Tempo medio: 0.256014 s (3 run validi)
+[36/128] Testing 36 threads, size: 6000x6000
+  Carico totale: 36000000 punti
+  Carico per thread: 1000000 punti
+  Run 1/3...
+    ✓ Tempo: 0.257064
+  Run 2/3...
+    ✓ Tempo: 0.257224
+  Run 3/3...
+    ✓ Tempo: 0.256959
+  ✓ Tempo medio: 0.257082 s (3 run validi)
+[37/128] Testing 37 threads, size: 6082x6082
+  Carico totale: 36990724 punti
+  Carico per thread: 999749 punti
+  Run 1/3...
+    ✓ Tempo: 0.257767
+  Run 2/3...
+    ✓ Tempo: 0.258162
+  Run 3/3...
+    ✓ Tempo: 0.257878
+  ✓ Tempo medio: 0.257936 s (3 run validi)
+[38/128] Testing 38 threads, size: 6164x6164
+  Carico totale: 37994896 punti
+  Carico per thread: 999865 punti
+  Run 1/3...
+    ✓ Tempo: 0.257625
+  Run 2/3...
+    ✓ Tempo: 0.257447
+  Run 3/3...
+    ✓ Tempo: 0.257469
+  ✓ Tempo medio: 0.257514 s (3 run validi)
+[39/128] Testing 39 threads, size: 6244x6244
+  Carico totale: 38987536 punti
+  Carico per thread: 999680 punti
+  Run 1/3...
+    ✓ Tempo: 0.256561
+  Run 2/3...
+    ✓ Tempo: 0.256565
+  Run 3/3...
+    ✓ Tempo: 0.256347
+  ✓ Tempo medio: 0.256491 s (3 run validi)
+[40/128] Testing 40 threads, size: 6324x6324
+  Carico totale: 39992976 punti
+  Carico per thread: 999824 punti
+  Run 1/3...
+    ✓ Tempo: 0.257894
+  Run 2/3...
+    ✓ Tempo: 0.257665
+  Run 3/3...
+    ✓ Tempo: 0.257731
+  ✓ Tempo medio: 0.257763 s (3 run validi)
+[41/128] Testing 41 threads, size: 6403x6403
+  Carico totale: 40998409 punti
+  Carico per thread: 999961 punti
+  Run 1/3...
+    ✓ Tempo: 0.258130
+  Run 2/3...
+    ✓ Tempo: 0.257838
+  Run 3/3...
+    ✓ Tempo: 0.258189
+  ✓ Tempo medio: 0.258052 s (3 run validi)
+[42/128] Testing 42 threads, size: 6480x6480
+  Carico totale: 41990400 punti
+  Carico per thread: 999771 punti
+  Run 1/3...
+    ✓ Tempo: 0.257727
+  Run 2/3...
+    ✓ Tempo: 0.257294
+  Run 3/3...
+    ✓ Tempo: 0.257275
+  ✓ Tempo medio: 0.257432 s (3 run validi)
+[43/128] Testing 43 threads, size: 6557x6557
+  Carico totale: 42994249 punti
+  Carico per thread: 999866 punti
+  Run 1/3...
+    ✓ Tempo: 0.256552
+  Run 2/3...
+    ✓ Tempo: 0.256891
+  Run 3/3...
+    ✓ Tempo: 0.256449
+  ✓ Tempo medio: 0.256631 s (3 run validi)
+[44/128] Testing 44 threads, size: 6633x6633
+  Carico totale: 43996689 punti
+  Carico per thread: 999924 punti
+  Run 1/3...
+    ✓ Tempo: 0.258450
+  Run 2/3...
+    ✓ Tempo: 0.258220
+  Run 3/3...
+    ✓ Tempo: 0.258133
+  ✓ Tempo medio: 0.258268 s (3 run validi)
+[45/128] Testing 45 threads, size: 6708x6708
+  Carico totale: 44997264 punti
+  Carico per thread: 999939 punti
+  Run 1/3...
+    ✓ Tempo: 0.257752
+  Run 2/3...
+    ✓ Tempo: 0.257991
+  Run 3/3...
+    ✓ Tempo: 0.258168
+  ✓ Tempo medio: 0.257970 s (3 run validi)
+[46/128] Testing 46 threads, size: 6782x6782
+  Carico totale: 45995524 punti
+  Carico per thread: 999902 punti
+  Run 1/3...
+    ✓ Tempo: 0.257726
+  Run 2/3...
+    ✓ Tempo: 0.258020
+  Run 3/3...
+    ✓ Tempo: 0.257915
+  ✓ Tempo medio: 0.257887 s (3 run validi)
+[47/128] Testing 47 threads, size: 6855x6855
+  Carico totale: 46991025 punti
+  Carico per thread: 999809 punti
+  Run 1/3...
+    ✓ Tempo: 0.257398
+  Run 2/3...
+    ✓ Tempo: 0.257350
+  Run 3/3...
+    ✓ Tempo: 0.257543
+  ✓ Tempo medio: 0.257430 s (3 run validi)
+[48/128] Testing 48 threads, size: 6928x6928
+  Carico totale: 47997184 punti
+  Carico per thread: 999941 punti
+  Run 1/3...
+    ✓ Tempo: 0.257018
+  Run 2/3...
+    ✓ Tempo: 0.257031
+  Run 3/3...
+    ✓ Tempo: 0.256380
+  ✓ Tempo medio: 0.256810 s (3 run validi)
+[49/128] Testing 49 threads, size: 7000x7000
+  Carico totale: 49000000 punti
+  Carico per thread: 1000000 punti
+  Run 1/3...
+    ✓ Tempo: 0.256811
+  Run 2/3...
+    ✓ Tempo: 0.256678
+  Run 3/3...
+    ✓ Tempo: 0.256609
+  ✓ Tempo medio: 0.256699 s (3 run validi)
+[50/128] Testing 50 threads, size: 7071x7071
+  Carico totale: 49999041 punti
+  Carico per thread: 999980 punti
+  Run 1/3...
+    ✓ Tempo: 0.258104
+  Run 2/3...
+    ✓ Tempo: 0.258099
+  Run 3/3...
+    ✓ Tempo: 0.257650
+  ✓ Tempo medio: 0.257951 s (3 run validi)
+[51/128] Testing 51 threads, size: 7141x7141
+  Carico totale: 50993881 punti
+  Carico per thread: 999880 punti
+  Run 1/3...
+    ✓ Tempo: 0.258393
+  Run 2/3...
+    ✓ Tempo: 0.258332
+  Run 3/3...
+    ✓ Tempo: 0.258486
+  ✓ Tempo medio: 0.258404 s (3 run validi)
+[52/128] Testing 52 threads, size: 7211x7211
+  Carico totale: 51998521 punti
+  Carico per thread: 999971 punti
+  Run 1/3...
+    ✓ Tempo: 0.257276
+  Run 2/3...
+    ✓ Tempo: 0.257483
+  Run 3/3...
+    ✓ Tempo: 0.258422
+  ✓ Tempo medio: 0.257727 s (3 run validi)
+[53/128] Testing 53 threads, size: 7280x7280
+  Carico totale: 52998400 punti
+  Carico per thread: 999969 punti
+  Run 1/3...
+    ✓ Tempo: 0.257141
+  Run 2/3...
+    ✓ Tempo: 0.256718
+  Run 3/3...
+    ✓ Tempo: 0.257809
+  ✓ Tempo medio: 0.257223 s (3 run validi)
+[54/128] Testing 54 threads, size: 7348x7348
+  Carico totale: 53993104 punti
+  Carico per thread: 999872 punti
+  Run 1/3...
+    ✓ Tempo: 0.256254
+  Run 2/3...
+    ✓ Tempo: 0.256514
+  Run 3/3...
+    ✓ Tempo: 0.257249
+  ✓ Tempo medio: 0.256672 s (3 run validi)
+[55/128] Testing 55 threads, size: 7416x7416
+  Carico totale: 54997056 punti
+  Carico per thread: 999946 punti
+  Run 1/3...
+    ✓ Tempo: 0.256542
+  Run 2/3...
+    ✓ Tempo: 0.256385
+  Run 3/3...
+    ✓ Tempo: 0.256562
+  ✓ Tempo medio: 0.256496 s (3 run validi)
+[56/128] Testing 56 threads, size: 7483x7483
+  Carico totale: 55995289 punti
+  Carico per thread: 999915 punti
+  Run 1/3...
+    ✓ Tempo: 0.257620
+  Run 2/3...
+    ✓ Tempo: 0.258208
+  Run 3/3...
+    ✓ Tempo: 0.257976
+  ✓ Tempo medio: 0.257935 s (3 run validi)
+[57/128] Testing 57 threads, size: 7549x7549
+  Carico totale: 56987401 punti
+  Carico per thread: 999778 punti
+  Run 1/3...
+    ✓ Tempo: 0.258559
+  Run 2/3...
+    ✓ Tempo: 0.258619
+  Run 3/3...
+    ✓ Tempo: 0.258300
+  ✓ Tempo medio: 0.258493 s (3 run validi)
+[58/128] Testing 58 threads, size: 7615x7615
+  Carico totale: 57988225 punti
+  Carico per thread: 999796 punti
+  Run 1/3...
+    ✓ Tempo: 0.258696
+  Run 2/3...
+    ✓ Tempo: 0.258540
+  Run 3/3...
+    ✓ Tempo: 0.258669
+  ✓ Tempo medio: 0.258635 s (3 run validi)
+[59/128] Testing 59 threads, size: 7681x7681
+  Carico totale: 58997761 punti
+  Carico per thread: 999962 punti
+  Run 1/3...
+    ✓ Tempo: 0.257865
+  Run 2/3...
+    ✓ Tempo: 0.257966
+  Run 3/3...
+    ✓ Tempo: 0.257778
+  ✓ Tempo medio: 0.257870 s (3 run validi)
+[60/128] Testing 60 threads, size: 7745x7745
+  Carico totale: 59985025 punti
+  Carico per thread: 999750 punti
+  Run 1/3...
+    ✓ Tempo: 0.257802
+  Run 2/3...
+    ✓ Tempo: 0.257451
+  Run 3/3...
+    ✓ Tempo: 0.257570
+  ✓ Tempo medio: 0.257608 s (3 run validi)
+[61/128] Testing 61 threads, size: 7810x7810
+  Carico totale: 60996100 punti
+  Carico per thread: 999936 punti
+  Run 1/3...
+    ✓ Tempo: 0.257602
+  Run 2/3...
+    ✓ Tempo: 0.257704
+  Run 3/3...
+    ✓ Tempo: 0.257326
+  ✓ Tempo medio: 0.257544 s (3 run validi)
+[62/128] Testing 62 threads, size: 7874x7874
+  Carico totale: 61999876 punti
+  Carico per thread: 999998 punti
+  Run 1/3...
+    ✓ Tempo: 0.256619
+  Run 2/3...
+    ✓ Tempo: 0.257085
+  Run 3/3...
+    ✓ Tempo: 0.256757
+  ✓ Tempo medio: 0.256820 s (3 run validi)
+[63/128] Testing 63 threads, size: 7937x7937
+  Carico totale: 62995969 punti
+  Carico per thread: 999936 punti
+  Run 1/3...
+    ✓ Tempo: 0.257668
+  Run 2/3...
+    ✓ Tempo: 0.257078
+  Run 3/3...
+    ✓ Tempo: 0.257749
+  ✓ Tempo medio: 0.257498 s (3 run validi)
+[64/128] Testing 64 threads, size: 8000x8000
+  Carico totale: 64000000 punti
+  Carico per thread: 1000000 punti
+  Run 1/3...
+    ✓ Tempo: 0.351129
+  Run 2/3...
+    ✓ Tempo: 0.351303
+  Run 3/3...
+    ✓ Tempo: 0.352717
+  ✓ Tempo medio: 0.351716 s (3 run validi)
+[65/128] Testing 65 threads, size: 8062x8062
+  Carico totale: 64995844 punti
+  Carico per thread: 999936 punti
+  Run 1/3...
+    ✓ Tempo: 0.351690
+  Run 2/3...
+    ✓ Tempo: 0.351709
+  Run 3/3...
+    ✓ Tempo: 0.351620
+  ✓ Tempo medio: 0.351673 s (3 run validi)
+[66/128] Testing 66 threads, size: 8124x8124
+  Carico totale: 65999376 punti
+  Carico per thread: 999990 punti
+  Run 1/3...
+    ✓ Tempo: 0.351482
+  Run 2/3...
+    ✓ Tempo: 0.350703
+  Run 3/3...
+    ✓ Tempo: 0.351044
+  ✓ Tempo medio: 0.351076 s (3 run validi)
+[67/128] Testing 67 threads, size: 8185x8185
+  Carico totale: 66994225 punti
+  Carico per thread: 999913 punti
+  Run 1/3...
+    ✓ Tempo: 0.351365
+  Run 2/3...
+    ✓ Tempo: 0.351499
+  Run 3/3...
+    ✓ Tempo: 0.352376
+  ✓ Tempo medio: 0.351747 s (3 run validi)
+[68/128] Testing 68 threads, size: 8246x8246
+  Carico totale: 67996516 punti
+  Carico per thread: 999948 punti
+  Run 1/3...
+    ✓ Tempo: 0.349593
+  Run 2/3...
+    ✓ Tempo: 0.350332
+  Run 3/3...
+    ✓ Tempo: 0.349304
+  ✓ Tempo medio: 0.349743 s (3 run validi)
+[69/128] Testing 69 threads, size: 8306x8306
+  Carico totale: 68989636 punti
+  Carico per thread: 999849 punti
+  Run 1/3...
+    ✓ Tempo: 0.351346
+  Run 2/3...
+    ✓ Tempo: 0.350752
+  Run 3/3...
+    ✓ Tempo: 0.350958
+  ✓ Tempo medio: 0.351019 s (3 run validi)
+[70/128] Testing 70 threads, size: 8366x8366
+  Carico totale: 69989956 punti
+  Carico per thread: 999856 punti
+  Run 1/3...
+    ✓ Tempo: 0.350930
+  Run 2/3...
+    ✓ Tempo: 0.350847
+  Run 3/3...
+    ✓ Tempo: 0.350380
+  ✓ Tempo medio: 0.350719 s (3 run validi)
+[71/128] Testing 71 threads, size: 8426x8426
+  Carico totale: 70997476 punti
+  Carico per thread: 999964 punti
+  Run 1/3...
+    ✓ Tempo: 0.355286
+  Run 2/3...
+    ✓ Tempo: 0.355708
+  Run 3/3...
+    ✓ Tempo: 0.355385
+  ✓ Tempo medio: 0.355460 s (3 run validi)
+[72/128] Testing 72 threads, size: 8485x8485
+  Carico totale: 71995225 punti
+  Carico per thread: 999933 punti
+  Run 1/3...
+    ✓ Tempo: 0.354508
+  Run 2/3...
+    ✓ Tempo: 0.355409
+  Run 3/3...
+    ✓ Tempo: 0.355263
+  ✓ Tempo medio: 0.355060 s (3 run validi)
+[73/128] Testing 73 threads, size: 8544x8544
+  Carico totale: 72999936 punti
+  Carico per thread: 999999 punti
+  Run 1/3...
+    ✓ Tempo: 0.353961
+  Run 2/3...
+    ✓ Tempo: 0.354328
+  Run 3/3...
+    ✓ Tempo: 0.354709
+  ✓ Tempo medio: 0.354333 s (3 run validi)
+[74/128] Testing 74 threads, size: 8602x8602
+  Carico totale: 73994404 punti
+  Carico per thread: 999924 punti
+  Run 1/3...
+    ✓ Tempo: 0.354122
+  Run 2/3...
+    ✓ Tempo: 0.354501
+  Run 3/3...
+    ✓ Tempo: 0.353595
+  ✓ Tempo medio: 0.354073 s (3 run validi)
+[75/128] Testing 75 threads, size: 8660x8660
+  Carico totale: 74995600 punti
+  Carico per thread: 999941 punti
+  Run 1/3...
+    ✓ Tempo: 0.352059
+  Run 2/3...
+    ✓ Tempo: 0.351675
+  Run 3/3...
+    ✓ Tempo: 0.352358
+  ✓ Tempo medio: 0.352031 s (3 run validi)
+[76/128] Testing 76 threads, size: 8717x8717
+  Carico totale: 75986089 punti
+  Carico per thread: 999816 punti
+  Run 1/3...
+    ✓ Tempo: 0.353579
+  Run 2/3...
+    ✓ Tempo: 0.352732
+  Run 3/3...
+    ✓ Tempo: 0.352187
+  ✓ Tempo medio: 0.352833 s (3 run validi)
+[77/128] Testing 77 threads, size: 8774x8774
+  Carico totale: 76983076 punti
+  Carico per thread: 999780 punti
+  Run 1/3...
+    ✓ Tempo: 0.351658
+  Run 2/3...
+    ✓ Tempo: 0.351422
+  Run 3/3...
+    ✓ Tempo: 0.351439
+  ✓ Tempo medio: 0.351506 s (3 run validi)
+[78/128] Testing 78 threads, size: 8831x8831
+  Carico totale: 77986561 punti
+  Carico per thread: 999827 punti
+  Run 1/3...
+    ✓ Tempo: 0.352181
+  Run 2/3...
+    ✓ Tempo: 0.352392
+  Run 3/3...
+    ✓ Tempo: 0.352486
+  ✓ Tempo medio: 0.352353 s (3 run validi)
+[79/128] Testing 79 threads, size: 8888x8888
+  Carico totale: 78996544 punti
+  Carico per thread: 999956 punti
+  Run 1/3...
+    ✓ Tempo: 0.355644
+  Run 2/3...
+    ✓ Tempo: 0.355222
+  Run 3/3...
+    ✓ Tempo: 0.355121
+  ✓ Tempo medio: 0.355329 s (3 run validi)
+[80/128] Testing 80 threads, size: 8944x8944
+  Carico totale: 79995136 punti
+  Carico per thread: 999939 punti
+  Run 1/3...
+    ✓ Tempo: 0.353932
+  Run 2/3...
+    ✓ Tempo: 0.354333
+  Run 3/3...
+    ✓ Tempo: 0.354322
+  ✓ Tempo medio: 0.354196 s (3 run validi)
+[81/128] Testing 81 threads, size: 9000x9000
+  Carico totale: 81000000 punti
+  Carico per thread: 1000000 punti
+  Run 1/3...
+    ✓ Tempo: 0.353193
+  Run 2/3...
+    ✓ Tempo: 0.353664
+  Run 3/3...
+    ✓ Tempo: 0.353704
+  ✓ Tempo medio: 0.353520 s (3 run validi)
+[82/128] Testing 82 threads, size: 9055x9055
+  Carico totale: 81993025 punti
+  Carico per thread: 999914 punti
+  Run 1/3...
+    ✓ Tempo: 0.351774
+  Run 2/3...
+    ✓ Tempo: 0.352426
+  Run 3/3...
+    ✓ Tempo: 0.353250
+  ✓ Tempo medio: 0.352483 s (3 run validi)
+[83/128] Testing 83 threads, size: 9110x9110
+  Carico totale: 82992100 punti
+  Carico per thread: 999904 punti
+  Run 1/3...
+    ✓ Tempo: 0.352188
+  Run 2/3...
+    ✓ Tempo: 0.352123
+  Run 3/3...
+    ✓ Tempo: 0.352013
+  ✓ Tempo medio: 0.352108 s (3 run validi)
+[84/128] Testing 84 threads, size: 9165x9165
+  Carico totale: 83997225 punti
+  Carico per thread: 999966 punti
+  Run 1/3...
+    ✓ Tempo: 0.355270
+  Run 2/3...
+    ✓ Tempo: 0.355570
+  Run 3/3...
+    ✓ Tempo: 0.355775
+  ✓ Tempo medio: 0.355538 s (3 run validi)
+[85/128] Testing 85 threads, size: 9219x9219
+  Carico totale: 84989961 punti
+  Carico per thread: 999881 punti
+  Run 1/3...
+    ✓ Tempo: 0.355150
+  Run 2/3...
+    ✓ Tempo: 0.355978
+  Run 3/3...
+    ✓ Tempo: 0.355797
+  ✓ Tempo medio: 0.355642 s (3 run validi)
+[86/128] Testing 86 threads, size: 9273x9273
+  Carico totale: 85988529 punti
+  Carico per thread: 999866 punti
+  Run 1/3...
+    ✓ Tempo: 0.353783
+  Run 2/3...
+    ✓ Tempo: 0.354430
+  Run 3/3...
+    ✓ Tempo: 0.353505
+  ✓ Tempo medio: 0.353906 s (3 run validi)
+[87/128] Testing 87 threads, size: 9327x9327
+  Carico totale: 86992929 punti
+  Carico per thread: 999918 punti
+  Run 1/3...
+    ✓ Tempo: 0.352356
+  Run 2/3...
+    ✓ Tempo: 0.352579
+  Run 3/3...
+    ✓ Tempo: 0.352759
+  ✓ Tempo medio: 0.352565 s (3 run validi)
+[88/128] Testing 88 threads, size: 9380x9380
+  Carico totale: 87984400 punti
+  Carico per thread: 999822 punti
+  Run 1/3...
+    ✓ Tempo: 0.350910
+  Run 2/3...
+    ✓ Tempo: 0.351709
+  Run 3/3...
+    ✓ Tempo: 0.351270
+  ✓ Tempo medio: 0.351296 s (3 run validi)
+[89/128] Testing 89 threads, size: 9433x9433
+  Carico totale: 88981489 punti
+  Carico per thread: 999792 punti
+  Run 1/3...
+    ✓ Tempo: 0.355187
+  Run 2/3...
+    ✓ Tempo: 0.354544
+  Run 3/3...
+    ✓ Tempo: 0.354983
+  ✓ Tempo medio: 0.354905 s (3 run validi)
+[90/128] Testing 90 threads, size: 9486x9486
+  Carico totale: 89984196 punti
+  Carico per thread: 999824 punti
+  Run 1/3...
+    ✓ Tempo: 0.355001
+  Run 2/3...
+    ✓ Tempo: 0.354873
+  Run 3/3...
+    ✓ Tempo: 0.354341
+  ✓ Tempo medio: 0.354738 s (3 run validi)
+[91/128] Testing 91 threads, size: 9539x9539
+  Carico totale: 90992521 punti
+  Carico per thread: 999917 punti
+  Run 1/3...
+    ✓ Tempo: 0.352449
+  Run 2/3...
+    ✓ Tempo: 0.352378
+  Run 3/3...
+    ✓ Tempo: 0.352360
+  ✓ Tempo medio: 0.352396 s (3 run validi)
+[92/128] Testing 92 threads, size: 9591x9591
+  Carico totale: 91987281 punti
+  Carico per thread: 999861 punti
+  Run 1/3...
+    ✓ Tempo: 0.353412
+  Run 2/3...
+    ✓ Tempo: 0.353013
+  Run 3/3...
+    ✓ Tempo: 0.352625
+  ✓ Tempo medio: 0.353017 s (3 run validi)
+[93/128] Testing 93 threads, size: 9643x9643
+  Carico totale: 92987449 punti
+  Carico per thread: 999865 punti
+  Run 1/3...
+    ✓ Tempo: 0.356293
+  Run 2/3...
+    ✓ Tempo: 0.356658
+  Run 3/3...
+    ✓ Tempo: 0.355752
+  ✓ Tempo medio: 0.356234 s (3 run validi)
+[94/128] Testing 94 threads, size: 9695x9695
+  Carico totale: 93993025 punti
+  Carico per thread: 999925 punti
+  Run 1/3...
+    ✓ Tempo: 0.353993
+  Run 2/3...
+    ✓ Tempo: 0.353804
+  Run 3/3...
+    ✓ Tempo: 0.354163
+  ✓ Tempo medio: 0.353987 s (3 run validi)
+[95/128] Testing 95 threads, size: 9746x9746
+  Carico totale: 94984516 punti
+  Carico per thread: 999837 punti
+  Run 1/3...
+    ✓ Tempo: 0.353241
+  Run 2/3...
+    ✓ Tempo: 0.352707
+  Run 3/3...
+    ✓ Tempo: 0.353812
+  ✓ Tempo medio: 0.353253 s (3 run validi)
+[96/128] Testing 96 threads, size: 9797x9797
+  Carico totale: 95981209 punti
+  Carico per thread: 999804 punti
+  Run 1/3...
+    ✓ Tempo: 0.356125
+  Run 2/3...
+    ✓ Tempo: 0.355803
+  Run 3/3...
+    ✓ Tempo: 0.356048
+  ✓ Tempo medio: 0.355992 s (3 run validi)
+[97/128] Testing 97 threads, size: 9848x9848
+  Carico totale: 96983104 punti
+  Carico per thread: 999825 punti
+  Run 1/3...
+    ✓ Tempo: 0.356660
+  Run 2/3...
+    ✓ Tempo: 0.355848
+  Run 3/3...
+    ✓ Tempo: 0.355469
+  ✓ Tempo medio: 0.355992 s (3 run validi)
+[98/128] Testing 98 threads, size: 9899x9899
+  Carico totale: 97990201 punti
+  Carico per thread: 999900 punti
+  Run 1/3...
+    ✓ Tempo: 0.355960
+  Run 2/3...
+    ✓ Tempo: 0.353388
+  Run 3/3...
+    ✓ Tempo: 0.352992
+  ✓ Tempo medio: 0.354113 s (3 run validi)
+[99/128] Testing 99 threads, size: 9949x9949
+  Carico totale: 98982601 punti
+  Carico per thread: 999824 punti
+  Run 1/3...
+    ✓ Tempo: 0.354269
+  Run 2/3...
+    ✓ Tempo: 0.354127
+  Run 3/3...
+    ✓ Tempo: 0.353856
+  ✓ Tempo medio: 0.354084 s (3 run validi)
+[100/128] Testing 100 threads, size: 10000x10000
+  Carico totale: 100000000 punti
+  Carico per thread: 1000000 punti
+  Run 1/3...
+    ✓ Tempo: 0.356936
+  Run 2/3...
+    ✓ Tempo: 0.356835
+  Run 3/3...
+    ✓ Tempo: 0.356567
+  ✓ Tempo medio: 0.356779 s (3 run validi)
+[101/128] Testing 101 threads, size: 10049x10049
+  Carico totale: 100982401 punti
+  Carico per thread: 999825 punti
+  Run 1/3...
+    ✓ Tempo: 0.354846
+  Run 2/3...
+    ✓ Tempo: 0.354890
+  Run 3/3...
+    ✓ Tempo: 0.355149
+  ✓ Tempo medio: 0.354962 s (3 run validi)
+[102/128] Testing 102 threads, size: 10099x10099
+  Carico totale: 101989801 punti
+  Carico per thread: 999900 punti
+  Run 1/3...
+    ✓ Tempo: 0.353193
+  Run 2/3...
+    ✓ Tempo: 0.353765
+  Run 3/3...
+    ✓ Tempo: 0.353769
+  ✓ Tempo medio: 0.353576 s (3 run validi)
+[103/128] Testing 103 threads, size: 10148x10148
+  Carico totale: 102981904 punti
+  Carico per thread: 999824 punti
+  Run 1/3...
+    ✓ Tempo: 0.355883
+  Run 2/3...
+    ✓ Tempo: 0.356269
+  Run 3/3...
+    ✓ Tempo: 0.355868
+  ✓ Tempo medio: 0.356007 s (3 run validi)
+[104/128] Testing 104 threads, size: 10198x10198
+  Carico totale: 103999204 punti
+  Carico per thread: 999992 punti
+  Run 1/3...
+    ✓ Tempo: 0.356490
+  Run 2/3...
+    ✓ Tempo: 0.356194
+  Run 3/3...
+    ✓ Tempo: 0.355916
+  ✓ Tempo medio: 0.356200 s (3 run validi)
+[105/128] Testing 105 threads, size: 10246x10246
+  Carico totale: 104980516 punti
+  Carico per thread: 999814 punti
+  Run 1/3...
+    ✓ Tempo: 0.353182
+  Run 2/3...
+    ✓ Tempo: 0.353178
+  Run 3/3...
+    ✓ Tempo: 0.353089
+  ✓ Tempo medio: 0.353150 s (3 run validi)
+[106/128] Testing 106 threads, size: 10295x10295
+  Carico totale: 105987025 punti
+  Carico per thread: 999877 punti
+  Run 1/3...
+    ✓ Tempo: 0.354359
+  Run 2/3...
+    ✓ Tempo: 0.353715
+  Run 3/3...
+    ✓ Tempo: 0.354119
+  ✓ Tempo medio: 0.354064 s (3 run validi)
+[107/128] Testing 107 threads, size: 10344x10344
+  Carico totale: 106998336 punti
+  Carico per thread: 999984 punti
+  Run 1/3...
+    ✓ Tempo: 0.356348
+  Run 2/3...
+    ✓ Tempo: 0.356142
+  Run 3/3...
+    ✓ Tempo: 0.356505
+  ✓ Tempo medio: 0.356332 s (3 run validi)
+[108/128] Testing 108 threads, size: 10392x10392
+  Carico totale: 107993664 punti
+  Carico per thread: 999941 punti
+  Run 1/3...
+    ✓ Tempo: 0.354252
+  Run 2/3...
+    ✓ Tempo: 0.354401
+  Run 3/3...
+    ✓ Tempo: 0.354517
+  ✓ Tempo medio: 0.354390 s (3 run validi)
+[109/128] Testing 109 threads, size: 10440x10440
+  Carico totale: 108993600 punti
+  Carico per thread: 999941 punti
+  Run 1/3...
+    ✓ Tempo: 0.353694
+  Run 2/3...
+    ✓ Tempo: 0.353398
+  Run 3/3...
+    ✓ Tempo: 0.353434
+  ✓ Tempo medio: 0.353509 s (3 run validi)
+[110/128] Testing 110 threads, size: 10488x10488
+  Carico totale: 109998144 punti
+  Carico per thread: 999983 punti
+  Run 1/3...
+    ✓ Tempo: 0.355389
+  Run 2/3...
+    ✓ Tempo: 0.355472
+  Run 3/3...
+    ✓ Tempo: 0.354879
+  ✓ Tempo medio: 0.355247 s (3 run validi)
+[111/128] Testing 111 threads, size: 10535x10535
+  Carico totale: 110986225 punti
+  Carico per thread: 999875 punti
+  Run 1/3...
+    ✓ Tempo: 0.355156
+  Run 2/3...
+    ✓ Tempo: 0.354732
+  Run 3/3...
+    ✓ Tempo: 0.355234
+  ✓ Tempo medio: 0.355041 s (3 run validi)
+[112/128] Testing 112 threads, size: 10583x10583
+  Carico totale: 111999889 punti
+  Carico per thread: 999999 punti
+  Run 1/3...
+    ✓ Tempo: 0.358167
+  Run 2/3...
+    ✓ Tempo: 0.357929
+  Run 3/3...
+    ✓ Tempo: 0.358346
+  ✓ Tempo medio: 0.358147 s (3 run validi)
+[113/128] Testing 113 threads, size: 10630x10630
+  Carico totale: 112996900 punti
+  Carico per thread: 999972 punti
+  Run 1/3...
+    ✓ Tempo: 0.357186
+  Run 2/3...
+    ✓ Tempo: 0.357306
+  Run 3/3...
+    ✓ Tempo: 0.357323
+  ✓ Tempo medio: 0.357272 s (3 run validi)
+[114/128] Testing 114 threads, size: 10677x10677
+  Carico totale: 113998329 punti
+  Carico per thread: 999985 punti
+  Run 1/3...
+    ✓ Tempo: 0.354966
+  Run 2/3...
+    ✓ Tempo: 0.354752
+  Run 3/3...
+    ✓ Tempo: 0.354306
+  ✓ Tempo medio: 0.354675 s (3 run validi)
+[115/128] Testing 115 threads, size: 10723x10723
+  Carico totale: 114982729 punti
+  Carico per thread: 999849 punti
+  Run 1/3...
+    ✓ Tempo: 0.356433
+  Run 2/3...
+    ✓ Tempo: 0.356739
+  Run 3/3...
+    ✓ Tempo: 0.356100
+  ✓ Tempo medio: 0.356424 s (3 run validi)
+[116/128] Testing 116 threads, size: 10770x10770
+  Carico totale: 115992900 punti
+  Carico per thread: 999938 punti
+  Run 1/3...
+    ✓ Tempo: 0.357347
+  Run 2/3...
+    ✓ Tempo: 0.357419
+  Run 3/3...
+    ✓ Tempo: 0.357226
+  ✓ Tempo medio: 0.357331 s (3 run validi)
+[117/128] Testing 117 threads, size: 10816x10816
+  Carico totale: 116985856 punti
+  Carico per thread: 999879 punti
+  Run 1/3...
+    ✓ Tempo: 0.354914
+  Run 2/3...
+    ✓ Tempo: 0.354713
+  Run 3/3...
+    ✓ Tempo: 0.354813
+  ✓ Tempo medio: 0.354813 s (3 run validi)
+[118/128] Testing 118 threads, size: 10862x10862
+  Carico totale: 117983044 punti
+  Carico per thread: 999856 punti
+  Run 1/3...
+    ✓ Tempo: 0.353979
+  Run 2/3...
+    ✓ Tempo: 0.353476
+  Run 3/3...
+    ✓ Tempo: 0.353621
+  ✓ Tempo medio: 0.353692 s (3 run validi)
+[119/128] Testing 119 threads, size: 10908x10908
+  Carico totale: 118984464 punti
+  Carico per thread: 999869 punti
+  Run 1/3...
+    ✓ Tempo: 0.355971
+  Run 2/3...
+    ✓ Tempo: 0.356135
+  Run 3/3...
+    ✓ Tempo: 0.355733
+  ✓ Tempo medio: 0.355946 s (3 run validi)
+[120/128] Testing 120 threads, size: 10954x10954
+  Carico totale: 119990116 punti
+  Carico per thread: 999917 punti
+  Run 1/3...
+    ✓ Tempo: 0.357499
+  Run 2/3...
+    ✓ Tempo: 0.357278
+  Run 3/3...
+    ✓ Tempo: 0.356716
+  ✓ Tempo medio: 0.357164 s (3 run validi)
+[121/128] Testing 121 threads, size: 11000x11000
+  Carico totale: 121000000 punti
+  Carico per thread: 1000000 punti
+  Run 1/3...
+    ✓ Tempo: 0.358029
+  Run 2/3...
+    ✓ Tempo: 0.359119
+  Run 3/3...
+    ✓ Tempo: 0.358584
+  ✓ Tempo medio: 0.358577 s (3 run validi)
+[122/128] Testing 122 threads, size: 11045x11045
+  Carico totale: 121992025 punti
+  Carico per thread: 999934 punti
+  Run 1/3...
+    ✓ Tempo: 0.356338
+  Run 2/3...
+    ✓ Tempo: 0.356029
+  Run 3/3...
+    ✓ Tempo: 0.356027
+  ✓ Tempo medio: 0.356131 s (3 run validi)
+[123/128] Testing 123 threads, size: 11090x11090
+  Carico totale: 122988100 punti
+  Carico per thread: 999903 punti
+  Run 1/3...
+    ✓ Tempo: 0.354443
+  Run 2/3...
+    ✓ Tempo: 0.354278
+  Run 3/3...
+    ✓ Tempo: 0.354078
+  ✓ Tempo medio: 0.354266 s (3 run validi)
+[124/128] Testing 124 threads, size: 11135x11135
+  Carico totale: 123988225 punti
+  Carico per thread: 999905 punti
+  Run 1/3...
+    ✓ Tempo: 0.356433
+  Run 2/3...
+    ✓ Tempo: 0.356978
+  Run 3/3...
+    ✓ Tempo: 0.357246
+  ✓ Tempo medio: 0.356886 s (3 run validi)
+[125/128] Testing 125 threads, size: 11180x11180
+  Carico totale: 124992400 punti
+  Carico per thread: 999939 punti
+  Run 1/3...
+    ✓ Tempo: 0.356677
+  Run 2/3...
+    ✓ Tempo: 0.356926
+  Run 3/3...
+    ✓ Tempo: 0.356593
+  ✓ Tempo medio: 0.356732 s (3 run validi)
+[126/128] Testing 126 threads, size: 11224x11224
+  Carico totale: 125978176 punti
+  Carico per thread: 999826 punti
+  Run 1/3...
+    ✓ Tempo: 0.353985
+  Run 2/3...
+    ✓ Tempo: 0.354129
+  Run 3/3...
+    ✓ Tempo: 0.354299
+  ✓ Tempo medio: 0.354138 s (3 run validi)
+[127/128] Testing 127 threads, size: 11269x11269
+  Carico totale: 126990361 punti
+  Carico per thread: 999924 punti
+  Run 1/3...
+    ✓ Tempo: 0.353477
+  Run 2/3...
+    ✓ Tempo: 0.353413
+  Run 3/3...
+    ✓ Tempo: 0.353432
+  ✓ Tempo medio: 0.353441 s (3 run validi)
+[128/128] Testing 128 threads, size: 11313x11313
+  Carico totale: 127983969 punti
+  Carico per thread: 999874 punti
+  Run 1/3...
+    ✓ Tempo: 0.355430
+  Run 2/3...
+    ✓ Tempo: 0.355082
+  Run 3/3...
+    ✓ Tempo: 0.354937
+  ✓ Tempo medio: 0.355150 s (3 run validi)
+
+=== WEAK SCALING COMPLETATO ===
+File risultati: results/omp_weak_scaling.csv
+Righe generate: 129
+Wed Jul 23 10:15:07 PM CEST 2025

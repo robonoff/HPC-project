@@ -1,12 +1,12 @@
 === MANDELBROT STRONG SCALING TEST ===
-Data: Wed Jul 23 08:14:34 PM CEST 2025
-Nodo: epyc005.hpc.rd.areasciencepark.it
+Data: Wed Jul 23 09:59:13 PM CEST 2025
+Nodo: epyc003.hpc.rd.areasciencepark.it
 CPU disponibili: 128
 
 Compilando mandelbrot...
 Parametri test:
-- Dimensioni: 10000x10000
-- Max iterazioni: 1000
+- Dimensioni: 6000x6000
+- Max iterazioni: 500
 - Thread testati: 128 configurazioni
 - Output: results/omp_strong_scaling.csv
 
@@ -15,1284 +15,1284 @@ Inizio test strong scaling...
   OMP_NUM_THREADS: 1
   OMP_PROC_BIND: close
   Run 1/3...
-    ✓ Tempo: 48.916207
+    ✓ Tempo: 9.014649
   Run 2/3...
-    ✓ Tempo: 48.860336
+    ✓ Tempo: 9.015151
   Run 3/3...
-    ✓ Tempo: 48.885481
-  ✓ Tempo medio: 48.887341 s (3 run validi)
+    ✓ Tempo: 9.009097
+  ✓ Tempo medio: 9.012966 s (3 run validi)
 [2/128] Testing 2 threads...
   OMP_NUM_THREADS: 2
   OMP_PROC_BIND: close
   Run 1/3...
-    ✓ Tempo: 24.395163
+    ✓ Tempo: 4.498134
   Run 2/3...
-    ✓ Tempo: 24.375828
+    ✓ Tempo: 4.499641
   Run 3/3...
-    ✓ Tempo: 24.394652
-  ✓ Tempo medio: 24.388548 s (3 run validi)
+    ✓ Tempo: 4.497790
+  ✓ Tempo medio: 4.498522 s (3 run validi)
 [3/128] Testing 3 threads...
   OMP_NUM_THREADS: 3
   OMP_PROC_BIND: close
   Run 1/3...
-    ✓ Tempo: 17.851510
+    ✓ Tempo: 3.279034
   Run 2/3...
-    ✓ Tempo: 17.858201
+    ✓ Tempo: 3.276219
   Run 3/3...
-    ✓ Tempo: 17.858629
-  ✓ Tempo medio: 17.856113 s (3 run validi)
+    ✓ Tempo: 3.276780
+  ✓ Tempo medio: 3.277344 s (3 run validi)
 [4/128] Testing 4 threads...
   OMP_NUM_THREADS: 4
   OMP_PROC_BIND: close
   Run 1/3...
-    ✓ Tempo: 14.347614
+    ✓ Tempo: 2.629705
   Run 2/3...
-    ✓ Tempo: 14.358487
+    ✓ Tempo: 2.630591
   Run 3/3...
-    ✓ Tempo: 14.365807
-  ✓ Tempo medio: 14.357303 s (3 run validi)
+    ✓ Tempo: 2.635167
+  ✓ Tempo medio: 2.631821 s (3 run validi)
 [5/128] Testing 5 threads...
   OMP_NUM_THREADS: 5
   OMP_PROC_BIND: close
   Run 1/3...
-    ✓ Tempo: 12.151894
+    ✓ Tempo: 2.224309
   Run 2/3...
-    ✓ Tempo: 12.168784
+    ✓ Tempo: 2.219284
   Run 3/3...
-    ✓ Tempo: 12.156298
-  ✓ Tempo medio: 12.158992 s (3 run validi)
+    ✓ Tempo: 2.221027
+  ✓ Tempo medio: 2.221540 s (3 run validi)
 [6/128] Testing 6 threads...
   OMP_NUM_THREADS: 6
   OMP_PROC_BIND: close
   Run 1/3...
-    ✓ Tempo: 10.340251
+    ✓ Tempo: 1.887571
   Run 2/3...
-    ✓ Tempo: 10.333494
+    ✓ Tempo: 1.888426
   Run 3/3...
-    ✓ Tempo: 10.344761
-  ✓ Tempo medio: 10.339502 s (3 run validi)
+    ✓ Tempo: 1.888341
+  ✓ Tempo medio: 1.888113 s (3 run validi)
 [7/128] Testing 7 threads...
   OMP_NUM_THREADS: 7
   OMP_PROC_BIND: close
   Run 1/3...
-    ✓ Tempo: 8.985503
+    ✓ Tempo: 1.640089
   Run 2/3...
-    ✓ Tempo: 8.990905
+    ✓ Tempo: 1.639586
   Run 3/3...
-    ✓ Tempo: 8.975836
-  ✓ Tempo medio: 8.984081 s (3 run validi)
+    ✓ Tempo: 1.640394
+  ✓ Tempo medio: 1.640023 s (3 run validi)
 [8/128] Testing 8 threads...
   OMP_NUM_THREADS: 8
   OMP_PROC_BIND: close
   Run 1/3...
-    ✓ Tempo: 7.922120
+    ✓ Tempo: 1.445985
   Run 2/3...
-    ✓ Tempo: 7.922406
+    ✓ Tempo: 1.446460
   Run 3/3...
-    ✓ Tempo: 7.915355
-  ✓ Tempo medio: 7.919960 s (3 run validi)
+    ✓ Tempo: 1.447089
+  ✓ Tempo medio: 1.446511 s (3 run validi)
 [9/128] Testing 9 threads...
   OMP_NUM_THREADS: 9
   OMP_PROC_BIND: close
   Run 1/3...
-    ✓ Tempo: 5.693214
+    ✓ Tempo: 1.041183
   Run 2/3...
-    ✓ Tempo: 5.683949
+    ✓ Tempo: 1.042048
   Run 3/3...
-    ✓ Tempo: 5.688093
-  ✓ Tempo medio: 5.688419 s (3 run validi)
+    ✓ Tempo: 1.042461
+  ✓ Tempo medio: 1.041897 s (3 run validi)
 [10/128] Testing 10 threads...
   OMP_NUM_THREADS: 10
   OMP_PROC_BIND: close
   Run 1/3...
-    ✓ Tempo: 5.128234
+    ✓ Tempo: 0.940741
   Run 2/3...
-    ✓ Tempo: 5.140249
+    ✓ Tempo: 0.941921
   Run 3/3...
-    ✓ Tempo: 5.140872
-  ✓ Tempo medio: 5.136452 s (3 run validi)
+    ✓ Tempo: 0.941229
+  ✓ Tempo medio: 0.941297 s (3 run validi)
 [11/128] Testing 11 threads...
   OMP_NUM_THREADS: 11
   OMP_PROC_BIND: close
   Run 1/3...
-    ✓ Tempo: 4.668463
+    ✓ Tempo: 0.855648
   Run 2/3...
-    ✓ Tempo: 4.669480
+    ✓ Tempo: 0.855428
   Run 3/3...
-    ✓ Tempo: 4.669601
-  ✓ Tempo medio: 4.669181 s (3 run validi)
+    ✓ Tempo: 0.855331
+  ✓ Tempo medio: 0.855469 s (3 run validi)
 [12/128] Testing 12 threads...
   OMP_NUM_THREADS: 12
   OMP_PROC_BIND: close
   Run 1/3...
-    ✓ Tempo: 4.284593
+    ✓ Tempo: 0.786781
   Run 2/3...
-    ✓ Tempo: 4.287453
+    ✓ Tempo: 0.785381
   Run 3/3...
-    ✓ Tempo: 4.286807
-  ✓ Tempo medio: 4.286284 s (3 run validi)
+    ✓ Tempo: 0.786482
+  ✓ Tempo medio: 0.786215 s (3 run validi)
 [13/128] Testing 13 threads...
   OMP_NUM_THREADS: 13
   OMP_PROC_BIND: close
   Run 1/3...
-    ✓ Tempo: 3.979420
+    ✓ Tempo: 0.725592
   Run 2/3...
-    ✓ Tempo: 3.956945
+    ✓ Tempo: 0.726186
   Run 3/3...
-    ✓ Tempo: 3.959127
-  ✓ Tempo medio: 3.965164 s (3 run validi)
+    ✓ Tempo: 0.725408
+  ✓ Tempo medio: 0.725729 s (3 run validi)
 [14/128] Testing 14 threads...
   OMP_NUM_THREADS: 14
   OMP_PROC_BIND: close
   Run 1/3...
-    ✓ Tempo: 3.671883
+    ✓ Tempo: 0.673006
   Run 2/3...
-    ✓ Tempo: 3.672514
+    ✓ Tempo: 0.674025
   Run 3/3...
-    ✓ Tempo: 3.669784
-  ✓ Tempo medio: 3.671394 s (3 run validi)
+    ✓ Tempo: 0.674294
+  ✓ Tempo medio: 0.673775 s (3 run validi)
 [15/128] Testing 15 threads...
   OMP_NUM_THREADS: 15
   OMP_PROC_BIND: close
   Run 1/3...
-    ✓ Tempo: 3.424502
+    ✓ Tempo: 0.627713
   Run 2/3...
-    ✓ Tempo: 3.422779
+    ✓ Tempo: 0.628848
   Run 3/3...
-    ✓ Tempo: 3.419942
-  ✓ Tempo medio: 3.422408 s (3 run validi)
+    ✓ Tempo: 0.629173
+  ✓ Tempo medio: 0.628578 s (3 run validi)
 [16/128] Testing 16 threads...
   OMP_NUM_THREADS: 16
   OMP_PROC_BIND: close
   Run 1/3...
-    ✓ Tempo: 3.215555
+    ✓ Tempo: 0.587849
   Run 2/3...
-    ✓ Tempo: 3.215992
+    ✓ Tempo: 0.587285
   Run 3/3...
-    ✓ Tempo: 3.215713
-  ✓ Tempo medio: 3.215753 s (3 run validi)
+    ✓ Tempo: 0.588127
+  ✓ Tempo medio: 0.587754 s (3 run validi)
 [17/128] Testing 17 threads...
   OMP_NUM_THREADS: 17
   OMP_PROC_BIND: close
   Run 1/3...
-    ✓ Tempo: 3.026889
+    ✓ Tempo: 0.552386
   Run 2/3...
-    ✓ Tempo: 3.026067
+    ✓ Tempo: 0.553734
   Run 3/3...
-    ✓ Tempo: 3.026511
-  ✓ Tempo medio: 3.026489 s (3 run validi)
+    ✓ Tempo: 0.553391
+  ✓ Tempo medio: 0.553170 s (3 run validi)
 [18/128] Testing 18 threads...
   OMP_NUM_THREADS: 18
   OMP_PROC_BIND: close
   Run 1/3...
-    ✓ Tempo: 2.842105
+    ✓ Tempo: 0.522203
   Run 2/3...
-    ✓ Tempo: 2.843860
+    ✓ Tempo: 0.522201
   Run 3/3...
-    ✓ Tempo: 2.845085
-  ✓ Tempo medio: 2.843683 s (3 run validi)
+    ✓ Tempo: 0.521123
+  ✓ Tempo medio: 0.521842 s (3 run validi)
 [19/128] Testing 19 threads...
   OMP_NUM_THREADS: 19
   OMP_PROC_BIND: close
   Run 1/3...
-    ✓ Tempo: 2.698355
+    ✓ Tempo: 0.505458
   Run 2/3...
-    ✓ Tempo: 2.692913
+    ✓ Tempo: 0.505480
   Run 3/3...
-    ✓ Tempo: 2.697964
-  ✓ Tempo medio: 2.696411 s (3 run validi)
+    ✓ Tempo: 0.505020
+  ✓ Tempo medio: 0.505319 s (3 run validi)
 [20/128] Testing 20 threads...
   OMP_NUM_THREADS: 20
   OMP_PROC_BIND: close
   Run 1/3...
-    ✓ Tempo: 2.575698
+    ✓ Tempo: 0.472466
   Run 2/3...
-    ✓ Tempo: 2.576842
+    ✓ Tempo: 0.472203
   Run 3/3...
-    ✓ Tempo: 2.570274
-  ✓ Tempo medio: 2.574271 s (3 run validi)
+    ✓ Tempo: 0.472770
+  ✓ Tempo medio: 0.472480 s (3 run validi)
 [21/128] Testing 21 threads...
   OMP_NUM_THREADS: 21
   OMP_PROC_BIND: close
   Run 1/3...
-    ✓ Tempo: 2.447908
+    ✓ Tempo: 0.448502
   Run 2/3...
-    ✓ Tempo: 2.448617
+    ✓ Tempo: 0.447677
   Run 3/3...
-    ✓ Tempo: 2.449350
-  ✓ Tempo medio: 2.448625 s (3 run validi)
+    ✓ Tempo: 0.448535
+  ✓ Tempo medio: 0.448238 s (3 run validi)
 [22/128] Testing 22 threads...
   OMP_NUM_THREADS: 22
   OMP_PROC_BIND: close
   Run 1/3...
-    ✓ Tempo: 2.330290
+    ✓ Tempo: 0.428910
   Run 2/3...
-    ✓ Tempo: 2.334076
+    ✓ Tempo: 0.429349
   Run 3/3...
-    ✓ Tempo: 2.337176
-  ✓ Tempo medio: 2.333847 s (3 run validi)
+    ✓ Tempo: 0.428975
+  ✓ Tempo medio: 0.429078 s (3 run validi)
 [23/128] Testing 23 threads...
   OMP_NUM_THREADS: 23
   OMP_PROC_BIND: close
   Run 1/3...
-    ✓ Tempo: 2.225734
+    ✓ Tempo: 0.409389
   Run 2/3...
-    ✓ Tempo: 2.227467
+    ✓ Tempo: 0.409391
   Run 3/3...
-    ✓ Tempo: 2.224699
-  ✓ Tempo medio: 2.225967 s (3 run validi)
+    ✓ Tempo: 0.409491
+  ✓ Tempo medio: 0.409424 s (3 run validi)
 [24/128] Testing 24 threads...
   OMP_NUM_THREADS: 24
   OMP_PROC_BIND: close
   Run 1/3...
-    ✓ Tempo: 2.141236
+    ✓ Tempo: 0.398765
   Run 2/3...
-    ✓ Tempo: 2.141609
+    ✓ Tempo: 0.398315
   Run 3/3...
-    ✓ Tempo: 2.139153
-  ✓ Tempo medio: 2.140666 s (3 run validi)
+    ✓ Tempo: 0.398646
+  ✓ Tempo medio: 0.398575 s (3 run validi)
 [25/128] Testing 25 threads...
   OMP_NUM_THREADS: 25
   OMP_PROC_BIND: close
   Run 1/3...
-    ✓ Tempo: 2.057422
+    ✓ Tempo: 0.378228
   Run 2/3...
-    ✓ Tempo: 2.057694
+    ✓ Tempo: 0.378251
   Run 3/3...
-    ✓ Tempo: 2.057240
-  ✓ Tempo medio: 2.057452 s (3 run validi)
+    ✓ Tempo: 0.378618
+  ✓ Tempo medio: 0.378366 s (3 run validi)
 [26/128] Testing 26 threads...
   OMP_NUM_THREADS: 26
   OMP_PROC_BIND: close
   Run 1/3...
-    ✓ Tempo: 1.975566
+    ✓ Tempo: 0.372125
   Run 2/3...
-    ✓ Tempo: 1.974378
+    ✓ Tempo: 0.372273
   Run 3/3...
-    ✓ Tempo: 1.974479
-  ✓ Tempo medio: 1.974808 s (3 run validi)
+    ✓ Tempo: 0.372039
+  ✓ Tempo medio: 0.372146 s (3 run validi)
 [27/128] Testing 27 threads...
   OMP_NUM_THREADS: 27
   OMP_PROC_BIND: close
   Run 1/3...
-    ✓ Tempo: 1.897350
+    ✓ Tempo: 0.356903
   Run 2/3...
-    ✓ Tempo: 1.897402
+    ✓ Tempo: 0.356313
   Run 3/3...
-    ✓ Tempo: 1.896956
-  ✓ Tempo medio: 1.897236 s (3 run validi)
+    ✓ Tempo: 0.356995
+  ✓ Tempo medio: 0.356737 s (3 run validi)
 [28/128] Testing 28 threads...
   OMP_NUM_THREADS: 28
   OMP_PROC_BIND: close
   Run 1/3...
-    ✓ Tempo: 1.831283
+    ✓ Tempo: 0.344989
   Run 2/3...
-    ✓ Tempo: 1.829911
+    ✓ Tempo: 0.344934
   Run 3/3...
-    ✓ Tempo: 1.830825
-  ✓ Tempo medio: 1.830673 s (3 run validi)
+    ✓ Tempo: 0.344999
+  ✓ Tempo medio: 0.344974 s (3 run validi)
 [29/128] Testing 29 threads...
   OMP_NUM_THREADS: 29
   OMP_PROC_BIND: close
   Run 1/3...
-    ✓ Tempo: 1.770140
+    ✓ Tempo: 0.334422
   Run 2/3...
-    ✓ Tempo: 1.769972
+    ✓ Tempo: 0.334191
   Run 3/3...
-    ✓ Tempo: 1.770066
-  ✓ Tempo medio: 1.770059 s (3 run validi)
+    ✓ Tempo: 0.334281
+  ✓ Tempo medio: 0.334298 s (3 run validi)
 [30/128] Testing 30 threads...
   OMP_NUM_THREADS: 30
   OMP_PROC_BIND: close
   Run 1/3...
-    ✓ Tempo: 1.710132
+    ✓ Tempo: 0.315407
   Run 2/3...
-    ✓ Tempo: 1.709893
+    ✓ Tempo: 0.315426
   Run 3/3...
-    ✓ Tempo: 1.710179
-  ✓ Tempo medio: 1.710068 s (3 run validi)
+    ✓ Tempo: 0.315737
+  ✓ Tempo medio: 0.315523 s (3 run validi)
 [31/128] Testing 31 threads...
   OMP_NUM_THREADS: 31
   OMP_PROC_BIND: close
   Run 1/3...
-    ✓ Tempo: 1.658732
+    ✓ Tempo: 0.309616
   Run 2/3...
-    ✓ Tempo: 1.659494
+    ✓ Tempo: 0.309040
   Run 3/3...
-    ✓ Tempo: 1.658398
-  ✓ Tempo medio: 1.658875 s (3 run validi)
+    ✓ Tempo: 0.310182
+  ✓ Tempo medio: 0.309613 s (3 run validi)
 [32/128] Testing 32 threads...
   OMP_NUM_THREADS: 32
   OMP_PROC_BIND: close
   Run 1/3...
-    ✓ Tempo: 1.608127
+    ✓ Tempo: 0.301631
   Run 2/3...
-    ✓ Tempo: 1.607893
+    ✓ Tempo: 0.300656
   Run 3/3...
-    ✓ Tempo: 1.609351
-  ✓ Tempo medio: 1.608457 s (3 run validi)
+    ✓ Tempo: 0.300993
+  ✓ Tempo medio: 0.301093 s (3 run validi)
 [33/128] Testing 33 threads...
   OMP_NUM_THREADS: 33
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 1.499784
+    ✓ Tempo: 0.281090
   Run 2/3...
-    ✓ Tempo: 1.498355
+    ✓ Tempo: 0.280999
   Run 3/3...
-    ✓ Tempo: 1.500679
-  ✓ Tempo medio: 1.499606 s (3 run validi)
+    ✓ Tempo: 0.281213
+  ✓ Tempo medio: 0.281101 s (3 run validi)
 [34/128] Testing 34 threads...
   OMP_NUM_THREADS: 34
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 1.459880
+    ✓ Tempo: 0.270803
   Run 2/3...
-    ✓ Tempo: 1.461460
+    ✓ Tempo: 0.270633
   Run 3/3...
-    ✓ Tempo: 1.461109
-  ✓ Tempo medio: 1.460816 s (3 run validi)
+    ✓ Tempo: 0.271082
+  ✓ Tempo medio: 0.270839 s (3 run validi)
 [35/128] Testing 35 threads...
   OMP_NUM_THREADS: 35
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 1.414989
+    ✓ Tempo: 0.265531
   Run 2/3...
-    ✓ Tempo: 1.417766
+    ✓ Tempo: 0.264696
   Run 3/3...
-    ✓ Tempo: 1.416914
-  ✓ Tempo medio: 1.416556 s (3 run validi)
+    ✓ Tempo: 0.264860
+  ✓ Tempo medio: 0.265029 s (3 run validi)
 [36/128] Testing 36 threads...
   OMP_NUM_THREADS: 36
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 1.378676
+    ✓ Tempo: 0.257864
   Run 2/3...
-    ✓ Tempo: 1.377667
+    ✓ Tempo: 0.257848
   Run 3/3...
-    ✓ Tempo: 1.378114
-  ✓ Tempo medio: 1.378152 s (3 run validi)
+    ✓ Tempo: 0.257627
+  ✓ Tempo medio: 0.257780 s (3 run validi)
 [37/128] Testing 37 threads...
   OMP_NUM_THREADS: 37
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 1.341889
+    ✓ Tempo: 0.249842
   Run 2/3...
-    ✓ Tempo: 1.341698
+    ✓ Tempo: 0.249433
   Run 3/3...
-    ✓ Tempo: 1.342515
-  ✓ Tempo medio: 1.342034 s (3 run validi)
+    ✓ Tempo: 0.249537
+  ✓ Tempo medio: 0.249604 s (3 run validi)
 [38/128] Testing 38 threads...
   OMP_NUM_THREADS: 38
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 1.307429
+    ✓ Tempo: 0.244715
   Run 2/3...
-    ✓ Tempo: 1.307541
+    ✓ Tempo: 0.244918
   Run 3/3...
-    ✓ Tempo: 1.307453
-  ✓ Tempo medio: 1.307474 s (3 run validi)
+    ✓ Tempo: 0.244067
+  ✓ Tempo medio: 0.244567 s (3 run validi)
 [39/128] Testing 39 threads...
   OMP_NUM_THREADS: 39
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 1.265331
+    ✓ Tempo: 0.237412
   Run 2/3...
-    ✓ Tempo: 1.265155
+    ✓ Tempo: 0.237594
   Run 3/3...
-    ✓ Tempo: 1.264697
-  ✓ Tempo medio: 1.265061 s (3 run validi)
+    ✓ Tempo: 0.236980
+  ✓ Tempo medio: 0.237329 s (3 run validi)
 [40/128] Testing 40 threads...
   OMP_NUM_THREADS: 40
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 1.234314
+    ✓ Tempo: 0.232198
   Run 2/3...
-    ✓ Tempo: 1.237133
+    ✓ Tempo: 0.232049
   Run 3/3...
-    ✓ Tempo: 1.234171
-  ✓ Tempo medio: 1.235206 s (3 run validi)
+    ✓ Tempo: 0.232318
+  ✓ Tempo medio: 0.232188 s (3 run validi)
 [41/128] Testing 41 threads...
   OMP_NUM_THREADS: 41
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 1.207983
+    ✓ Tempo: 0.225842
   Run 2/3...
-    ✓ Tempo: 1.209516
+    ✓ Tempo: 0.226337
   Run 3/3...
-    ✓ Tempo: 1.207453
-  ✓ Tempo medio: 1.208317 s (3 run validi)
+    ✓ Tempo: 0.226296
+  ✓ Tempo medio: 0.226158 s (3 run validi)
 [42/128] Testing 42 threads...
   OMP_NUM_THREADS: 42
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 1.182441
+    ✓ Tempo: 0.220476
   Run 2/3...
-    ✓ Tempo: 1.180920
+    ✓ Tempo: 0.220314
   Run 3/3...
-    ✓ Tempo: 1.182615
-  ✓ Tempo medio: 1.181992 s (3 run validi)
+    ✓ Tempo: 0.219979
+  ✓ Tempo medio: 0.220256 s (3 run validi)
 [43/128] Testing 43 threads...
   OMP_NUM_THREADS: 43
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 1.147719
+    ✓ Tempo: 0.216739
   Run 2/3...
-    ✓ Tempo: 1.148808
+    ✓ Tempo: 0.216476
   Run 3/3...
-    ✓ Tempo: 1.147394
-  ✓ Tempo medio: 1.147974 s (3 run validi)
+    ✓ Tempo: 0.216693
+  ✓ Tempo medio: 0.216636 s (3 run validi)
 [44/128] Testing 44 threads...
   OMP_NUM_THREADS: 44
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 1.125382
+    ✓ Tempo: 0.210559
   Run 2/3...
-    ✓ Tempo: 1.125798
+    ✓ Tempo: 0.210956
   Run 3/3...
-    ✓ Tempo: 1.126365
-  ✓ Tempo medio: 1.125848 s (3 run validi)
+    ✓ Tempo: 0.211207
+  ✓ Tempo medio: 0.210907 s (3 run validi)
 [45/128] Testing 45 threads...
   OMP_NUM_THREADS: 45
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 1.105180
+    ✓ Tempo: 0.207170
   Run 2/3...
-    ✓ Tempo: 1.106619
+    ✓ Tempo: 0.206887
   Run 3/3...
-    ✓ Tempo: 1.105902
-  ✓ Tempo medio: 1.105900 s (3 run validi)
+    ✓ Tempo: 0.206839
+  ✓ Tempo medio: 0.206965 s (3 run validi)
 [46/128] Testing 46 threads...
   OMP_NUM_THREADS: 46
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 1.076904
+    ✓ Tempo: 0.202446
   Run 2/3...
-    ✓ Tempo: 1.077001
+    ✓ Tempo: 0.202397
   Run 3/3...
-    ✓ Tempo: 1.075859
-  ✓ Tempo medio: 1.076588 s (3 run validi)
+    ✓ Tempo: 0.202228
+  ✓ Tempo medio: 0.202357 s (3 run validi)
 [47/128] Testing 47 threads...
   OMP_NUM_THREADS: 47
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 1.056495
+    ✓ Tempo: 0.198441
   Run 2/3...
-    ✓ Tempo: 1.056926
+    ✓ Tempo: 0.198411
   Run 3/3...
-    ✓ Tempo: 1.056963
-  ✓ Tempo medio: 1.056795 s (3 run validi)
+    ✓ Tempo: 0.197898
+  ✓ Tempo medio: 0.198250 s (3 run validi)
 [48/128] Testing 48 threads...
   OMP_NUM_THREADS: 48
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 1.030281
+    ✓ Tempo: 0.194389
   Run 2/3...
-    ✓ Tempo: 1.030441
+    ✓ Tempo: 0.194374
   Run 3/3...
-    ✓ Tempo: 1.029331
-  ✓ Tempo medio: 1.030018 s (3 run validi)
+    ✓ Tempo: 0.194102
+  ✓ Tempo medio: 0.194288 s (3 run validi)
 [49/128] Testing 49 threads...
   OMP_NUM_THREADS: 49
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 1.013628
+    ✓ Tempo: 0.190257
   Run 2/3...
-    ✓ Tempo: 1.014061
+    ✓ Tempo: 0.190170
   Run 3/3...
-    ✓ Tempo: 1.014151
-  ✓ Tempo medio: 1.013947 s (3 run validi)
+    ✓ Tempo: 0.190758
+  ✓ Tempo medio: 0.190395 s (3 run validi)
 [50/128] Testing 50 threads...
   OMP_NUM_THREADS: 50
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.988352
+    ✓ Tempo: 0.185913
   Run 2/3...
-    ✓ Tempo: 0.989042
+    ✓ Tempo: 0.186226
   Run 3/3...
-    ✓ Tempo: 0.988952
-  ✓ Tempo medio: 0.988782 s (3 run validi)
+    ✓ Tempo: 0.185487
+  ✓ Tempo medio: 0.185875 s (3 run validi)
 [51/128] Testing 51 threads...
   OMP_NUM_THREADS: 51
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.974840
+    ✓ Tempo: 0.182178
   Run 2/3...
-    ✓ Tempo: 0.974458
+    ✓ Tempo: 0.182584
   Run 3/3...
-    ✓ Tempo: 0.974142
-  ✓ Tempo medio: 0.974480 s (3 run validi)
+    ✓ Tempo: 0.182743
+  ✓ Tempo medio: 0.182502 s (3 run validi)
 [52/128] Testing 52 threads...
   OMP_NUM_THREADS: 52
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.948761
+    ✓ Tempo: 0.179990
   Run 2/3...
-    ✓ Tempo: 0.949321
+    ✓ Tempo: 0.180219
   Run 3/3...
-    ✓ Tempo: 0.950857
-  ✓ Tempo medio: 0.949646 s (3 run validi)
+    ✓ Tempo: 0.180193
+  ✓ Tempo medio: 0.180134 s (3 run validi)
 [53/128] Testing 53 threads...
   OMP_NUM_THREADS: 53
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.937735
+    ✓ Tempo: 0.175704
   Run 2/3...
-    ✓ Tempo: 0.938562
+    ✓ Tempo: 0.175790
   Run 3/3...
-    ✓ Tempo: 0.938309
-  ✓ Tempo medio: 0.938202 s (3 run validi)
+    ✓ Tempo: 0.176021
+  ✓ Tempo medio: 0.175838 s (3 run validi)
 [54/128] Testing 54 threads...
   OMP_NUM_THREADS: 54
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.917217
+    ✓ Tempo: 0.174270
   Run 2/3...
-    ✓ Tempo: 0.918207
+    ✓ Tempo: 0.173589
   Run 3/3...
-    ✓ Tempo: 0.917383
-  ✓ Tempo medio: 0.917602 s (3 run validi)
+    ✓ Tempo: 0.174146
+  ✓ Tempo medio: 0.174002 s (3 run validi)
 [55/128] Testing 55 threads...
   OMP_NUM_THREADS: 55
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.907228
+    ✓ Tempo: 0.169832
   Run 2/3...
-    ✓ Tempo: 0.907321
+    ✓ Tempo: 0.169736
   Run 3/3...
-    ✓ Tempo: 0.906901
-  ✓ Tempo medio: 0.907150 s (3 run validi)
+    ✓ Tempo: 0.169807
+  ✓ Tempo medio: 0.169792 s (3 run validi)
 [56/128] Testing 56 threads...
   OMP_NUM_THREADS: 56
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.886150
+    ✓ Tempo: 0.168234
   Run 2/3...
-    ✓ Tempo: 0.886071
+    ✓ Tempo: 0.167408
   Run 3/3...
-    ✓ Tempo: 0.885313
-  ✓ Tempo medio: 0.885845 s (3 run validi)
+    ✓ Tempo: 0.167692
+  ✓ Tempo medio: 0.167778 s (3 run validi)
 [57/128] Testing 57 threads...
   OMP_NUM_THREADS: 57
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.874187
+    ✓ Tempo: 0.164097
   Run 2/3...
-    ✓ Tempo: 0.873160
+    ✓ Tempo: 0.164054
   Run 3/3...
-    ✓ Tempo: 0.873987
-  ✓ Tempo medio: 0.873778 s (3 run validi)
+    ✓ Tempo: 0.164065
+  ✓ Tempo medio: 0.164072 s (3 run validi)
 [58/128] Testing 58 threads...
   OMP_NUM_THREADS: 58
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.857553
+    ✓ Tempo: 0.162937
   Run 2/3...
-    ✓ Tempo: 0.856527
+    ✓ Tempo: 0.163114
   Run 3/3...
-    ✓ Tempo: 0.857947
-  ✓ Tempo medio: 0.857342 s (3 run validi)
+    ✓ Tempo: 0.162360
+  ✓ Tempo medio: 0.162804 s (3 run validi)
 [59/128] Testing 59 threads...
   OMP_NUM_THREADS: 59
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.839838
+    ✓ Tempo: 0.158220
   Run 2/3...
-    ✓ Tempo: 0.839767
+    ✓ Tempo: 0.158016
   Run 3/3...
-    ✓ Tempo: 0.840142
-  ✓ Tempo medio: 0.839916 s (3 run validi)
+    ✓ Tempo: 0.158270
+  ✓ Tempo medio: 0.158169 s (3 run validi)
 [60/128] Testing 60 threads...
   OMP_NUM_THREADS: 60
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.831246
+    ✓ Tempo: 0.156708
   Run 2/3...
-    ✓ Tempo: 0.831046
+    ✓ Tempo: 0.156627
   Run 3/3...
-    ✓ Tempo: 0.830991
-  ✓ Tempo medio: 0.831094 s (3 run validi)
+    ✓ Tempo: 0.156736
+  ✓ Tempo medio: 0.156690 s (3 run validi)
 [61/128] Testing 61 threads...
   OMP_NUM_THREADS: 61
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.814523
+    ✓ Tempo: 0.154338
   Run 2/3...
-    ✓ Tempo: 0.814479
+    ✓ Tempo: 0.154143
   Run 3/3...
-    ✓ Tempo: 0.814567
-  ✓ Tempo medio: 0.814523 s (3 run validi)
+    ✓ Tempo: 0.154316
+  ✓ Tempo medio: 0.154266 s (3 run validi)
 [62/128] Testing 62 threads...
   OMP_NUM_THREADS: 62
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.799682
+    ✓ Tempo: 0.151071
   Run 2/3...
-    ✓ Tempo: 0.800573
+    ✓ Tempo: 0.151071
   Run 3/3...
-    ✓ Tempo: 0.799528
-  ✓ Tempo medio: 0.799928 s (3 run validi)
+    ✓ Tempo: 0.150896
+  ✓ Tempo medio: 0.151013 s (3 run validi)
 [63/128] Testing 63 threads...
   OMP_NUM_THREADS: 63
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.791081
+    ✓ Tempo: 0.150413
   Run 2/3...
-    ✓ Tempo: 0.791122
+    ✓ Tempo: 0.151146
   Run 3/3...
-    ✓ Tempo: 0.791000
-  ✓ Tempo medio: 0.791068 s (3 run validi)
+    ✓ Tempo: 0.150704
+  ✓ Tempo medio: 0.150754 s (3 run validi)
 [64/128] Testing 64 threads...
   OMP_NUM_THREADS: 64
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 1.084885
+    ✓ Tempo: 0.200794
   Run 2/3...
-    ✓ Tempo: 1.083193
+    ✓ Tempo: 0.200032
   Run 3/3...
-    ✓ Tempo: 1.083158
-  ✓ Tempo medio: 1.083745 s (3 run validi)
+    ✓ Tempo: 0.200408
+  ✓ Tempo medio: 0.200411 s (3 run validi)
 [65/128] Testing 65 threads...
   OMP_NUM_THREADS: 65
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 1.067512
+    ✓ Tempo: 0.197092
   Run 2/3...
-    ✓ Tempo: 1.068822
+    ✓ Tempo: 0.197001
   Run 3/3...
-    ✓ Tempo: 1.067163
-  ✓ Tempo medio: 1.067832 s (3 run validi)
+    ✓ Tempo: 0.196665
+  ✓ Tempo medio: 0.196919 s (3 run validi)
 [66/128] Testing 66 threads...
   OMP_NUM_THREADS: 66
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 1.042780
+    ✓ Tempo: 0.195446
   Run 2/3...
-    ✓ Tempo: 1.042401
+    ✓ Tempo: 0.195199
   Run 3/3...
-    ✓ Tempo: 1.043322
-  ✓ Tempo medio: 1.042834 s (3 run validi)
+    ✓ Tempo: 0.195289
+  ✓ Tempo medio: 0.195311 s (3 run validi)
 [67/128] Testing 67 threads...
   OMP_NUM_THREADS: 67
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 1.040773
+    ✓ Tempo: 0.193229
   Run 2/3...
-    ✓ Tempo: 1.040566
+    ✓ Tempo: 0.193228
   Run 3/3...
-    ✓ Tempo: 1.041294
-  ✓ Tempo medio: 1.040878 s (3 run validi)
+    ✓ Tempo: 0.193038
+  ✓ Tempo medio: 0.193165 s (3 run validi)
 [68/128] Testing 68 threads...
   OMP_NUM_THREADS: 68
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 1.019918
+    ✓ Tempo: 0.190980
   Run 2/3...
-    ✓ Tempo: 1.018812
+    ✓ Tempo: 0.192171
   Run 3/3...
-    ✓ Tempo: 1.019406
-  ✓ Tempo medio: 1.019379 s (3 run validi)
+    ✓ Tempo: 0.190915
+  ✓ Tempo medio: 0.191355 s (3 run validi)
 [69/128] Testing 69 threads...
   OMP_NUM_THREADS: 69
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 1.003237
+    ✓ Tempo: 0.188943
   Run 2/3...
-    ✓ Tempo: 1.003981
+    ✓ Tempo: 0.189017
   Run 3/3...
-    ✓ Tempo: 1.003495
-  ✓ Tempo medio: 1.003571 s (3 run validi)
+    ✓ Tempo: 0.188596
+  ✓ Tempo medio: 0.188852 s (3 run validi)
 [70/128] Testing 70 threads...
   OMP_NUM_THREADS: 70
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.995226
+    ✓ Tempo: 0.183194
   Run 2/3...
-    ✓ Tempo: 0.995326
+    ✓ Tempo: 0.183134
   Run 3/3...
-    ✓ Tempo: 0.995445
-  ✓ Tempo medio: 0.995332 s (3 run validi)
+    ✓ Tempo: 0.182900
+  ✓ Tempo medio: 0.183076 s (3 run validi)
 [71/128] Testing 71 threads...
   OMP_NUM_THREADS: 71
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.976487
+    ✓ Tempo: 0.181571
   Run 2/3...
-    ✓ Tempo: 0.975331
+    ✓ Tempo: 0.181330
   Run 3/3...
-    ✓ Tempo: 0.976566
-  ✓ Tempo medio: 0.976128 s (3 run validi)
+    ✓ Tempo: 0.181204
+  ✓ Tempo medio: 0.181368 s (3 run validi)
 [72/128] Testing 72 threads...
   OMP_NUM_THREADS: 72
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.971235
+    ✓ Tempo: 0.179448
   Run 2/3...
-    ✓ Tempo: 0.971681
+    ✓ Tempo: 0.179150
   Run 3/3...
-    ✓ Tempo: 0.971795
-  ✓ Tempo medio: 0.971570 s (3 run validi)
+    ✓ Tempo: 0.178983
+  ✓ Tempo medio: 0.179194 s (3 run validi)
 [73/128] Testing 73 threads...
   OMP_NUM_THREADS: 73
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.948247
+    ✓ Tempo: 0.177114
   Run 2/3...
-    ✓ Tempo: 0.947679
+    ✓ Tempo: 0.177368
   Run 3/3...
-    ✓ Tempo: 0.947133
-  ✓ Tempo medio: 0.947686 s (3 run validi)
+    ✓ Tempo: 0.177086
+  ✓ Tempo medio: 0.177189 s (3 run validi)
 [74/128] Testing 74 threads...
   OMP_NUM_THREADS: 74
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.945395
+    ✓ Tempo: 0.174674
   Run 2/3...
-    ✓ Tempo: 0.945050
+    ✓ Tempo: 0.174970
   Run 3/3...
-    ✓ Tempo: 0.945117
-  ✓ Tempo medio: 0.945187 s (3 run validi)
+    ✓ Tempo: 0.174911
+  ✓ Tempo medio: 0.174852 s (3 run validi)
 [75/128] Testing 75 threads...
   OMP_NUM_THREADS: 75
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.922382
+    ✓ Tempo: 0.172837
   Run 2/3...
-    ✓ Tempo: 0.922218
+    ✓ Tempo: 0.172574
   Run 3/3...
-    ✓ Tempo: 0.922235
-  ✓ Tempo medio: 0.922278 s (3 run validi)
+    ✓ Tempo: 0.172518
+  ✓ Tempo medio: 0.172643 s (3 run validi)
 [76/128] Testing 76 threads...
   OMP_NUM_THREADS: 76
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.918462
+    ✓ Tempo: 0.170547
   Run 2/3...
-    ✓ Tempo: 0.918212
+    ✓ Tempo: 0.170850
   Run 3/3...
-    ✓ Tempo: 0.918885
-  ✓ Tempo medio: 0.918520 s (3 run validi)
+    ✓ Tempo: 0.170695
+  ✓ Tempo medio: 0.170697 s (3 run validi)
 [77/128] Testing 77 threads...
   OMP_NUM_THREADS: 77
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.897641
+    ✓ Tempo: 0.168226
   Run 2/3...
-    ✓ Tempo: 0.899074
+    ✓ Tempo: 0.168247
   Run 3/3...
-    ✓ Tempo: 0.896817
-  ✓ Tempo medio: 0.897844 s (3 run validi)
+    ✓ Tempo: 0.167907
+  ✓ Tempo medio: 0.168127 s (3 run validi)
 [78/128] Testing 78 threads...
   OMP_NUM_THREADS: 78
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.892430
+    ✓ Tempo: 0.166822
   Run 2/3...
-    ✓ Tempo: 0.892567
+    ✓ Tempo: 0.166991
   Run 3/3...
-    ✓ Tempo: 0.892598
-  ✓ Tempo medio: 0.892532 s (3 run validi)
+    ✓ Tempo: 0.166749
+  ✓ Tempo medio: 0.166854 s (3 run validi)
 [79/128] Testing 79 threads...
   OMP_NUM_THREADS: 79
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.885842
+    ✓ Tempo: 0.164301
   Run 2/3...
-    ✓ Tempo: 0.885248
+    ✓ Tempo: 0.164286
   Run 3/3...
-    ✓ Tempo: 0.883882
-  ✓ Tempo medio: 0.884991 s (3 run validi)
+    ✓ Tempo: 0.164093
+  ✓ Tempo medio: 0.164227 s (3 run validi)
 [80/128] Testing 80 threads...
   OMP_NUM_THREADS: 80
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.862532
+    ✓ Tempo: 0.163166
   Run 2/3...
-    ✓ Tempo: 0.862049
+    ✓ Tempo: 0.163194
   Run 3/3...
-    ✓ Tempo: 0.862428
-  ✓ Tempo medio: 0.862336 s (3 run validi)
+    ✓ Tempo: 0.162958
+  ✓ Tempo medio: 0.163106 s (3 run validi)
 [81/128] Testing 81 threads...
   OMP_NUM_THREADS: 81
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.857416
+    ✓ Tempo: 0.160361
   Run 2/3...
-    ✓ Tempo: 0.857882
+    ✓ Tempo: 0.160310
   Run 3/3...
-    ✓ Tempo: 0.859331
-  ✓ Tempo medio: 0.858210 s (3 run validi)
+    ✓ Tempo: 0.160494
+  ✓ Tempo medio: 0.160388 s (3 run validi)
 [82/128] Testing 82 threads...
   OMP_NUM_THREADS: 82
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.847763
+    ✓ Tempo: 0.159080
   Run 2/3...
-    ✓ Tempo: 0.847561
+    ✓ Tempo: 0.158876
   Run 3/3...
-    ✓ Tempo: 0.847667
-  ✓ Tempo medio: 0.847664 s (3 run validi)
+    ✓ Tempo: 0.158679
+  ✓ Tempo medio: 0.158878 s (3 run validi)
 [83/128] Testing 83 threads...
   OMP_NUM_THREADS: 83
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.833546
+    ✓ Tempo: 0.164985
   Run 2/3...
-    ✓ Tempo: 0.833401
+    ✓ Tempo: 0.156254
   Run 3/3...
-    ✓ Tempo: 0.833314
-  ✓ Tempo medio: 0.833420 s (3 run validi)
+    ✓ Tempo: 0.156233
+  ✓ Tempo medio: 0.159157 s (3 run validi)
 [84/128] Testing 84 threads...
   OMP_NUM_THREADS: 84
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.824712
+    ✓ Tempo: 0.154873
   Run 2/3...
-    ✓ Tempo: 0.824169
+    ✓ Tempo: 0.154890
   Run 3/3...
-    ✓ Tempo: 0.824418
-  ✓ Tempo medio: 0.824433 s (3 run validi)
+    ✓ Tempo: 0.155039
+  ✓ Tempo medio: 0.154934 s (3 run validi)
 [85/128] Testing 85 threads...
   OMP_NUM_THREADS: 85
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.817862
+    ✓ Tempo: 0.153537
   Run 2/3...
-    ✓ Tempo: 0.818232
+    ✓ Tempo: 0.153539
   Run 3/3...
-    ✓ Tempo: 0.817976
-  ✓ Tempo medio: 0.818023 s (3 run validi)
+    ✓ Tempo: 0.152939
+  ✓ Tempo medio: 0.153338 s (3 run validi)
 [86/128] Testing 86 threads...
   OMP_NUM_THREADS: 86
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.810832
+    ✓ Tempo: 0.153336
   Run 2/3...
-    ✓ Tempo: 0.811724
+    ✓ Tempo: 0.153130
   Run 3/3...
-    ✓ Tempo: 0.811044
-  ✓ Tempo medio: 0.811200 s (3 run validi)
+    ✓ Tempo: 0.153103
+  ✓ Tempo medio: 0.153190 s (3 run validi)
 [87/128] Testing 87 threads...
   OMP_NUM_THREADS: 87
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.803222
+    ✓ Tempo: 0.149414
   Run 2/3...
-    ✓ Tempo: 0.803062
+    ✓ Tempo: 0.149650
   Run 3/3...
-    ✓ Tempo: 0.803331
-  ✓ Tempo medio: 0.803205 s (3 run validi)
+    ✓ Tempo: 0.149332
+  ✓ Tempo medio: 0.149465 s (3 run validi)
 [88/128] Testing 88 threads...
   OMP_NUM_THREADS: 88
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.784978
+    ✓ Tempo: 0.149267
   Run 2/3...
-    ✓ Tempo: 0.785517
+    ✓ Tempo: 0.148899
   Run 3/3...
-    ✓ Tempo: 0.785150
-  ✓ Tempo medio: 0.785215 s (3 run validi)
+    ✓ Tempo: 0.149064
+  ✓ Tempo medio: 0.149077 s (3 run validi)
 [89/128] Testing 89 threads...
   OMP_NUM_THREADS: 89
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.777775
+    ✓ Tempo: 0.147772
   Run 2/3...
-    ✓ Tempo: 0.777810
+    ✓ Tempo: 0.147848
   Run 3/3...
-    ✓ Tempo: 0.778005
-  ✓ Tempo medio: 0.777863 s (3 run validi)
+    ✓ Tempo: 0.147657
+  ✓ Tempo medio: 0.147759 s (3 run validi)
 [90/128] Testing 90 threads...
   OMP_NUM_THREADS: 90
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.771619
+    ✓ Tempo: 0.145794
   Run 2/3...
-    ✓ Tempo: 0.771771
+    ✓ Tempo: 0.145172
   Run 3/3...
-    ✓ Tempo: 0.771601
-  ✓ Tempo medio: 0.771664 s (3 run validi)
+    ✓ Tempo: 0.145503
+  ✓ Tempo medio: 0.145490 s (3 run validi)
 [91/128] Testing 91 threads...
   OMP_NUM_THREADS: 91
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.763927
+    ✓ Tempo: 0.143988
   Run 2/3...
-    ✓ Tempo: 0.763667
+    ✓ Tempo: 0.143871
   Run 3/3...
-    ✓ Tempo: 0.763408
-  ✓ Tempo medio: 0.763667 s (3 run validi)
+    ✓ Tempo: 0.144035
+  ✓ Tempo medio: 0.143965 s (3 run validi)
 [92/128] Testing 92 threads...
   OMP_NUM_THREADS: 92
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.758443
+    ✓ Tempo: 0.141599
   Run 2/3...
-    ✓ Tempo: 0.758552
+    ✓ Tempo: 0.141728
   Run 3/3...
-    ✓ Tempo: 0.758058
-  ✓ Tempo medio: 0.758351 s (3 run validi)
+    ✓ Tempo: 0.141471
+  ✓ Tempo medio: 0.141599 s (3 run validi)
 [93/128] Testing 93 threads...
   OMP_NUM_THREADS: 93
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.751092
+    ✓ Tempo: 0.142221
   Run 2/3...
-    ✓ Tempo: 0.751596
+    ✓ Tempo: 0.142086
   Run 3/3...
-    ✓ Tempo: 0.750739
-  ✓ Tempo medio: 0.751142 s (3 run validi)
+    ✓ Tempo: 0.142159
+  ✓ Tempo medio: 0.142155 s (3 run validi)
 [94/128] Testing 94 threads...
   OMP_NUM_THREADS: 94
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.742173
+    ✓ Tempo: 0.139727
   Run 2/3...
-    ✓ Tempo: 0.742272
+    ✓ Tempo: 0.139533
   Run 3/3...
-    ✓ Tempo: 0.742208
-  ✓ Tempo medio: 0.742218 s (3 run validi)
+    ✓ Tempo: 0.139720
+  ✓ Tempo medio: 0.139660 s (3 run validi)
 [95/128] Testing 95 threads...
   OMP_NUM_THREADS: 95
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.736822
+    ✓ Tempo: 0.138666
   Run 2/3...
-    ✓ Tempo: 0.737270
+    ✓ Tempo: 0.138583
   Run 3/3...
-    ✓ Tempo: 0.737179
-  ✓ Tempo medio: 0.737090 s (3 run validi)
+    ✓ Tempo: 0.138646
+  ✓ Tempo medio: 0.138632 s (3 run validi)
 [96/128] Testing 96 threads...
   OMP_NUM_THREADS: 96
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.727315
+    ✓ Tempo: 0.137451
   Run 2/3...
-    ✓ Tempo: 0.727445
+    ✓ Tempo: 0.137400
   Run 3/3...
-    ✓ Tempo: 0.726958
-  ✓ Tempo medio: 0.727239 s (3 run validi)
+    ✓ Tempo: 0.137439
+  ✓ Tempo medio: 0.137430 s (3 run validi)
 [97/128] Testing 97 threads...
   OMP_NUM_THREADS: 97
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.724066
+    ✓ Tempo: 0.135501
   Run 2/3...
-    ✓ Tempo: 0.723092
+    ✓ Tempo: 0.135260
   Run 3/3...
-    ✓ Tempo: 0.723066
-  ✓ Tempo medio: 0.723408 s (3 run validi)
+    ✓ Tempo: 0.135254
+  ✓ Tempo medio: 0.135338 s (3 run validi)
 [98/128] Testing 98 threads...
   OMP_NUM_THREADS: 98
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.715071
+    ✓ Tempo: 0.134588
   Run 2/3...
-    ✓ Tempo: 0.715079
+    ✓ Tempo: 0.134923
   Run 3/3...
-    ✓ Tempo: 0.715252
-  ✓ Tempo medio: 0.715134 s (3 run validi)
+    ✓ Tempo: 0.134850
+  ✓ Tempo medio: 0.134787 s (3 run validi)
 [99/128] Testing 99 threads...
   OMP_NUM_THREADS: 99
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.700844
+    ✓ Tempo: 0.134548
   Run 2/3...
-    ✓ Tempo: 0.700443
+    ✓ Tempo: 0.134761
   Run 3/3...
-    ✓ Tempo: 0.700914
-  ✓ Tempo medio: 0.700734 s (3 run validi)
+    ✓ Tempo: 0.134208
+  ✓ Tempo medio: 0.134506 s (3 run validi)
 [100/128] Testing 100 threads...
   OMP_NUM_THREADS: 100
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.702408
+    ✓ Tempo: 0.131460
   Run 2/3...
-    ✓ Tempo: 0.701881
+    ✓ Tempo: 0.131419
   Run 3/3...
-    ✓ Tempo: 0.703721
-  ✓ Tempo medio: 0.702670 s (3 run validi)
+    ✓ Tempo: 0.131538
+  ✓ Tempo medio: 0.131472 s (3 run validi)
 [101/128] Testing 101 threads...
   OMP_NUM_THREADS: 101
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.689443
+    ✓ Tempo: 0.130890
   Run 2/3...
-    ✓ Tempo: 0.689676
+    ✓ Tempo: 0.131135
   Run 3/3...
-    ✓ Tempo: 0.689379
-  ✓ Tempo medio: 0.689499 s (3 run validi)
+    ✓ Tempo: 0.130654
+  ✓ Tempo medio: 0.130893 s (3 run validi)
 [102/128] Testing 102 threads...
   OMP_NUM_THREADS: 102
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.689374
+    ✓ Tempo: 0.129618
   Run 2/3...
-    ✓ Tempo: 0.689394
+    ✓ Tempo: 0.129283
   Run 3/3...
-    ✓ Tempo: 0.689485
-  ✓ Tempo medio: 0.689418 s (3 run validi)
+    ✓ Tempo: 0.129323
+  ✓ Tempo medio: 0.129408 s (3 run validi)
 [103/128] Testing 103 threads...
   OMP_NUM_THREADS: 103
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.679043
+    ✓ Tempo: 0.128658
   Run 2/3...
-    ✓ Tempo: 0.678470
+    ✓ Tempo: 0.128180
   Run 3/3...
-    ✓ Tempo: 0.678337
-  ✓ Tempo medio: 0.678617 s (3 run validi)
+    ✓ Tempo: 0.128260
+  ✓ Tempo medio: 0.128366 s (3 run validi)
 [104/128] Testing 104 threads...
   OMP_NUM_THREADS: 104
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.676081
+    ✓ Tempo: 0.127573
   Run 2/3...
-    ✓ Tempo: 0.675434
+    ✓ Tempo: 0.127636
   Run 3/3...
-    ✓ Tempo: 0.675525
-  ✓ Tempo medio: 0.675680 s (3 run validi)
+    ✓ Tempo: 0.127713
+  ✓ Tempo medio: 0.127641 s (3 run validi)
 [105/128] Testing 105 threads...
   OMP_NUM_THREADS: 105
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.666777
+    ✓ Tempo: 0.126545
   Run 2/3...
-    ✓ Tempo: 0.666698
+    ✓ Tempo: 0.126578
   Run 3/3...
-    ✓ Tempo: 0.666667
-  ✓ Tempo medio: 0.666714 s (3 run validi)
+    ✓ Tempo: 0.126276
+  ✓ Tempo medio: 0.126466 s (3 run validi)
 [106/128] Testing 106 threads...
   OMP_NUM_THREADS: 106
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.661757
+    ✓ Tempo: 0.124839
   Run 2/3...
-    ✓ Tempo: 0.661284
+    ✓ Tempo: 0.124964
   Run 3/3...
-    ✓ Tempo: 0.660945
-  ✓ Tempo medio: 0.661329 s (3 run validi)
+    ✓ Tempo: 0.124429
+  ✓ Tempo medio: 0.124744 s (3 run validi)
 [107/128] Testing 107 threads...
   OMP_NUM_THREADS: 107
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.654460
+    ✓ Tempo: 0.124034
   Run 2/3...
-    ✓ Tempo: 0.654320
+    ✓ Tempo: 0.124323
   Run 3/3...
-    ✓ Tempo: 0.653819
-  ✓ Tempo medio: 0.654200 s (3 run validi)
+    ✓ Tempo: 0.124183
+  ✓ Tempo medio: 0.124180 s (3 run validi)
 [108/128] Testing 108 threads...
   OMP_NUM_THREADS: 108
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.647045
+    ✓ Tempo: 0.123871
   Run 2/3...
-    ✓ Tempo: 0.646784
+    ✓ Tempo: 0.124022
   Run 3/3...
-    ✓ Tempo: 0.646704
-  ✓ Tempo medio: 0.646844 s (3 run validi)
+    ✓ Tempo: 0.123817
+  ✓ Tempo medio: 0.123903 s (3 run validi)
 [109/128] Testing 109 threads...
   OMP_NUM_THREADS: 109
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.641268
+    ✓ Tempo: 0.122338
   Run 2/3...
-    ✓ Tempo: 0.641370
+    ✓ Tempo: 0.122274
   Run 3/3...
-    ✓ Tempo: 0.641763
-  ✓ Tempo medio: 0.641467 s (3 run validi)
+    ✓ Tempo: 0.122266
+  ✓ Tempo medio: 0.122293 s (3 run validi)
 [110/128] Testing 110 threads...
   OMP_NUM_THREADS: 110
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.632448
+    ✓ Tempo: 0.120869
   Run 2/3...
-    ✓ Tempo: 0.632748
+    ✓ Tempo: 0.120731
   Run 3/3...
-    ✓ Tempo: 0.632727
-  ✓ Tempo medio: 0.632641 s (3 run validi)
+    ✓ Tempo: 0.120699
+  ✓ Tempo medio: 0.120766 s (3 run validi)
 [111/128] Testing 111 threads...
   OMP_NUM_THREADS: 111
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.628589
+    ✓ Tempo: 0.120611
   Run 2/3...
-    ✓ Tempo: 0.628000
+    ✓ Tempo: 0.120641
   Run 3/3...
-    ✓ Tempo: 0.628086
-  ✓ Tempo medio: 0.628225 s (3 run validi)
+    ✓ Tempo: 0.120478
+  ✓ Tempo medio: 0.120577 s (3 run validi)
 [112/128] Testing 112 threads...
   OMP_NUM_THREADS: 112
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.630490
+    ✓ Tempo: 0.119631
   Run 2/3...
-    ✓ Tempo: 0.630426
+    ✓ Tempo: 0.119321
   Run 3/3...
-    ✓ Tempo: 0.630353
-  ✓ Tempo medio: 0.630423 s (3 run validi)
+    ✓ Tempo: 0.119624
+  ✓ Tempo medio: 0.119525 s (3 run validi)
 [113/128] Testing 113 threads...
   OMP_NUM_THREADS: 113
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.616251
+    ✓ Tempo: 0.118109
   Run 2/3...
-    ✓ Tempo: 0.616189
+    ✓ Tempo: 0.118197
   Run 3/3...
-    ✓ Tempo: 0.616735
-  ✓ Tempo medio: 0.616392 s (3 run validi)
+    ✓ Tempo: 0.118190
+  ✓ Tempo medio: 0.118165 s (3 run validi)
 [114/128] Testing 114 threads...
   OMP_NUM_THREADS: 114
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.618484
+    ✓ Tempo: 0.117155
   Run 2/3...
-    ✓ Tempo: 0.616580
+    ✓ Tempo: 0.117005
   Run 3/3...
-    ✓ Tempo: 0.618103
-  ✓ Tempo medio: 0.617722 s (3 run validi)
+    ✓ Tempo: 0.116797
+  ✓ Tempo medio: 0.116986 s (3 run validi)
 [115/128] Testing 115 threads...
   OMP_NUM_THREADS: 115
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.612630
+    ✓ Tempo: 0.116816
   Run 2/3...
-    ✓ Tempo: 0.613709
+    ✓ Tempo: 0.116155
   Run 3/3...
-    ✓ Tempo: 0.612926
-  ✓ Tempo medio: 0.613088 s (3 run validi)
+    ✓ Tempo: 0.116466
+  ✓ Tempo medio: 0.116479 s (3 run validi)
 [116/128] Testing 116 threads...
   OMP_NUM_THREADS: 116
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.604941
+    ✓ Tempo: 0.115632
   Run 2/3...
-    ✓ Tempo: 0.604964
+    ✓ Tempo: 0.115906
   Run 3/3...
-    ✓ Tempo: 0.605102
-  ✓ Tempo medio: 0.605002 s (3 run validi)
+    ✓ Tempo: 0.115450
+  ✓ Tempo medio: 0.115663 s (3 run validi)
 [117/128] Testing 117 threads...
   OMP_NUM_THREADS: 117
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.597865
+    ✓ Tempo: 0.113885
   Run 2/3...
-    ✓ Tempo: 0.597859
+    ✓ Tempo: 0.113790
   Run 3/3...
-    ✓ Tempo: 0.597958
-  ✓ Tempo medio: 0.597894 s (3 run validi)
+    ✓ Tempo: 0.114066
+  ✓ Tempo medio: 0.113914 s (3 run validi)
 [118/128] Testing 118 threads...
   OMP_NUM_THREADS: 118
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.592293
+    ✓ Tempo: 0.113951
   Run 2/3...
-    ✓ Tempo: 0.591815
+    ✓ Tempo: 0.113683
   Run 3/3...
-    ✓ Tempo: 0.591816
-  ✓ Tempo medio: 0.591975 s (3 run validi)
+    ✓ Tempo: 0.113452
+  ✓ Tempo medio: 0.113695 s (3 run validi)
 [119/128] Testing 119 threads...
   OMP_NUM_THREADS: 119
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.594696
+    ✓ Tempo: 0.113377
   Run 2/3...
-    ✓ Tempo: 0.594514
+    ✓ Tempo: 0.113024
   Run 3/3...
-    ✓ Tempo: 0.594766
-  ✓ Tempo medio: 0.594659 s (3 run validi)
+    ✓ Tempo: 0.113307
+  ✓ Tempo medio: 0.113236 s (3 run validi)
 [120/128] Testing 120 threads...
   OMP_NUM_THREADS: 120
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.581904
+    ✓ Tempo: 0.113567
   Run 2/3...
-    ✓ Tempo: 0.581764
+    ✓ Tempo: 0.113149
   Run 3/3...
-    ✓ Tempo: 0.581957
-  ✓ Tempo medio: 0.581875 s (3 run validi)
+    ✓ Tempo: 0.113511
+  ✓ Tempo medio: 0.113409 s (3 run validi)
 [121/128] Testing 121 threads...
   OMP_NUM_THREADS: 121
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.582086
+    ✓ Tempo: 0.112280
   Run 2/3...
-    ✓ Tempo: 0.581916
+    ✓ Tempo: 0.111965
   Run 3/3...
-    ✓ Tempo: 0.581974
-  ✓ Tempo medio: 0.581992 s (3 run validi)
+    ✓ Tempo: 0.111997
+  ✓ Tempo medio: 0.112081 s (3 run validi)
 [122/128] Testing 122 threads...
   OMP_NUM_THREADS: 122
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.576217
+    ✓ Tempo: 0.109351
   Run 2/3...
-    ✓ Tempo: 0.575052
+    ✓ Tempo: 0.109547
   Run 3/3...
-    ✓ Tempo: 0.575280
-  ✓ Tempo medio: 0.575516 s (3 run validi)
+    ✓ Tempo: 0.109303
+  ✓ Tempo medio: 0.109400 s (3 run validi)
 [123/128] Testing 123 threads...
   OMP_NUM_THREADS: 123
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.569163
+    ✓ Tempo: 0.110372
   Run 2/3...
-    ✓ Tempo: 0.569187
+    ✓ Tempo: 0.109927
   Run 3/3...
-    ✓ Tempo: 0.569140
-  ✓ Tempo medio: 0.569163 s (3 run validi)
+    ✓ Tempo: 0.109623
+  ✓ Tempo medio: 0.109974 s (3 run validi)
 [124/128] Testing 124 threads...
   OMP_NUM_THREADS: 124
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.569823
+    ✓ Tempo: 0.109569
   Run 2/3...
-    ✓ Tempo: 0.570218
+    ✓ Tempo: 0.109451
   Run 3/3...
-    ✓ Tempo: 0.569700
-  ✓ Tempo medio: 0.569914 s (3 run validi)
+    ✓ Tempo: 0.109375
+  ✓ Tempo medio: 0.109465 s (3 run validi)
 [125/128] Testing 125 threads...
   OMP_NUM_THREADS: 125
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.567711
+    ✓ Tempo: 0.108563
   Run 2/3...
-    ✓ Tempo: 0.567550
+    ✓ Tempo: 0.108175
   Run 3/3...
-    ✓ Tempo: 0.569002
-  ✓ Tempo medio: 0.568088 s (3 run validi)
+    ✓ Tempo: 0.108120
+  ✓ Tempo medio: 0.108286 s (3 run validi)
 [126/128] Testing 126 threads...
   OMP_NUM_THREADS: 126
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.557345
+    ✓ Tempo: 0.107069
   Run 2/3...
-    ✓ Tempo: 0.557436
+    ✓ Tempo: 0.107141
   Run 3/3...
-    ✓ Tempo: 0.557763
-  ✓ Tempo medio: 0.557515 s (3 run validi)
+    ✓ Tempo: 0.106850
+  ✓ Tempo medio: 0.107020 s (3 run validi)
 [127/128] Testing 127 threads...
   OMP_NUM_THREADS: 127
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.554603
+    ✓ Tempo: 0.106196
   Run 2/3...
-    ✓ Tempo: 0.554324
+    ✓ Tempo: 0.106032
   Run 3/3...
-    ✓ Tempo: 0.554340
-  ✓ Tempo medio: 0.554422 s (3 run validi)
+    ✓ Tempo: 0.106130
+  ✓ Tempo medio: 0.106119 s (3 run validi)
 [128/128] Testing 128 threads...
   OMP_NUM_THREADS: 128
   OMP_PROC_BIND: spread
   Run 1/3...
-    ✓ Tempo: 0.546860
+    ✓ Tempo: 0.106163
   Run 2/3...
-    ✓ Tempo: 0.546933
+    ✓ Tempo: 0.106023
   Run 3/3...
-    ✓ Tempo: 0.546476
-  ✓ Tempo medio: 0.546756 s (3 run validi)
+    ✓ Tempo: 0.107152
+  ✓ Tempo medio: 0.106446 s (3 run validi)
 
 === STRONG SCALING COMPLETATO ===
 File risultati: results/omp_strong_scaling.csv
 Righe generate: 129
-Wed Jul 23 08:41:27 PM CEST 2025
+Wed Jul 23 10:13:56 PM CEST 2025

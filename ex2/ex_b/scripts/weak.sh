@@ -31,8 +31,8 @@ fi
 
 # Parametri base per weak scaling
 CORES=1
-BASE_SIZE=2500  # Dimensione base per 1 thread
-MAX_ITER=1000
+BASE_SIZE=1000  # Dimensione base per 1 thread
+MAX_ITER=500
 
 # File di output
 OUTPUT_FILE="results/omp_weak_scaling.csv"
