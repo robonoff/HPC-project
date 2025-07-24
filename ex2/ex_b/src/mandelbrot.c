@@ -225,7 +225,7 @@ double compute_mandelbrot(mandel_params_t* params, int num_threads, const char* 
         // 96-128 thread: NUMA-aware tasks (overhead giustificato)
         compute_mandelbrot_numa_tasks(params, result);
     } else if (num_threads >= 32) {
-        // 32-95 thread: Guided scheduling
+        // 32-95 thread: Guided scheduling (SWEET SPOT)
         compute_mandelbrot_guided_optimized(params, result);
     } else if (num_threads >= 8) {
         // 8-31 thread: Dynamic scheduling (load balancing)
