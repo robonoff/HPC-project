@@ -1,6 +1,6 @@
 /* 
  * Mandelbrot Set Ultra-Ottimizzato per AMD EPYC 7H12 (128 cores, 8 NUMA nodes)
- * Ottimizzazioni: Soglie corrette, Multi-algorithm, Cache-aware, NUMA-optimized
+ * Ottimizzazioni: Soglie, Multi-algorithm, Cache-aware, NUMA-optimized
  */
 
 #include <stdio.h>
