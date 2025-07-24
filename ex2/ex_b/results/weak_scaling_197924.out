@@ -1,0 +1,44 @@
+=== MANDELBROT WEAK SCALING FIXED ===
+Data: Thu Jul 24 01:45:53 PM CEST 2025
+Nodo: epyc006.hpc.rd.areasciencepark.it
+CPU disponibili: 128
+NUMA nodes: 8
+
+Parametri weak scaling CORRETTI:
+- Dimensione base: 1000x1000 (1M pixel per 1 thread)
+- Max iterazioni: 400
+- Thread testati: 128 configurazioni
+- Formula: size = base * sqrt(threads) (lavoro/thread costante)
+- Output: results/omp_weak_scaling.csv
+
+Inizio weak scaling con formula corretta...
+[1/128] Testing 1 threads, size: 1000x1000
+  Memoria richiesta: 3 MB
+  Work per thread: 1000000 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.209526 s
+  Run 2/3...
+    ✓ Tempo: 0.203673 s
+  Run 3/3...
+    ✓ Tempo: 0.203125 s
+  ✓ Tempo mediano: 0.203673 s (3 run validi)
+    Efficienza weak: 100.0%
+[2/128] Testing 2 threads, size: 1416x1416
+  Memoria richiesta: 7 MB
+  Work per thread: 1002528 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.234889 s
+  Run 2/3...
+    ✓ Tempo: 0.234408 s
+  Run 3/3...
+    ✓ Tempo: 0.223696 s
+  ✓ Tempo mediano: 0.234408 s (3 run validi)
+    Efficienza weak: 86.9%
+[3/128] Testing 3 threads, size: 1736x1736
+  Memoria richiesta: 11 MB
+  Work per thread: 1004565 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.247900 s
+  Run 2/3...
+    ✓ Tempo: 0.253093 s
+  Run 3/3...

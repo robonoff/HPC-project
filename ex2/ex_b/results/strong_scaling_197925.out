@@ -1,0 +1,1334 @@
+=== MANDELBROT STRONG SCALING FIXED ===
+Data: Thu Jul 24 01:46:27 PM CEST 2025
+Nodo: epyc005.hpc.rd.areasciencepark.it
+CPU disponibili: 128
+NUMA nodes: 8
+
+Parametri strong scaling ottimizzati:
+- Dimensioni fisse: 8000x8000
+- Max iterazioni: 500
+- Thread testati: 128 configurazioni
+- Soglie ottimizzate: 8/32/96 per minimizzare salti
+- Output: results/omp_strong_scaling.csv
+
+Inizio strong scaling con soglie ottimizzate...
+[1/128] Testing 1 threads (8000x8000)
+  Algoritmo: Static scheduling
+  Cache warm-up...
+  Run 1/3...
+    ✓ Tempo: 17.218271 s
+  Run 2/3...
+    ✓ Tempo: 17.213518 s
+  Run 3/3...
+    ✓ Tempo: 17.211971 s
+  ✓ Tempo mediano: 17.213518 s (3 run validi)
+    Speedup: 1.00x, Efficienza: 100.0%
+[2/128] Testing 2 threads (8000x8000)
+  Algoritmo: Static scheduling
+  Run 1/3...
+    ✓ Tempo: 8.581389 s
+  Run 2/3...
+    ✓ Tempo: 8.579236 s
+  Run 3/3...
+    ✓ Tempo: 8.583609 s
+  ✓ Tempo mediano: 8.581389 s (3 run validi)
+    Speedup: 2.01x, Efficienza: 100.3%
+[3/128] Testing 3 threads (8000x8000)
+  Algoritmo: Static scheduling
+  Run 1/3...
+    ✓ Tempo: 12.368013 s
+  Run 2/3...
+    ✓ Tempo: 12.375109 s
+  Run 3/3...
+    ✓ Tempo: 12.364229 s
+  ✓ Tempo mediano: 12.368013 s (3 run validi)
+    Speedup: 1.39x, Efficienza: 46.4%
+[4/128] Testing 4 threads (8000x8000)
+  Algoritmo: Static scheduling
+  Run 1/3...
+    ✓ Tempo: 8.008960 s
+  Run 2/3...
+    ✓ Tempo: 8.010952 s
+  Run 3/3...
+    ✓ Tempo: 8.007460 s
+  ✓ Tempo mediano: 8.008960 s (3 run validi)
+    Speedup: 2.15x, Efficienza: 53.7%
+[5/128] Testing 5 threads (8000x8000)
+  Algoritmo: Static scheduling
+  Run 1/3...
+    ✓ Tempo: 8.443346 s
+  Run 2/3...
+    ✓ Tempo: 8.440960 s
+  Run 3/3...
+    ✓ Tempo: 8.444319 s
+  ✓ Tempo mediano: 8.443346 s (3 run validi)
+    Speedup: 2.04x, Efficienza: 40.8%
+[6/128] Testing 6 threads (8000x8000)
+  Algoritmo: Static scheduling
+  Run 1/3...
+    ✓ Tempo: 6.174908 s
+  Run 2/3...
+    ✓ Tempo: 6.171452 s
+  Run 3/3...
+    ✓ Tempo: 6.169063 s
+  ✓ Tempo mediano: 6.171452 s (3 run validi)
+    Speedup: 2.79x, Efficienza: 46.5%
+[7/128] Testing 7 threads (8000x8000)
+  Algoritmo: Static scheduling
+  Run 1/3...
+    ✓ Tempo: 6.232583 s
+  Run 2/3...
+    ✓ Tempo: 6.230280 s
+  Run 3/3...
+    ✓ Tempo: 6.228610 s
+  ✓ Tempo mediano: 6.230280 s (3 run validi)
+    Speedup: 2.76x, Efficienza: 39.5%
+[8/128] Testing 8 threads (8000x8000)
+  Algoritmo: Dynamic scheduling
+  Run 1/3...
+    ✓ Tempo: 2.769852 s
+  Run 2/3...
+    ✓ Tempo: 2.770095 s
+  Run 3/3...
+    ✓ Tempo: 2.769046 s
+  ✓ Tempo mediano: 2.769852 s (3 run validi)
+    Speedup: 6.21x, Efficienza: 77.7%
+[9/128] Testing 9 threads (8000x8000)
+  Algoritmo: Dynamic scheduling
+  Run 1/3...
+    ✓ Tempo: 2.470783 s
+  Run 2/3...
+    ✓ Tempo: 2.475002 s
+  Run 3/3...
+    ✓ Tempo: 2.470263 s
+  ✓ Tempo mediano: 2.470783 s (3 run validi)
+    Speedup: 6.97x, Efficienza: 77.4%
+[10/128] Testing 10 threads (8000x8000)
+  Algoritmo: Dynamic scheduling
+  Run 1/3...
+    ✓ Tempo: 2.235757 s
+  Run 2/3...
+    ✓ Tempo: 2.236677 s
+  Run 3/3...
+    ✓ Tempo: 2.232973 s
+  ✓ Tempo mediano: 2.235757 s (3 run validi)
+    Speedup: 7.70x, Efficienza: 77.0%
+[11/128] Testing 11 threads (8000x8000)
+  Algoritmo: Dynamic scheduling
+  Cache warm-up...
+  Run 1/3...
+    ✓ Tempo: 2.037966 s
+  Run 2/3...
+    ✓ Tempo: 2.037790 s
+  Run 3/3...
+    ✓ Tempo: 2.036376 s
+  ✓ Tempo mediano: 2.037790 s (3 run validi)
+    Speedup: 8.45x, Efficienza: 76.8%
+[12/128] Testing 12 threads (8000x8000)
+  Algoritmo: Dynamic scheduling
+  Run 1/3...
+    ✓ Tempo: 1.872676 s
+  Run 2/3...
+    ✓ Tempo: 1.875563 s
+  Run 3/3...
+    ✓ Tempo: 1.872643 s
+  ✓ Tempo mediano: 1.872676 s (3 run validi)
+    Speedup: 9.19x, Efficienza: 76.6%
+[13/128] Testing 13 threads (8000x8000)
+  Algoritmo: Dynamic scheduling
+  Run 1/3...
+    ✓ Tempo: 1.734426 s
+  Run 2/3...
+    ✓ Tempo: 1.735249 s
+  Run 3/3...
+    ✓ Tempo: 1.734036 s
+  ✓ Tempo mediano: 1.734426 s (3 run validi)
+    Speedup: 9.92x, Efficienza: 76.3%
+[14/128] Testing 14 threads (8000x8000)
+  Algoritmo: Dynamic scheduling
+  Run 1/3...
+    ✓ Tempo: 1.613830 s
+  Run 2/3...
+    ✓ Tempo: 1.615108 s
+  Run 3/3...
+    ✓ Tempo: 1.614060 s
+  ✓ Tempo mediano: 1.614060 s (3 run validi)
+    Speedup: 10.66x, Efficienza: 76.2%
+[15/128] Testing 15 threads (8000x8000)
+  Algoritmo: Dynamic scheduling
+  Run 1/3...
+    ✓ Tempo: 1.511797 s
+  Run 2/3...
+    ✓ Tempo: 1.514046 s
+  Run 3/3...
+    ✓ Tempo: 1.510846 s
+  ✓ Tempo mediano: 1.511797 s (3 run validi)
+    Speedup: 11.39x, Efficienza: 75.9%
+[16/128] Testing 16 threads (8000x8000)
+  Algoritmo: Dynamic scheduling
+  Run 1/3...
+    ✓ Tempo: 1.129596 s
+  Run 2/3...
+    ✓ Tempo: 1.126954 s
+  Run 3/3...
+    ✓ Tempo: 1.129618 s
+  ✓ Tempo mediano: 1.129596 s (3 run validi)
+    Speedup: 15.24x, Efficienza: 95.2%
+[17/128] Testing 17 threads (8000x8000)
+  Algoritmo: Dynamic scheduling
+  Run 1/3...
+    ✓ Tempo: 1.065200 s
+  Run 2/3...
+    ✓ Tempo: 1.064803 s
+  Run 3/3...
+    ✓ Tempo: 1.065801 s
+  ✓ Tempo mediano: 1.065200 s (3 run validi)
+    Speedup: 16.16x, Efficienza: 95.1%
+[18/128] Testing 18 threads (8000x8000)
+  Algoritmo: Dynamic scheduling
+  Run 1/3...
+    ✓ Tempo: 1.000130 s
+  Run 2/3...
+    ✓ Tempo: 0.999780 s
+  Run 3/3...
+    ✓ Tempo: 1.000946 s
+  ✓ Tempo mediano: 1.000130 s (3 run validi)
+    Speedup: 17.21x, Efficienza: 95.6%
+[19/128] Testing 19 threads (8000x8000)
+  Algoritmo: Dynamic scheduling
+  Run 1/3...
+    ✓ Tempo: 0.947208 s
+  Run 2/3...
+    ✓ Tempo: 0.947053 s
+  Run 3/3...
+    ✓ Tempo: 0.949398 s
+  ✓ Tempo mediano: 0.947208 s (3 run validi)
+    Speedup: 18.17x, Efficienza: 95.6%
+[20/128] Testing 20 threads (8000x8000)
+  Algoritmo: Dynamic scheduling
+  Run 1/3...
+    ✓ Tempo: 0.900959 s
+  Run 2/3...
+    ✓ Tempo: 0.900393 s
+  Run 3/3...
+    ✓ Tempo: 0.943348 s
+  ✓ Tempo mediano: 0.900959 s (3 run validi)
+    Speedup: 19.11x, Efficienza: 95.5%
+[21/128] Testing 21 threads (8000x8000)
+  Algoritmo: Dynamic scheduling
+  Cache warm-up...
+  Run 1/3...
+    ✓ Tempo: 0.864672 s
+  Run 2/3...
+    ✓ Tempo: 0.863232 s
+  Run 3/3...
+    ✓ Tempo: 0.867561 s
+  ✓ Tempo mediano: 0.864672 s (3 run validi)
+    Speedup: 19.91x, Efficienza: 94.8%
+[22/128] Testing 22 threads (8000x8000)
+  Algoritmo: Dynamic scheduling
+  Run 1/3...
+    ✓ Tempo: 0.817106 s
+  Run 2/3...
+    ✓ Tempo: 0.817948 s
+  Run 3/3...
+    ✓ Tempo: 0.817823 s
+  ✓ Tempo mediano: 0.817823 s (3 run validi)
+    Speedup: 21.05x, Efficienza: 95.7%
+[23/128] Testing 23 threads (8000x8000)
+  Algoritmo: Dynamic scheduling
+  Run 1/3...
+    ✓ Tempo: 0.789059 s
+  Run 2/3...
+    ✓ Tempo: 0.788246 s
+  Run 3/3...
+    ✓ Tempo: 0.788681 s
+  ✓ Tempo mediano: 0.788681 s (3 run validi)
+    Speedup: 21.83x, Efficienza: 94.9%
+[24/128] Testing 24 threads (8000x8000)
+  Algoritmo: Dynamic scheduling
+  Run 1/3...
+    ✓ Tempo: 0.751135 s
+  Run 2/3...
+    ✓ Tempo: 0.750123 s
+  Run 3/3...
+    ✓ Tempo: 0.750613 s
+  ✓ Tempo mediano: 0.750613 s (3 run validi)
+    Speedup: 22.93x, Efficienza: 95.6%
+[25/128] Testing 25 threads (8000x8000)
+  Algoritmo: Dynamic scheduling
+  Run 1/3...
+    ✓ Tempo: 0.724683 s
+  Run 2/3...
+    ✓ Tempo: 0.726080 s
+  Run 3/3...
+    ✓ Tempo: 0.726105 s
+  ✓ Tempo mediano: 0.726080 s (3 run validi)
+    Speedup: 23.71x, Efficienza: 94.8%
+[26/128] Testing 26 threads (8000x8000)
+  Algoritmo: Dynamic scheduling
+  Run 1/3...
+    ✓ Tempo: 0.695110 s
+  Run 2/3...
+    ✓ Tempo: 0.695349 s
+  Run 3/3...
+    ✓ Tempo: 0.694989 s
+  ✓ Tempo mediano: 0.695110 s (3 run validi)
+    Speedup: 24.76x, Efficienza: 95.2%
+[27/128] Testing 27 threads (8000x8000)
+  Algoritmo: Dynamic scheduling
+  Run 1/3...
+    ✓ Tempo: 0.672714 s
+  Run 2/3...
+    ✓ Tempo: 0.673933 s
+  Run 3/3...
+    ✓ Tempo: 0.687820 s
+  ✓ Tempo mediano: 0.673933 s (3 run validi)
+    Speedup: 25.54x, Efficienza: 94.6%
+[28/128] Testing 28 threads (8000x8000)
+  Algoritmo: Dynamic scheduling
+  Run 1/3...
+    ✓ Tempo: 0.645635 s
+  Run 2/3...
+    ✓ Tempo: 0.644481 s
+  Run 3/3...
+    ✓ Tempo: 0.643871 s
+  ✓ Tempo mediano: 0.644481 s (3 run validi)
+    Speedup: 26.71x, Efficienza: 95.4%
+[29/128] Testing 29 threads (8000x8000)
+  Algoritmo: Dynamic scheduling
+  Run 1/3...
+    ✓ Tempo: 0.630463 s
+  Run 2/3...
+    ✓ Tempo: 0.630513 s
+  Run 3/3...
+    ✓ Tempo: 0.629346 s
+  ✓ Tempo mediano: 0.630463 s (3 run validi)
+    Speedup: 27.30x, Efficienza: 94.1%
+[30/128] Testing 30 threads (8000x8000)
+  Algoritmo: Dynamic scheduling
+  Run 1/3...
+    ✓ Tempo: 0.607562 s
+  Run 2/3...
+    ✓ Tempo: 0.608389 s
+  Run 3/3...
+    ✓ Tempo: 0.607353 s
+  ✓ Tempo mediano: 0.607562 s (3 run validi)
+    Speedup: 28.33x, Efficienza: 94.4%
+[31/128] Testing 31 threads (8000x8000)
+  Algoritmo: Dynamic scheduling
+  Cache warm-up...
+  Run 1/3...
+    ✓ Tempo: 0.581908 s
+  Run 2/3...
+    ✓ Tempo: 0.583395 s
+  Run 3/3...
+    ✓ Tempo: 0.582820 s
+  ✓ Tempo mediano: 0.582820 s (3 run validi)
+    Speedup: 29.53x, Efficienza: 95.3%
+[32/128] Testing 32 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.749587 s
+  Run 2/3...
+    ✓ Tempo: 0.750073 s
+  Run 3/3...
+    ✓ Tempo: 0.749733 s
+  ✓ Tempo mediano: 0.749733 s (3 run validi)
+    Speedup: 22.96x, Efficienza: 71.7%
+[33/128] Testing 33 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.729380 s
+  Run 2/3...
+    ✓ Tempo: 0.729062 s
+  Run 3/3...
+    ✓ Tempo: 0.729163 s
+  ✓ Tempo mediano: 0.729163 s (3 run validi)
+    Speedup: 23.61x, Efficienza: 71.5%
+[34/128] Testing 34 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.709784 s
+  Run 2/3...
+    ✓ Tempo: 0.711785 s
+  Run 3/3...
+    ✓ Tempo: 0.709889 s
+  ✓ Tempo mediano: 0.709889 s (3 run validi)
+    Speedup: 24.25x, Efficienza: 71.3%
+[35/128] Testing 35 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.683214 s
+  Run 2/3...
+    ✓ Tempo: 0.683452 s
+  Run 3/3...
+    ✓ Tempo: 0.683837 s
+  ✓ Tempo mediano: 0.683452 s (3 run validi)
+    Speedup: 25.19x, Efficienza: 72.0%
+[36/128] Testing 36 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.669876 s
+  Run 2/3...
+    ✓ Tempo: 0.670018 s
+  Run 3/3...
+    ✓ Tempo: 0.670070 s
+  ✓ Tempo mediano: 0.670018 s (3 run validi)
+    Speedup: 25.69x, Efficienza: 71.4%
+[37/128] Testing 37 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.650563 s
+  Run 2/3...
+    ✓ Tempo: 0.650644 s
+  Run 3/3...
+    ✓ Tempo: 0.650219 s
+  ✓ Tempo mediano: 0.650563 s (3 run validi)
+    Speedup: 26.46x, Efficienza: 71.5%
+[38/128] Testing 38 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.634965 s
+  Run 2/3...
+    ✓ Tempo: 0.634898 s
+  Run 3/3...
+    ✓ Tempo: 0.634884 s
+  ✓ Tempo mediano: 0.634898 s (3 run validi)
+    Speedup: 27.11x, Efficienza: 71.3%
+[39/128] Testing 39 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.616733 s
+  Run 2/3...
+    ✓ Tempo: 0.616833 s
+  Run 3/3...
+    ✓ Tempo: 0.616655 s
+  ✓ Tempo mediano: 0.616733 s (3 run validi)
+    Speedup: 27.91x, Efficienza: 71.6%
+[40/128] Testing 40 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.600728 s
+  Run 2/3...
+    ✓ Tempo: 0.600736 s
+  Run 3/3...
+    ✓ Tempo: 0.600774 s
+  ✓ Tempo mediano: 0.600736 s (3 run validi)
+    Speedup: 28.65x, Efficienza: 71.6%
+[41/128] Testing 41 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Cache warm-up...
+  Run 1/3...
+    ✓ Tempo: 0.588830 s
+  Run 2/3...
+    ✓ Tempo: 0.589047 s
+  Run 3/3...
+    ✓ Tempo: 0.588201 s
+  ✓ Tempo mediano: 0.588830 s (3 run validi)
+    Speedup: 29.23x, Efficienza: 71.3%
+[42/128] Testing 42 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.570641 s
+  Run 2/3...
+    ✓ Tempo: 0.571021 s
+  Run 3/3...
+    ✓ Tempo: 0.570534 s
+  ✓ Tempo mediano: 0.570641 s (3 run validi)
+    Speedup: 30.17x, Efficienza: 71.8%
+[43/128] Testing 43 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.560730 s
+  Run 2/3...
+    ✓ Tempo: 0.561408 s
+  Run 3/3...
+    ✓ Tempo: 0.560658 s
+  ✓ Tempo mediano: 0.560730 s (3 run validi)
+    Speedup: 30.70x, Efficienza: 71.4%
+[44/128] Testing 44 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.548909 s
+  Run 2/3...
+    ✓ Tempo: 0.548783 s
+  Run 3/3...
+    ✓ Tempo: 0.549170 s
+  ✓ Tempo mediano: 0.548909 s (3 run validi)
+    Speedup: 31.36x, Efficienza: 71.3%
+[45/128] Testing 45 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.536188 s
+  Run 2/3...
+    ✓ Tempo: 0.536368 s
+  Run 3/3...
+    ✓ Tempo: 0.536381 s
+  ✓ Tempo mediano: 0.536368 s (3 run validi)
+    Speedup: 32.09x, Efficienza: 71.3%
+[46/128] Testing 46 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.521321 s
+  Run 2/3...
+    ✓ Tempo: 0.521294 s
+  Run 3/3...
+    ✓ Tempo: 0.521192 s
+  ✓ Tempo mediano: 0.521294 s (3 run validi)
+    Speedup: 33.02x, Efficienza: 71.8%
+[47/128] Testing 47 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.513021 s
+  Run 2/3...
+    ✓ Tempo: 0.513584 s
+  Run 3/3...
+    ✓ Tempo: 0.513107 s
+  ✓ Tempo mediano: 0.513107 s (3 run validi)
+    Speedup: 33.55x, Efficienza: 71.4%
+[48/128] Testing 48 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.504591 s
+  Run 2/3...
+    ✓ Tempo: 0.504797 s
+  Run 3/3...
+    ✓ Tempo: 0.505052 s
+  ✓ Tempo mediano: 0.504797 s (3 run validi)
+    Speedup: 34.10x, Efficienza: 71.0%
+[49/128] Testing 49 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.490957 s
+  Run 2/3...
+    ✓ Tempo: 0.491522 s
+  Run 3/3...
+    ✓ Tempo: 0.490799 s
+  ✓ Tempo mediano: 0.490957 s (3 run validi)
+    Speedup: 35.06x, Efficienza: 71.6%
+[50/128] Testing 50 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.482192 s
+  Run 2/3...
+    ✓ Tempo: 0.482721 s
+  Run 3/3...
+    ✓ Tempo: 0.482075 s
+  ✓ Tempo mediano: 0.482192 s (3 run validi)
+    Speedup: 35.70x, Efficienza: 71.4%
+[51/128] Testing 51 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Cache warm-up...
+  Run 1/3...
+    ✓ Tempo: 0.474853 s
+  Run 2/3...
+    ✓ Tempo: 0.474683 s
+  Run 3/3...
+    ✓ Tempo: 0.475278 s
+  ✓ Tempo mediano: 0.474853 s (3 run validi)
+    Speedup: 36.25x, Efficienza: 71.1%
+[52/128] Testing 52 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.465007 s
+  Run 2/3...
+    ✓ Tempo: 0.465246 s
+  Run 3/3...
+    ✓ Tempo: 0.464879 s
+  ✓ Tempo mediano: 0.465007 s (3 run validi)
+    Speedup: 37.02x, Efficienza: 71.2%
+[53/128] Testing 53 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.452889 s
+  Run 2/3...
+    ✓ Tempo: 0.453166 s
+  Run 3/3...
+    ✓ Tempo: 0.453239 s
+  ✓ Tempo mediano: 0.453166 s (3 run validi)
+    Speedup: 37.99x, Efficienza: 71.7%
+[54/128] Testing 54 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.445863 s
+  Run 2/3...
+    ✓ Tempo: 0.445535 s
+  Run 3/3...
+    ✓ Tempo: 0.445670 s
+  ✓ Tempo mediano: 0.445670 s (3 run validi)
+    Speedup: 38.62x, Efficienza: 71.5%
+[55/128] Testing 55 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.442609 s
+  Run 2/3...
+    ✓ Tempo: 0.441804 s
+  Run 3/3...
+    ✓ Tempo: 0.442219 s
+  ✓ Tempo mediano: 0.442219 s (3 run validi)
+    Speedup: 38.93x, Efficienza: 70.8%
+[56/128] Testing 56 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.432985 s
+  Run 2/3...
+    ✓ Tempo: 0.433310 s
+  Run 3/3...
+    ✓ Tempo: 0.433021 s
+  ✓ Tempo mediano: 0.433021 s (3 run validi)
+    Speedup: 39.75x, Efficienza: 71.0%
+[57/128] Testing 57 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.424578 s
+  Run 2/3...
+    ✓ Tempo: 0.424811 s
+  Run 3/3...
+    ✓ Tempo: 0.424804 s
+  ✓ Tempo mediano: 0.424804 s (3 run validi)
+    Speedup: 40.52x, Efficienza: 71.1%
+[58/128] Testing 58 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.417033 s
+  Run 2/3...
+    ✓ Tempo: 0.416981 s
+  Run 3/3...
+    ✓ Tempo: 0.417008 s
+  ✓ Tempo mediano: 0.417008 s (3 run validi)
+    Speedup: 41.28x, Efficienza: 71.2%
+[59/128] Testing 59 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.407598 s
+  Run 2/3...
+    ✓ Tempo: 0.407830 s
+  Run 3/3...
+    ✓ Tempo: 0.407572 s
+  ✓ Tempo mediano: 0.407598 s (3 run validi)
+    Speedup: 42.23x, Efficienza: 71.6%
+[60/128] Testing 60 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.406181 s
+  Run 2/3...
+    ✓ Tempo: 0.406309 s
+  Run 3/3...
+    ✓ Tempo: 0.406267 s
+  ✓ Tempo mediano: 0.406267 s (3 run validi)
+    Speedup: 42.37x, Efficienza: 70.6%
+[61/128] Testing 61 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Cache warm-up...
+  Run 1/3...
+    ✓ Tempo: 0.395659 s
+  Run 2/3...
+    ✓ Tempo: 0.396123 s
+  Run 3/3...
+    ✓ Tempo: 0.395651 s
+  ✓ Tempo mediano: 0.395659 s (3 run validi)
+    Speedup: 43.51x, Efficienza: 71.3%
+[62/128] Testing 62 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.389532 s
+  Run 2/3...
+    ✓ Tempo: 0.389412 s
+  Run 3/3...
+    ✓ Tempo: 0.389754 s
+  ✓ Tempo mediano: 0.389532 s (3 run validi)
+    Speedup: 44.19x, Efficienza: 71.3%
+[63/128] Testing 63 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.385656 s
+  Run 2/3...
+    ✓ Tempo: 0.385611 s
+  Run 3/3...
+    ✓ Tempo: 0.385399 s
+  ✓ Tempo mediano: 0.385611 s (3 run validi)
+    Speedup: 44.64x, Efficienza: 70.9%
+[64/128] Testing 64 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.378153 s
+  Run 2/3...
+    ✓ Tempo: 0.378092 s
+  Run 3/3...
+    ✓ Tempo: 0.378206 s
+  ✓ Tempo mediano: 0.378153 s (3 run validi)
+    Speedup: 45.52x, Efficienza: 71.1%
+[65/128] Testing 65 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.375278 s
+  Run 2/3...
+    ✓ Tempo: 0.375344 s
+  Run 3/3...
+    ✓ Tempo: 0.375120 s
+  ✓ Tempo mediano: 0.375278 s (3 run validi)
+    Speedup: 45.87x, Efficienza: 70.6%
+[66/128] Testing 66 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.366172 s
+  Run 2/3...
+    ✓ Tempo: 0.366314 s
+  Run 3/3...
+    ✓ Tempo: 0.366064 s
+  ✓ Tempo mediano: 0.366172 s (3 run validi)
+    Speedup: 47.01x, Efficienza: 71.2%
+[67/128] Testing 67 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.364552 s
+  Run 2/3...
+    ✓ Tempo: 0.364578 s
+  Run 3/3...
+    ✓ Tempo: 0.364444 s
+  ✓ Tempo mediano: 0.364552 s (3 run validi)
+    Speedup: 47.22x, Efficienza: 70.5%
+[68/128] Testing 68 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.355523 s
+  Run 2/3...
+    ✓ Tempo: 0.355658 s
+  Run 3/3...
+    ✓ Tempo: 0.355620 s
+  ✓ Tempo mediano: 0.355620 s (3 run validi)
+    Speedup: 48.40x, Efficienza: 71.2%
+[69/128] Testing 69 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.352884 s
+  Run 2/3...
+    ✓ Tempo: 0.353037 s
+  Run 3/3...
+    ✓ Tempo: 0.352757 s
+  ✓ Tempo mediano: 0.352884 s (3 run validi)
+    Speedup: 48.78x, Efficienza: 70.7%
+[70/128] Testing 70 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.349161 s
+  Run 2/3...
+    ✓ Tempo: 0.348900 s
+  Run 3/3...
+    ✓ Tempo: 0.348981 s
+  ✓ Tempo mediano: 0.348981 s (3 run validi)
+    Speedup: 49.33x, Efficienza: 70.5%
+[71/128] Testing 71 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Cache warm-up...
+  Run 1/3...
+    ✓ Tempo: 0.341667 s
+  Run 2/3...
+    ✓ Tempo: 0.341681 s
+  Run 3/3...
+    ✓ Tempo: 0.341705 s
+  ✓ Tempo mediano: 0.341681 s (3 run validi)
+    Speedup: 50.38x, Efficienza: 71.0%
+[72/128] Testing 72 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.338883 s
+  Run 2/3...
+    ✓ Tempo: 0.338803 s
+  Run 3/3...
+    ✓ Tempo: 0.338966 s
+  ✓ Tempo mediano: 0.338883 s (3 run validi)
+    Speedup: 50.79x, Efficienza: 70.5%
+[73/128] Testing 73 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.335981 s
+  Run 2/3...
+    ✓ Tempo: 0.336286 s
+  Run 3/3...
+    ✓ Tempo: 0.335873 s
+  ✓ Tempo mediano: 0.335981 s (3 run validi)
+    Speedup: 51.23x, Efficienza: 70.2%
+[74/128] Testing 74 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.327876 s
+  Run 2/3...
+    ✓ Tempo: 0.327791 s
+  Run 3/3...
+    ✓ Tempo: 0.327673 s
+  ✓ Tempo mediano: 0.327791 s (3 run validi)
+    Speedup: 52.51x, Efficienza: 71.0%
+[75/128] Testing 75 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.324258 s
+  Run 2/3...
+    ✓ Tempo: 0.324158 s
+  Run 3/3...
+    ✓ Tempo: 0.324269 s
+  ✓ Tempo mediano: 0.324258 s (3 run validi)
+    Speedup: 53.09x, Efficienza: 70.8%
+[76/128] Testing 76 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.321605 s
+  Run 2/3...
+    ✓ Tempo: 0.321260 s
+  Run 3/3...
+    ✓ Tempo: 0.321826 s
+  ✓ Tempo mediano: 0.321605 s (3 run validi)
+    Speedup: 53.52x, Efficienza: 70.4%
+[77/128] Testing 77 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.317705 s
+  Run 2/3...
+    ✓ Tempo: 0.317622 s
+  Run 3/3...
+    ✓ Tempo: 0.318171 s
+  ✓ Tempo mediano: 0.317705 s (3 run validi)
+    Speedup: 54.18x, Efficienza: 70.4%
+[78/128] Testing 78 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.311406 s
+  Run 2/3...
+    ✓ Tempo: 0.311579 s
+  Run 3/3...
+    ✓ Tempo: 0.311452 s
+  ✓ Tempo mediano: 0.311452 s (3 run validi)
+    Speedup: 55.27x, Efficienza: 70.9%
+[79/128] Testing 79 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.307317 s
+  Run 2/3...
+    ✓ Tempo: 0.307188 s
+  Run 3/3...
+    ✓ Tempo: 0.307110 s
+  ✓ Tempo mediano: 0.307188 s (3 run validi)
+    Speedup: 56.04x, Efficienza: 70.9%
+[80/128] Testing 80 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.304295 s
+  Run 2/3...
+    ✓ Tempo: 0.304483 s
+  Run 3/3...
+    ✓ Tempo: 0.304602 s
+  ✓ Tempo mediano: 0.304483 s (3 run validi)
+    Speedup: 56.53x, Efficienza: 70.7%
+[81/128] Testing 81 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Cache warm-up...
+  Run 1/3...
+    ✓ Tempo: 0.301598 s
+  Run 2/3...
+    ✓ Tempo: 0.301527 s
+  Run 3/3...
+    ✓ Tempo: 0.301327 s
+  ✓ Tempo mediano: 0.301527 s (3 run validi)
+    Speedup: 57.09x, Efficienza: 70.5%
+[82/128] Testing 82 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.299061 s
+  Run 2/3...
+    ✓ Tempo: 0.298723 s
+  Run 3/3...
+    ✓ Tempo: 0.298927 s
+  ✓ Tempo mediano: 0.298927 s (3 run validi)
+    Speedup: 57.58x, Efficienza: 70.2%
+[83/128] Testing 83 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.296064 s
+  Run 2/3...
+    ✓ Tempo: 0.296014 s
+  Run 3/3...
+    ✓ Tempo: 0.296036 s
+  ✓ Tempo mediano: 0.296036 s (3 run validi)
+    Speedup: 58.15x, Efficienza: 70.1%
+[84/128] Testing 84 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.291954 s
+  Run 2/3...
+    ✓ Tempo: 0.291675 s
+  Run 3/3...
+    ✓ Tempo: 0.291575 s
+  ✓ Tempo mediano: 0.291675 s (3 run validi)
+    Speedup: 59.02x, Efficienza: 70.3%
+[85/128] Testing 85 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.290062 s
+  Run 2/3...
+    ✓ Tempo: 0.290009 s
+  Run 3/3...
+    ✓ Tempo: 0.289835 s
+  ✓ Tempo mediano: 0.290009 s (3 run validi)
+    Speedup: 59.36x, Efficienza: 69.8%
+[86/128] Testing 86 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.286786 s
+  Run 2/3...
+    ✓ Tempo: 0.286286 s
+  Run 3/3...
+    ✓ Tempo: 0.286282 s
+  ✓ Tempo mediano: 0.286286 s (3 run validi)
+    Speedup: 60.13x, Efficienza: 69.9%
+[87/128] Testing 87 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.280391 s
+  Run 2/3...
+    ✓ Tempo: 0.280737 s
+  Run 3/3...
+    ✓ Tempo: 0.280692 s
+  ✓ Tempo mediano: 0.280692 s (3 run validi)
+    Speedup: 61.33x, Efficienza: 70.5%
+[88/128] Testing 88 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.280738 s
+  Run 2/3...
+    ✓ Tempo: 0.281010 s
+  Run 3/3...
+    ✓ Tempo: 0.280588 s
+  ✓ Tempo mediano: 0.280738 s (3 run validi)
+    Speedup: 61.32x, Efficienza: 69.7%
+[89/128] Testing 89 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.275660 s
+  Run 2/3...
+    ✓ Tempo: 0.275636 s
+  Run 3/3...
+    ✓ Tempo: 0.275438 s
+  ✓ Tempo mediano: 0.275636 s (3 run validi)
+    Speedup: 62.45x, Efficienza: 70.2%
+[90/128] Testing 90 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.274857 s
+  Run 2/3...
+    ✓ Tempo: 0.274860 s
+  Run 3/3...
+    ✓ Tempo: 0.274834 s
+  ✓ Tempo mediano: 0.274857 s (3 run validi)
+    Speedup: 62.63x, Efficienza: 69.6%
+[91/128] Testing 91 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Cache warm-up...
+  Run 1/3...
+    ✓ Tempo: 0.270664 s
+  Run 2/3...
+    ✓ Tempo: 0.270673 s
+  Run 3/3...
+    ✓ Tempo: 0.270814 s
+  ✓ Tempo mediano: 0.270673 s (3 run validi)
+    Speedup: 63.60x, Efficienza: 69.9%
+[92/128] Testing 92 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.269420 s
+  Run 2/3...
+    ✓ Tempo: 0.269063 s
+  Run 3/3...
+    ✓ Tempo: 0.269309 s
+  ✓ Tempo mediano: 0.269309 s (3 run validi)
+    Speedup: 63.92x, Efficienza: 69.5%
+[93/128] Testing 93 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.265845 s
+  Run 2/3...
+    ✓ Tempo: 0.265572 s
+  Run 3/3...
+    ✓ Tempo: 0.265596 s
+  ✓ Tempo mediano: 0.265596 s (3 run validi)
+    Speedup: 64.81x, Efficienza: 69.7%
+[94/128] Testing 94 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.263686 s
+  Run 2/3...
+    ✓ Tempo: 0.263497 s
+  Run 3/3...
+    ✓ Tempo: 0.263543 s
+  ✓ Tempo mediano: 0.263543 s (3 run validi)
+    Speedup: 65.32x, Efficienza: 69.5%
+[95/128] Testing 95 threads (8000x8000)
+  Algoritmo: Guided scheduling
+  Run 1/3...
+    ✓ Tempo: 0.259900 s
+  Run 2/3...
+    ✓ Tempo: 0.259735 s
+  Run 3/3...
+    ✓ Tempo: 0.259893 s
+  ✓ Tempo mediano: 0.259893 s (3 run validi)
+    Speedup: 66.23x, Efficienza: 69.7%
+[96/128] Testing 96 threads (8000x8000)
+  Algoritmo: NUMA-aware tasks
+  Run 1/3...
+    ✓ Tempo: 0.326332 s
+  Run 2/3...
+    ✓ Tempo: 0.326404 s
+  Run 3/3...
+    ✓ Tempo: 0.326041 s
+  ✓ Tempo mediano: 0.326332 s (3 run validi)
+    Speedup: 52.75x, Efficienza: 54.9%
+[97/128] Testing 97 threads (8000x8000)
+  Algoritmo: NUMA-aware tasks
+  Run 1/3...
+    ✓ Tempo: 0.319515 s
+  Run 2/3...
+    ✓ Tempo: 0.319385 s
+  Run 3/3...
+    ✓ Tempo: 0.319351 s
+  ✓ Tempo mediano: 0.319385 s (3 run validi)
+    Speedup: 53.90x, Efficienza: 55.6%
+[98/128] Testing 98 threads (8000x8000)
+  Algoritmo: NUMA-aware tasks
+  Run 1/3...
+    ✓ Tempo: 0.319304 s
+  Run 2/3...
+    ✓ Tempo: 0.319391 s
+  Run 3/3...
+    ✓ Tempo: 0.319281 s
+  ✓ Tempo mediano: 0.319304 s (3 run validi)
+    Speedup: 53.91x, Efficienza: 55.0%
+[99/128] Testing 99 threads (8000x8000)
+  Algoritmo: NUMA-aware tasks
+  Run 1/3...
+    ✓ Tempo: 0.314826 s
+  Run 2/3...
+    ✓ Tempo: 0.315305 s
+  Run 3/3...
+    ✓ Tempo: 0.315027 s
+  ✓ Tempo mediano: 0.315027 s (3 run validi)
+    Speedup: 54.64x, Efficienza: 55.2%
+[100/128] Testing 100 threads (8000x8000)
+  Algoritmo: NUMA-aware tasks
+  Run 1/3...
+    ✓ Tempo: 0.315599 s
+  Run 2/3...
+    ✓ Tempo: 0.315046 s
+  Run 3/3...
+    ✓ Tempo: 0.314698 s
+  ✓ Tempo mediano: 0.315046 s (3 run validi)
+    Speedup: 54.64x, Efficienza: 54.6%
+[101/128] Testing 101 threads (8000x8000)
+  Algoritmo: NUMA-aware tasks
+  Cache warm-up...
+  Run 1/3...
+    ✓ Tempo: 0.308261 s
+  Run 2/3...
+    ✓ Tempo: 0.308123 s
+  Run 3/3...
+    ✓ Tempo: 0.307500 s
+  ✓ Tempo mediano: 0.308123 s (3 run validi)
+    Speedup: 55.87x, Efficienza: 55.3%
+[102/128] Testing 102 threads (8000x8000)
+  Algoritmo: NUMA-aware tasks
+  Run 1/3...
+    ✓ Tempo: 0.307869 s
+  Run 2/3...
+    ✓ Tempo: 0.308022 s
+  Run 3/3...
+    ✓ Tempo: 0.307962 s
+  ✓ Tempo mediano: 0.307962 s (3 run validi)
+    Speedup: 55.89x, Efficienza: 54.8%
+[103/128] Testing 103 threads (8000x8000)
+  Algoritmo: NUMA-aware tasks
+  Run 1/3...
+    ✓ Tempo: 0.303781 s
+  Run 2/3...
+    ✓ Tempo: 0.304108 s
+  Run 3/3...
+    ✓ Tempo: 0.303756 s
+  ✓ Tempo mediano: 0.303781 s (3 run validi)
+    Speedup: 56.66x, Efficienza: 55.0%
+[104/128] Testing 104 threads (8000x8000)
+  Algoritmo: NUMA-aware tasks
+  Run 1/3...
+    ✓ Tempo: 0.303979 s
+  Run 2/3...
+    ✓ Tempo: 0.303337 s
+  Run 3/3...
+    ✓ Tempo: 0.303569 s
+  ✓ Tempo mediano: 0.303569 s (3 run validi)
+    Speedup: 56.70x, Efficienza: 54.5%
+[105/128] Testing 105 threads (8000x8000)
+  Algoritmo: NUMA-aware tasks
+  Run 1/3...
+    ✓ Tempo: 0.296213 s
+  Run 2/3...
+    ✓ Tempo: 0.296078 s
+  Run 3/3...
+    ✓ Tempo: 0.296024 s
+  ✓ Tempo mediano: 0.296078 s (3 run validi)
+    Speedup: 58.14x, Efficienza: 55.4%
+[106/128] Testing 106 threads (8000x8000)
+  Algoritmo: NUMA-aware tasks
+  Run 1/3...
+    ✓ Tempo: 0.296306 s
+  Run 2/3...
+    ✓ Tempo: 0.296130 s
+  Run 3/3...
+    ✓ Tempo: 0.296247 s
+  ✓ Tempo mediano: 0.296247 s (3 run validi)
+    Speedup: 58.11x, Efficienza: 54.8%
+[107/128] Testing 107 threads (8000x8000)
+  Algoritmo: NUMA-aware tasks
+  Run 1/3...
+    ✓ Tempo: 0.292304 s
+  Run 2/3...
+    ✓ Tempo: 0.292129 s
+  Run 3/3...
+    ✓ Tempo: 0.292296 s
+  ✓ Tempo mediano: 0.292296 s (3 run validi)
+    Speedup: 58.89x, Efficienza: 55.0%
+[108/128] Testing 108 threads (8000x8000)
+  Algoritmo: NUMA-aware tasks
+  Run 1/3...
+    ✓ Tempo: 0.292355 s
+  Run 2/3...
+    ✓ Tempo: 0.292143 s
+  Run 3/3...
+    ✓ Tempo: 0.292587 s
+  ✓ Tempo mediano: 0.292355 s (3 run validi)
+    Speedup: 58.88x, Efficienza: 54.5%
+[109/128] Testing 109 threads (8000x8000)
+  Algoritmo: NUMA-aware tasks
+  Run 1/3...
+    ✓ Tempo: 0.286660 s
+  Run 2/3...
+    ✓ Tempo: 0.286525 s
+  Run 3/3...
+    ✓ Tempo: 0.286736 s
+  ✓ Tempo mediano: 0.286660 s (3 run validi)
+    Speedup: 60.05x, Efficienza: 55.1%
+[110/128] Testing 110 threads (8000x8000)
+  Algoritmo: NUMA-aware tasks
+  Run 1/3...
+    ✓ Tempo: 0.286777 s
+  Run 2/3...
+    ✓ Tempo: 0.286042 s
+  Run 3/3...
+    ✓ Tempo: 0.286181 s
+  ✓ Tempo mediano: 0.286181 s (3 run validi)
+    Speedup: 60.15x, Efficienza: 54.7%
+[111/128] Testing 111 threads (8000x8000)
+  Algoritmo: NUMA-aware tasks
+  Cache warm-up...
+  Run 1/3...
+    ✓ Tempo: 0.286970 s
+  Run 2/3...
+    ✓ Tempo: 0.286786 s
+  Run 3/3...
+    ✓ Tempo: 0.286518 s
+  ✓ Tempo mediano: 0.286786 s (3 run validi)
+    Speedup: 60.02x, Efficienza: 54.1%
+[112/128] Testing 112 threads (8000x8000)
+  Algoritmo: NUMA-aware tasks
+  Run 1/3...
+    ✓ Tempo: 0.213413 s
+  Run 2/3...
+    ✓ Tempo: 0.212734 s
+  Run 3/3...
+    ✓ Tempo: 0.212752 s
+  ✓ Tempo mediano: 0.212752 s (3 run validi)
+    Speedup: 80.91x, Efficienza: 72.2%
+[113/128] Testing 113 threads (8000x8000)
+  Algoritmo: NUMA-aware tasks
+  Run 1/3...
+    ✓ Tempo: 0.213006 s
+  Run 2/3...
+    ✓ Tempo: 0.212832 s
+  Run 3/3...
+    ✓ Tempo: 0.211867 s
+  ✓ Tempo mediano: 0.212832 s (3 run validi)
+    Speedup: 80.88x, Efficienza: 71.6%
+[114/128] Testing 114 threads (8000x8000)
+  Algoritmo: NUMA-aware tasks
+  Run 1/3...
+    ✓ Tempo: 0.213066 s
+  Run 2/3...
+    ✓ Tempo: 0.213579 s
+  Run 3/3...
+    ✓ Tempo: 0.213520 s
+  ✓ Tempo mediano: 0.213520 s (3 run validi)
+    Speedup: 80.62x, Efficienza: 70.7%
+[115/128] Testing 115 threads (8000x8000)
+  Algoritmo: NUMA-aware tasks
+  Run 1/3...
+    ✓ Tempo: 0.207819 s
+  Run 2/3...
+    ✓ Tempo: 0.207460 s
+  Run 3/3...
+    ✓ Tempo: 0.207643 s
+  ✓ Tempo mediano: 0.207643 s (3 run validi)
+    Speedup: 82.90x, Efficienza: 72.1%
+[116/128] Testing 116 threads (8000x8000)
+  Algoritmo: NUMA-aware tasks
+  Run 1/3...
+    ✓ Tempo: 0.207409 s
+  Run 2/3...
+    ✓ Tempo: 0.208031 s
+  Run 3/3...
+    ✓ Tempo: 0.207916 s
+  ✓ Tempo mediano: 0.207916 s (3 run validi)
+    Speedup: 82.79x, Efficienza: 71.4%
+[117/128] Testing 117 threads (8000x8000)
+  Algoritmo: NUMA-aware tasks
+  Run 1/3...
+    ✓ Tempo: 0.207706 s
+  Run 2/3...
+    ✓ Tempo: 0.207242 s
+  Run 3/3...
+    ✓ Tempo: 0.207659 s
+  ✓ Tempo mediano: 0.207659 s (3 run validi)
+    Speedup: 82.89x, Efficienza: 70.8%
+[118/128] Testing 118 threads (8000x8000)
+  Algoritmo: NUMA-aware tasks
+  Run 1/3...
+    ✓ Tempo: 0.202471 s
+  Run 2/3...
+    ✓ Tempo: 0.201589 s
+  Run 3/3...
+    ✓ Tempo: 0.201559 s
+  ✓ Tempo mediano: 0.201589 s (3 run validi)
+    Speedup: 85.39x, Efficienza: 72.4%
+[119/128] Testing 119 threads (8000x8000)
+  Algoritmo: NUMA-aware tasks
+  Run 1/3...
+    ✓ Tempo: 0.201218 s
+  Run 2/3...
+    ✓ Tempo: 0.201495 s
+  Run 3/3...
+    ✓ Tempo: 0.201733 s
+  ✓ Tempo mediano: 0.201495 s (3 run validi)
+    Speedup: 85.43x, Efficienza: 71.8%
+[120/128] Testing 120 threads (8000x8000)
+  Algoritmo: NUMA-aware tasks
+  Run 1/3...
+    ✓ Tempo: 0.201443 s
+  Run 2/3...
+    ✓ Tempo: 0.201739 s
+  Run 3/3...
+    ✓ Tempo: 0.201692 s
+  ✓ Tempo mediano: 0.201692 s (3 run validi)
+    Speedup: 85.35x, Efficienza: 71.1%
+[121/128] Testing 121 threads (8000x8000)
+  Algoritmo: NUMA-aware tasks
+  Cache warm-up...
+  Run 1/3...
+    ✓ Tempo: 0.201158 s
+  Run 2/3...
+    ✓ Tempo: 0.202136 s
+  Run 3/3...
+    ✓ Tempo: 0.201191 s
+  ✓ Tempo mediano: 0.201191 s (3 run validi)
+    Speedup: 85.56x, Efficienza: 70.7%
+[122/128] Testing 122 threads (8000x8000)
+  Algoritmo: NUMA-aware tasks
+  Run 1/3...
+    ✓ Tempo: 0.196407 s
+  Run 2/3...
+    ✓ Tempo: 0.195533 s
+  Run 3/3...
+    ✓ Tempo: 0.195804 s
+  ✓ Tempo mediano: 0.195804 s (3 run validi)
+    Speedup: 87.91x, Efficienza: 72.1%
+[123/128] Testing 123 threads (8000x8000)
+  Algoritmo: NUMA-aware tasks
+  Run 1/3...
+    ✓ Tempo: 0.194767 s
+  Run 2/3...
+    ✓ Tempo: 0.195139 s
+  Run 3/3...
+    ✓ Tempo: 0.194953 s
+  ✓ Tempo mediano: 0.194953 s (3 run validi)
+    Speedup: 88.30x, Efficienza: 71.8%
+[124/128] Testing 124 threads (8000x8000)
+  Algoritmo: NUMA-aware tasks
+  Run 1/3...
+    ✓ Tempo: 0.194609 s
+  Run 2/3...
+    ✓ Tempo: 0.194234 s
+  Run 3/3...
+    ✓ Tempo: 0.194526 s
+  ✓ Tempo mediano: 0.194526 s (3 run validi)
+    Speedup: 88.49x, Efficienza: 71.4%
+[125/128] Testing 125 threads (8000x8000)
+  Algoritmo: NUMA-aware tasks
+  Run 1/3...
+    ✓ Tempo: 0.194557 s
+  Run 2/3...
+    ✓ Tempo: 0.194611 s
+  Run 3/3...
+    ✓ Tempo: 0.195316 s
+  ✓ Tempo mediano: 0.194611 s (3 run validi)
+    Speedup: 88.45x, Efficienza: 70.8%
+[126/128] Testing 126 threads (8000x8000)
+  Algoritmo: NUMA-aware tasks
+  Run 1/3...
+    ✓ Tempo: 0.190106 s
+  Run 2/3...
+    ✓ Tempo: 0.190003 s
+  Run 3/3...
+    ✓ Tempo: 0.189041 s
+  ✓ Tempo mediano: 0.190003 s (3 run validi)
+    Speedup: 90.60x, Efficienza: 71.9%
+[127/128] Testing 127 threads (8000x8000)
+  Algoritmo: NUMA-aware tasks
+  Run 1/3...
+    ✓ Tempo: 0.189491 s
+  Run 2/3...
+    ✓ Tempo: 0.189279 s
+  Run 3/3...
+    ✓ Tempo: 0.189038 s
+  ✓ Tempo mediano: 0.189279 s (3 run validi)
+    Speedup: 90.94x, Efficienza: 71.6%
+[128/128] Testing 128 threads (8000x8000)
+  Algoritmo: NUMA-aware tasks
+  Run 1/3...
+    ✓ Tempo: 0.189376 s
+  Run 2/3...
+    ✓ Tempo: 0.189131 s
+  Run 3/3...
+    ✓ Tempo: 0.189214 s
+  ✓ Tempo mediano: 0.189214 s (3 run validi)
+    Speedup: 90.97x, Efficienza: 71.1%
+
+=== STRONG SCALING COMPLETATO ===
+File risultati: results/omp_strong_scaling.csv
+Righe generate: 129
+
+=== SUMMARY STRONG SCALING ===
+Tempo baseline (1 thread): 17.213518s
+Tempo finale (128 thread): 0.189214s
+Speedup massimo: 91.0x con 128 threads
+Efficienza finale: 71.1%
+⚠ Strong scaling needs improvement
+
+=== ANALISI TRANSIZIONI ALGORITMI ===
+Transizione 7→8 thread (static→dynamic): 55.5% miglioramento
+Transizione 31→32 thread (dynamic→guided): -28.6% miglioramento
+Transizione 95→96 thread (guided→NUMA-tasks): -25.6% miglioramento
+  ⚠ Transizione negativa - NUMA-tasks ha overhead!
+
+=== GENERAZIONE IMMAGINE ===
+Generando immagine con configurazione ottimale...
+Generando immagine con 2 threads (efficienza ottimale)...
+1,2,2048,2048,1.124720
+✓ Immagine salvata: results/mandelbrot_strong.pgm
+  Risoluzione: 2048x2048, Thread: 2, Iterazioni: 1000
+✓ PNG: results/mandelbrot_strong.png
+
+Thu Jul 24 02:04:06 PM CEST 2025

@@ -1,0 +1,1438 @@
+=== MANDELBROT WEAK SCALING FIXED ===
+Data: Thu Jul 24 01:46:28 PM CEST 2025
+Nodo: epyc006.hpc.rd.areasciencepark.it
+CPU disponibili: 128
+NUMA nodes: 8
+
+Parametri weak scaling CORRETTI:
+- Dimensione base: 1000x1000 (1M pixel per 1 thread)
+- Max iterazioni: 400
+- Thread testati: 128 configurazioni
+- Formula: size = base * sqrt(threads) (lavoro/thread costante)
+- Output: results/omp_weak_scaling.csv
+
+Inizio weak scaling con formula corretta...
+[1/128] Testing 1 threads, size: 1000x1000
+  Memoria richiesta: 3 MB
+  Work per thread: 1000000 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.229028 s
+  Run 2/3...
+    ✓ Tempo: 0.228986 s
+  Run 3/3...
+    ✓ Tempo: 0.229770 s
+  ✓ Tempo mediano: 0.229028 s (3 run validi)
+    Efficienza weak: 100.0%
+[2/128] Testing 2 threads, size: 1416x1416
+  Memoria richiesta: 7 MB
+  Work per thread: 1002528 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.253469 s
+  Run 2/3...
+    ✓ Tempo: 0.253548 s
+  Run 3/3...
+    ✓ Tempo: 0.253173 s
+  ✓ Tempo mediano: 0.253469 s (3 run validi)
+    Efficienza weak: 90.4%
+[3/128] Testing 3 threads, size: 1736x1736
+  Memoria richiesta: 11 MB
+  Work per thread: 1004565 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.507433 s
+  Run 2/3...
+    ✓ Tempo: 0.507065 s
+  Run 3/3...
+    ✓ Tempo: 0.506920 s
+  ✓ Tempo mediano: 0.507065 s (3 run validi)
+    Efficienza weak: 45.2%
+[4/128] Testing 4 threads, size: 2000x2000
+  Memoria richiesta: 15 MB
+  Work per thread: 1000000 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.441623 s
+  Run 2/3...
+    ✓ Tempo: 0.440872 s
+  Run 3/3...
+    ✓ Tempo: 0.441613 s
+  ✓ Tempo mediano: 0.441613 s (3 run validi)
+    Efficienza weak: 51.9%
+[5/128] Testing 5 threads, size: 2240x2240
+  Memoria richiesta: 19 MB
+  Work per thread: 1003520 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.564030 s
+  Run 2/3...
+    ✓ Tempo: 0.571817 s
+  Run 3/3...
+    ✓ Tempo: 0.586487 s
+  ✓ Tempo mediano: 0.571817 s (3 run validi)
+    Efficienza weak: 40.1%
+[6/128] Testing 6 threads, size: 2456x2456
+  Memoria richiesta: 23 MB
+  Work per thread: 1005322 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.522027 s
+  Run 2/3...
+    ✓ Tempo: 0.506046 s
+  Run 3/3...
+    ✓ Tempo: 0.522396 s
+  ✓ Tempo mediano: 0.522027 s (3 run validi)
+    Efficienza weak: 43.9%
+[7/128] Testing 7 threads, size: 2648x2648
+  Memoria richiesta: 26 MB
+  Work per thread: 1001700 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.581654 s
+  Run 2/3...
+    ✓ Tempo: 0.579193 s
+  Run 3/3...
+    ✓ Tempo: 0.586429 s
+  ✓ Tempo mediano: 0.581654 s (3 run validi)
+    Efficienza weak: 39.4%
+[8/128] Testing 8 threads, size: 2832x2832
+  Memoria richiesta: 30 MB
+  Work per thread: 1002528 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.317540 s
+  Run 2/3...
+    ✓ Tempo: 0.339170 s
+  Run 3/3...
+    ✓ Tempo: 0.317855 s
+  ✓ Tempo mediano: 0.317855 s (3 run validi)
+    Efficienza weak: 72.1%
+[9/128] Testing 9 threads, size: 3000x3000
+  Memoria richiesta: 34 MB
+  Work per thread: 1000000 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.314623 s
+  Run 2/3...
+    ✓ Tempo: 0.314622 s
+  Run 3/3...
+    ✓ Tempo: 0.315822 s
+  ✓ Tempo mediano: 0.314623 s (3 run validi)
+    Efficienza weak: 72.8%
+[10/128] Testing 10 threads, size: 3168x3168
+  Memoria richiesta: 38 MB
+  Work per thread: 1003622 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.317660 s
+  Run 2/3...
+    ✓ Tempo: 0.317916 s
+  Run 3/3...
+    ✓ Tempo: 0.318802 s
+  ✓ Tempo mediano: 0.317916 s (3 run validi)
+    Efficienza weak: 72.0%
+[11/128] Testing 11 threads, size: 3320x3320
+  Memoria richiesta: 42 MB
+  Work per thread: 1002036 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.313191 s
+  Run 2/3...
+    ✓ Tempo: 0.313271 s
+  Run 3/3...
+    ✓ Tempo: 0.314166 s
+  ✓ Tempo mediano: 0.313271 s (3 run validi)
+    Efficienza weak: 73.1%
+[12/128] Testing 12 threads, size: 3464x3464
+  Memoria richiesta: 45 MB
+  Work per thread: 999941 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.319124 s
+  Run 2/3...
+    ✓ Tempo: 0.313229 s
+  Run 3/3...
+    ✓ Tempo: 0.318071 s
+  ✓ Tempo mediano: 0.318071 s (3 run validi)
+    Efficienza weak: 72.0%
+[13/128] Testing 13 threads, size: 3608x3608
+  Memoria richiesta: 49 MB
+  Work per thread: 1001358 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.317931 s
+  Run 2/3...
+    ✓ Tempo: 0.318103 s
+  Run 3/3...
+    ✓ Tempo: 0.312525 s
+  ✓ Tempo mediano: 0.317931 s (3 run validi)
+    Efficienza weak: 72.0%
+[14/128] Testing 14 threads, size: 3744x3744
+  Memoria richiesta: 53 MB
+  Work per thread: 1001252 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.316774 s
+  Run 2/3...
+    ✓ Tempo: 0.313296 s
+  Run 3/3...
+    ✓ Tempo: 0.319049 s
+  ✓ Tempo mediano: 0.316774 s (3 run validi)
+    Efficienza weak: 72.3%
+[15/128] Testing 15 threads, size: 3872x3872
+  Memoria richiesta: 57 MB
+  Work per thread: 999492 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.304448 s
+  Run 2/3...
+    ✓ Tempo: 0.321843 s
+  Run 3/3...
+    ✓ Tempo: 0.319945 s
+  ✓ Tempo mediano: 0.319945 s (3 run validi)
+    Efficienza weak: 71.6%
+[16/128] Testing 16 threads, size: 4000x4000
+  Memoria richiesta: 61 MB
+  Work per thread: 1000000 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.263290 s
+  Run 2/3...
+    ✓ Tempo: 0.263951 s
+  Run 3/3...
+    ✓ Tempo: 0.264014 s
+  ✓ Tempo mediano: 0.263951 s (3 run validi)
+    Efficienza weak: 86.8%
+[17/128] Testing 17 threads, size: 4128x4128
+  Memoria richiesta: 65 MB
+  Work per thread: 1002375 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.267592 s
+  Run 2/3...
+    ✓ Tempo: 0.267242 s
+  Run 3/3...
+    ✓ Tempo: 0.264227 s
+  ✓ Tempo mediano: 0.267242 s (3 run validi)
+    Efficienza weak: 85.7%
+[18/128] Testing 18 threads, size: 4248x4248
+  Memoria richiesta: 68 MB
+  Work per thread: 1002528 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.268317 s
+  Run 2/3...
+    ✓ Tempo: 0.267816 s
+  Run 3/3...
+    ✓ Tempo: 0.267533 s
+  ✓ Tempo mediano: 0.267816 s (3 run validi)
+    Efficienza weak: 85.5%
+[19/128] Testing 19 threads, size: 4360x4360
+  Memoria richiesta: 72 MB
+  Work per thread: 1000505 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.263245 s
+  Run 2/3...
+    ✓ Tempo: 0.262570 s
+  Run 3/3...
+    ✓ Tempo: 0.266456 s
+  ✓ Tempo mediano: 0.263245 s (3 run validi)
+    Efficienza weak: 87.0%
+[20/128] Testing 20 threads, size: 4472x4472
+  Memoria richiesta: 76 MB
+  Work per thread: 999939 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.263876 s
+  Run 2/3...
+    ✓ Tempo: 0.263478 s
+  Run 3/3...
+    ✓ Tempo: 0.262035 s
+  ✓ Tempo mediano: 0.263478 s (3 run validi)
+    Efficienza weak: 86.9%
+[21/128] Testing 21 threads, size: 4584x4584
+  Memoria richiesta: 80 MB
+  Work per thread: 1000621 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.265932 s
+  Run 2/3...
+    ✓ Tempo: 0.267920 s
+  Run 3/3...
+    ✓ Tempo: 0.264378 s
+  ✓ Tempo mediano: 0.265932 s (3 run validi)
+    Efficienza weak: 86.1%
+[22/128] Testing 22 threads, size: 4696x4696
+  Memoria richiesta: 84 MB
+  Work per thread: 1002382 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.263151 s
+  Run 2/3...
+    ✓ Tempo: 0.262853 s
+  Run 3/3...
+    ✓ Tempo: 0.266182 s
+  ✓ Tempo mediano: 0.263151 s (3 run validi)
+    Efficienza weak: 87.0%
+[23/128] Testing 23 threads, size: 4800x4800
+  Memoria richiesta: 87 MB
+  Work per thread: 1001739 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.265759 s
+  Run 2/3...
+    ✓ Tempo: 0.263854 s
+  Run 3/3...
+    ✓ Tempo: 0.264621 s
+  ✓ Tempo mediano: 0.264621 s (3 run validi)
+    Efficienza weak: 86.5%
+[24/128] Testing 24 threads, size: 4904x4904
+  Memoria richiesta: 91 MB
+  Work per thread: 1002050 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.262562 s
+  Run 2/3...
+    ✓ Tempo: 0.265011 s
+  Run 3/3...
+    ✓ Tempo: 0.261897 s
+  ✓ Tempo mediano: 0.262562 s (3 run validi)
+    Efficienza weak: 87.2%
+[25/128] Testing 25 threads, size: 5000x5000
+  Memoria richiesta: 95 MB
+  Work per thread: 1000000 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.264230 s
+  Run 2/3...
+    ✓ Tempo: 0.264863 s
+  Run 3/3...
+    ✓ Tempo: 0.270333 s
+  ✓ Tempo mediano: 0.264863 s (3 run validi)
+    Efficienza weak: 86.5%
+[26/128] Testing 26 threads, size: 5104x5104
+  Memoria richiesta: 99 MB
+  Work per thread: 1001954 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.266865 s
+  Run 2/3...
+    ✓ Tempo: 0.263902 s
+  Run 3/3...
+    ✓ Tempo: 0.267937 s
+  ✓ Tempo mediano: 0.266865 s (3 run validi)
+    Efficienza weak: 85.8%
+[27/128] Testing 27 threads, size: 5200x5200
+  Memoria richiesta: 103 MB
+  Work per thread: 1001481 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.263593 s
+  Run 2/3...
+    ✓ Tempo: 0.267248 s
+  Run 3/3...
+    ✓ Tempo: 0.266270 s
+  ✓ Tempo mediano: 0.266270 s (3 run validi)
+    Efficienza weak: 86.0%
+[28/128] Testing 28 threads, size: 5296x5296
+  Memoria richiesta: 106 MB
+  Work per thread: 1001700 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.266801 s
+  Run 2/3...
+    ✓ Tempo: 0.265628 s
+  Run 3/3...
+    ✓ Tempo: 0.265350 s
+  ✓ Tempo mediano: 0.265628 s (3 run validi)
+    Efficienza weak: 86.2%
+[29/128] Testing 29 threads, size: 5392x5392
+  Memoria richiesta: 110 MB
+  Work per thread: 1002540 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.268496 s
+  Run 2/3...
+    ✓ Tempo: 0.267587 s
+  Run 3/3...
+    ✓ Tempo: 0.271184 s
+  ✓ Tempo mediano: 0.268496 s (3 run validi)
+    Efficienza weak: 85.3%
+[30/128] Testing 30 threads, size: 5480x5480
+  Memoria richiesta: 114 MB
+  Work per thread: 1001013 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.267055 s
+  Run 2/3...
+    ✓ Tempo: 0.283935 s
+  Run 3/3...
+    ✓ Tempo: 0.267312 s
+  ✓ Tempo mediano: 0.267312 s (3 run validi)
+    Efficienza weak: 85.7%
+[31/128] Testing 31 threads, size: 5568x5568
+  Memoria richiesta: 118 MB
+  Work per thread: 1000084 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.266516 s
+  Run 2/3...
+    ✓ Tempo: 0.266420 s
+  Run 3/3...
+    ✓ Tempo: 0.266781 s
+  ✓ Tempo mediano: 0.266516 s (3 run validi)
+    Efficienza weak: 85.9%
+[32/128] Testing 32 threads, size: 5656x5656
+  Memoria richiesta: 122 MB
+  Work per thread: 999698 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.343033 s
+  Run 2/3...
+    ✓ Tempo: 0.339772 s
+  Run 3/3...
+    ✓ Tempo: 0.342926 s
+  ✓ Tempo mediano: 0.342926 s (3 run validi)
+    Efficienza weak: 66.8%
+[33/128] Testing 33 threads, size: 5744x5744
+  Memoria richiesta: 125 MB
+  Work per thread: 999804 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.338336 s
+  Run 2/3...
+    ✓ Tempo: 0.342972 s
+  Run 3/3...
+    ✓ Tempo: 0.340525 s
+  ✓ Tempo mediano: 0.340525 s (3 run validi)
+    Efficienza weak: 67.3%
+[34/128] Testing 34 threads, size: 5832x5832
+  Memoria richiesta: 129 MB
+  Work per thread: 1000359 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.339964 s
+  Run 2/3...
+    ✓ Tempo: 0.345249 s
+  Run 3/3...
+    ✓ Tempo: 0.340120 s
+  ✓ Tempo mediano: 0.340120 s (3 run validi)
+    Efficienza weak: 67.3%
+[35/128] Testing 35 threads, size: 5920x5920
+  Memoria richiesta: 133 MB
+  Work per thread: 1001325 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.342957 s
+  Run 2/3...
+    ✓ Tempo: 0.337034 s
+  Run 3/3...
+    ✓ Tempo: 0.340389 s
+  ✓ Tempo mediano: 0.340389 s (3 run validi)
+    Efficienza weak: 67.3%
+[36/128] Testing 36 threads, size: 6000x6000
+  Memoria richiesta: 137 MB
+  Work per thread: 1000000 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.338236 s
+  Run 2/3...
+    ✓ Tempo: 0.343309 s
+  Run 3/3...
+    ✓ Tempo: 0.338585 s
+  ✓ Tempo mediano: 0.338585 s (3 run validi)
+    Efficienza weak: 67.6%
+[37/128] Testing 37 threads, size: 6088x6088
+  Memoria richiesta: 141 MB
+  Work per thread: 1001722 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.344207 s
+  Run 2/3...
+    ✓ Tempo: 0.339044 s
+  Run 3/3...
+    ✓ Tempo: 0.338685 s
+  ✓ Tempo mediano: 0.339044 s (3 run validi)
+    Efficienza weak: 67.6%
+[38/128] Testing 38 threads, size: 6168x6168
+  Memoria richiesta: 145 MB
+  Work per thread: 1001163 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.337328 s
+  Run 2/3...
+    ✓ Tempo: 0.343394 s
+  Run 3/3...
+    ✓ Tempo: 0.342850 s
+  ✓ Tempo mediano: 0.342850 s (3 run validi)
+    Efficienza weak: 66.8%
+[39/128] Testing 39 threads, size: 6248x6248
+  Memoria richiesta: 148 MB
+  Work per thread: 1000961 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.339990 s
+  Run 2/3...
+    ✓ Tempo: 0.342589 s
+  Run 3/3...
+    ✓ Tempo: 0.339623 s
+  ✓ Tempo mediano: 0.339990 s (3 run validi)
+    Efficienza weak: 67.4%
+[40/128] Testing 40 threads, size: 6328x6328
+  Memoria richiesta: 152 MB
+  Work per thread: 1001089 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.336845 s
+  Run 2/3...
+    ✓ Tempo: 0.337881 s
+  Run 3/3...
+    ✓ Tempo: 0.337938 s
+  ✓ Tempo mediano: 0.337881 s (3 run validi)
+    Efficienza weak: 67.8%
+[41/128] Testing 41 threads, size: 6408x6408
+  Memoria richiesta: 156 MB
+  Work per thread: 1001523 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.339368 s
+  Run 2/3...
+    ✓ Tempo: 0.345146 s
+  Run 3/3...
+    ✓ Tempo: 0.354897 s
+  ✓ Tempo mediano: 0.345146 s (3 run validi)
+    Efficienza weak: 66.4%
+[42/128] Testing 42 threads, size: 6480x6480
+  Memoria richiesta: 160 MB
+  Work per thread: 999771 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.341485 s
+  Run 2/3...
+    ✓ Tempo: 0.341035 s
+  Run 3/3...
+    ✓ Tempo: 0.336998 s
+  ✓ Tempo mediano: 0.341035 s (3 run validi)
+    Efficienza weak: 67.2%
+[43/128] Testing 43 threads, size: 6560x6560
+  Memoria richiesta: 164 MB
+  Work per thread: 1000781 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.345162 s
+  Run 2/3...
+    ✓ Tempo: 0.340240 s
+  Run 3/3...
+    ✓ Tempo: 0.338736 s
+  ✓ Tempo mediano: 0.340240 s (3 run validi)
+    Efficienza weak: 67.3%
+[44/128] Testing 44 threads, size: 6640x6640
+  Memoria richiesta: 168 MB
+  Work per thread: 1002036 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.339800 s
+  Run 2/3...
+    ✓ Tempo: 0.338071 s
+  Run 3/3...
+    ✓ Tempo: 0.341045 s
+  ✓ Tempo mediano: 0.339800 s (3 run validi)
+    Efficienza weak: 67.4%
+[45/128] Testing 45 threads, size: 6712x6712
+  Memoria richiesta: 171 MB
+  Work per thread: 1001132 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.342358 s
+  Run 2/3...
+    ✓ Tempo: 0.337123 s
+  Run 3/3...
+    ✓ Tempo: 0.337788 s
+  ✓ Tempo mediano: 0.337788 s (3 run validi)
+    Efficienza weak: 67.8%
+[46/128] Testing 46 threads, size: 6784x6784
+  Memoria richiesta: 175 MB
+  Work per thread: 1000492 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.340461 s
+  Run 2/3...
+    ✓ Tempo: 0.340300 s
+  Run 3/3...
+    ✓ Tempo: 0.340119 s
+  ✓ Tempo mediano: 0.340300 s (3 run validi)
+    Efficienza weak: 67.3%
+[47/128] Testing 47 threads, size: 6856x6856
+  Memoria richiesta: 179 MB
+  Work per thread: 1000100 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.337485 s
+  Run 2/3...
+    ✓ Tempo: 0.337810 s
+  Run 3/3...
+    ✓ Tempo: 0.337875 s
+  ✓ Tempo mediano: 0.337810 s (3 run validi)
+    Efficienza weak: 67.8%
+[48/128] Testing 48 threads, size: 6928x6928
+  Memoria richiesta: 183 MB
+  Work per thread: 999941 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.338922 s
+  Run 2/3...
+    ✓ Tempo: 0.339430 s
+  Run 3/3...
+    ✓ Tempo: 0.339174 s
+  ✓ Tempo mediano: 0.339174 s (3 run validi)
+    Efficienza weak: 67.5%
+[49/128] Testing 49 threads, size: 7000x7000
+  Memoria richiesta: 186 MB
+  Work per thread: 1000000 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.336747 s
+  Run 2/3...
+    ✓ Tempo: 0.338440 s
+  Run 3/3...
+    ✓ Tempo: 0.336482 s
+  ✓ Tempo mediano: 0.336747 s (3 run validi)
+    Efficienza weak: 68.0%
+[50/128] Testing 50 threads, size: 7072x7072
+  Memoria richiesta: 190 MB
+  Work per thread: 1000263 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.341462 s
+  Run 2/3...
+    ✓ Tempo: 0.340547 s
+  Run 3/3...
+    ✓ Tempo: 0.340973 s
+  ✓ Tempo mediano: 0.340973 s (3 run validi)
+    Efficienza weak: 67.2%
+[51/128] Testing 51 threads, size: 7144x7144
+  Memoria richiesta: 194 MB
+  Work per thread: 1000720 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.338032 s
+  Run 2/3...
+    ✓ Tempo: 0.338287 s
+  Run 3/3...
+    ✓ Tempo: 0.337769 s
+  ✓ Tempo mediano: 0.338032 s (3 run validi)
+    Efficienza weak: 67.8%
+[52/128] Testing 52 threads, size: 7216x7216
+  Memoria richiesta: 198 MB
+  Work per thread: 1001358 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.337470 s
+  Run 2/3...
+    ✓ Tempo: 0.343581 s
+  Run 3/3...
+    ✓ Tempo: 0.337056 s
+  ✓ Tempo mediano: 0.337470 s (3 run validi)
+    Efficienza weak: 67.9%
+[53/128] Testing 53 threads, size: 7280x7280
+  Memoria richiesta: 202 MB
+  Work per thread: 999969 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.339712 s
+  Run 2/3...
+    ✓ Tempo: 0.339583 s
+  Run 3/3...
+    ✓ Tempo: 0.339345 s
+  ✓ Tempo mediano: 0.339583 s (3 run validi)
+    Efficienza weak: 67.4%
+[54/128] Testing 54 threads, size: 7352x7352
+  Memoria richiesta: 206 MB
+  Work per thread: 1000961 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.338983 s
+  Run 2/3...
+    ✓ Tempo: 0.338567 s
+  Run 3/3...
+    ✓ Tempo: 0.339546 s
+  ✓ Tempo mediano: 0.338983 s (3 run validi)
+    Efficienza weak: 67.6%
+[55/128] Testing 55 threads, size: 7416x7416
+  Memoria richiesta: 209 MB
+  Work per thread: 999946 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.336041 s
+  Run 2/3...
+    ✓ Tempo: 0.341783 s
+  Run 3/3...
+    ✓ Tempo: 0.341080 s
+  ✓ Tempo mediano: 0.341080 s (3 run validi)
+    Efficienza weak: 67.1%
+[56/128] Testing 56 threads, size: 7488x7488
+  Memoria richiesta: 213 MB
+  Work per thread: 1001252 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.337178 s
+  Run 2/3...
+    ✓ Tempo: 0.337183 s
+  Run 3/3...
+    ✓ Tempo: 0.338731 s
+  ✓ Tempo mediano: 0.337183 s (3 run validi)
+    Efficienza weak: 67.9%
+[57/128] Testing 57 threads, size: 7552x7552
+  Memoria richiesta: 217 MB
+  Work per thread: 1000573 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.337223 s
+  Run 2/3...
+    ✓ Tempo: 0.338094 s
+  Run 3/3...
+    ✓ Tempo: 0.337898 s
+  ✓ Tempo mediano: 0.337898 s (3 run validi)
+    Efficienza weak: 67.8%
+[58/128] Testing 58 threads, size: 7616x7616
+  Memoria richiesta: 221 MB
+  Work per thread: 1000059 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.337129 s
+  Run 2/3...
+    ✓ Tempo: 0.338214 s
+  Run 3/3...
+    ✓ Tempo: 0.338134 s
+  ✓ Tempo mediano: 0.338134 s (3 run validi)
+    Efficienza weak: 67.7%
+[59/128] Testing 59 threads, size: 7688x7688
+  Memoria richiesta: 225 MB
+  Work per thread: 1001785 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.338276 s
+  Run 2/3...
+    ✓ Tempo: 0.337649 s
+  Run 3/3...
+    ✓ Tempo: 0.341562 s
+  ✓ Tempo mediano: 0.338276 s (3 run validi)
+    Efficienza weak: 67.7%
+[60/128] Testing 60 threads, size: 7752x7752
+  Memoria richiesta: 229 MB
+  Work per thread: 1001558 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.339713 s
+  Run 2/3...
+    ✓ Tempo: 0.344849 s
+  Run 3/3...
+    ✓ Tempo: 0.339177 s
+  ✓ Tempo mediano: 0.339713 s (3 run validi)
+    Efficienza weak: 67.4%
+[61/128] Testing 61 threads, size: 7816x7816
+  Memoria richiesta: 233 MB
+  Work per thread: 1001473 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.339146 s
+  Run 2/3...
+    ✓ Tempo: 0.339335 s
+  Run 3/3...
+    ✓ Tempo: 0.339715 s
+  ✓ Tempo mediano: 0.339335 s (3 run validi)
+    Efficienza weak: 67.5%
+[62/128] Testing 62 threads, size: 7880x7880
+  Memoria richiesta: 236 MB
+  Work per thread: 1001522 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.339504 s
+  Run 2/3...
+    ✓ Tempo: 0.339675 s
+  Run 3/3...
+    ✓ Tempo: 0.340161 s
+  ✓ Tempo mediano: 0.339675 s (3 run validi)
+    Efficienza weak: 67.4%
+[63/128] Testing 63 threads, size: 7944x7944
+  Memoria richiesta: 240 MB
+  Work per thread: 1001700 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.338822 s
+  Run 2/3...
+    ✓ Tempo: 0.338899 s
+  Run 3/3...
+    ✓ Tempo: 0.338965 s
+  ✓ Tempo mediano: 0.338899 s (3 run validi)
+    Efficienza weak: 67.6%
+[64/128] Testing 64 threads, size: 8000x8000
+  Memoria richiesta: 244 MB
+  Work per thread: 1000000 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.338502 s
+  Run 2/3...
+    ✓ Tempo: 0.340916 s
+  Run 3/3...
+    ✓ Tempo: 0.339006 s
+  ✓ Tempo mediano: 0.339006 s (3 run validi)
+    Efficienza weak: 67.6%
+[65/128] Testing 65 threads, size: 8064x8064
+  Memoria richiesta: 248 MB
+  Work per thread: 1000432 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.339812 s
+  Run 2/3...
+    ✓ Tempo: 0.338028 s
+  Run 3/3...
+    ✓ Tempo: 0.339624 s
+  ✓ Tempo mediano: 0.339624 s (3 run validi)
+    Efficienza weak: 67.4%
+[66/128] Testing 66 threads, size: 8128x8128
+  Memoria richiesta: 252 MB
+  Work per thread: 1000975 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.339514 s
+  Run 2/3...
+    ✓ Tempo: 0.340597 s
+  Run 3/3...
+    ✓ Tempo: 0.339163 s
+  ✓ Tempo mediano: 0.339514 s (3 run validi)
+    Efficienza weak: 67.5%
+[67/128] Testing 67 threads, size: 8192x8192
+  Memoria richiesta: 256 MB
+  Work per thread: 1001624 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.340660 s
+  Run 2/3...
+    ✓ Tempo: 0.338930 s
+  Run 3/3...
+    ✓ Tempo: 0.339983 s
+  ✓ Tempo mediano: 0.339983 s (3 run validi)
+    Efficienza weak: 67.4%
+[68/128] Testing 68 threads, size: 8248x8248
+  Memoria richiesta: 259 MB
+  Work per thread: 1000433 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.337804 s
+  Run 2/3...
+    ✓ Tempo: 0.338070 s
+  Run 3/3...
+    ✓ Tempo: 0.338576 s
+  ✓ Tempo mediano: 0.338070 s (3 run validi)
+    Efficienza weak: 67.7%
+[69/128] Testing 69 threads, size: 8312x8312
+  Memoria richiesta: 263 MB
+  Work per thread: 1001294 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.338327 s
+  Run 2/3...
+    ✓ Tempo: 0.340004 s
+  Run 3/3...
+    ✓ Tempo: 0.339918 s
+  ✓ Tempo mediano: 0.339918 s (3 run validi)
+    Efficienza weak: 67.4%
+[70/128] Testing 70 threads, size: 8368x8368
+  Memoria richiesta: 267 MB
+  Work per thread: 1000334 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.342097 s
+  Run 2/3...
+    ✓ Tempo: 0.342544 s
+  Run 3/3...
+    ✓ Tempo: 0.355560 s
+  ✓ Tempo mediano: 0.342544 s (3 run validi)
+    Efficienza weak: 66.9%
+[71/128] Testing 71 threads, size: 8432x8432
+  Memoria richiesta: 271 MB
+  Work per thread: 1001389 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.343885 s
+  Run 2/3...
+    ✓ Tempo: 0.342356 s
+  Run 3/3...
+    ✓ Tempo: 0.344479 s
+  ✓ Tempo mediano: 0.343885 s (3 run validi)
+    Efficienza weak: 66.6%
+[72/128] Testing 72 threads, size: 8488x8488
+  Memoria richiesta: 274 MB
+  Work per thread: 1000640 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.342001 s
+  Run 2/3...
+    ✓ Tempo: 0.344898 s
+  Run 3/3...
+    ✓ Tempo: 0.341948 s
+  ✓ Tempo mediano: 0.342001 s (3 run validi)
+    Efficienza weak: 67.0%
+[73/128] Testing 73 threads, size: 8544x8544
+  Memoria richiesta: 278 MB
+  Work per thread: 999999 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.342316 s
+  Run 2/3...
+    ✓ Tempo: 0.342921 s
+  Run 3/3...
+    ✓ Tempo: 0.341426 s
+  ✓ Tempo mediano: 0.342316 s (3 run validi)
+    Efficienza weak: 66.9%
+[74/128] Testing 74 threads, size: 8608x8608
+  Memoria richiesta: 282 MB
+  Work per thread: 1001319 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.342622 s
+  Run 2/3...
+    ✓ Tempo: 0.342550 s
+  Run 3/3...
+    ✓ Tempo: 0.342385 s
+  ✓ Tempo mediano: 0.342550 s (3 run validi)
+    Efficienza weak: 66.9%
+[75/128] Testing 75 threads, size: 8664x8664
+  Memoria richiesta: 286 MB
+  Work per thread: 1000865 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.341341 s
+  Run 2/3...
+    ✓ Tempo: 0.340522 s
+  Run 3/3...
+    ✓ Tempo: 0.340916 s
+  ✓ Tempo mediano: 0.340916 s (3 run validi)
+    Efficienza weak: 67.2%
+[76/128] Testing 76 threads, size: 8720x8720
+  Memoria richiesta: 290 MB
+  Work per thread: 1000505 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.341896 s
+  Run 2/3...
+    ✓ Tempo: 0.340143 s
+  Run 3/3...
+    ✓ Tempo: 0.341641 s
+  ✓ Tempo mediano: 0.341641 s (3 run validi)
+    Efficienza weak: 67.0%
+[77/128] Testing 77 threads, size: 8776x8776
+  Memoria richiesta: 293 MB
+  Work per thread: 1000236 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.344647 s
+  Run 2/3...
+    ✓ Tempo: 0.339237 s
+  Run 3/3...
+    ✓ Tempo: 0.339679 s
+  ✓ Tempo mediano: 0.339679 s (3 run validi)
+    Efficienza weak: 67.4%
+[78/128] Testing 78 threads, size: 8832x8832
+  Memoria richiesta: 297 MB
+  Work per thread: 1000054 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.354931 s
+  Run 2/3...
+    ✓ Tempo: 0.340614 s
+  Run 3/3...
+    ✓ Tempo: 0.342581 s
+  ✓ Tempo mediano: 0.342581 s (3 run validi)
+    Efficienza weak: 66.9%
+[79/128] Testing 79 threads, size: 8888x8888
+  Memoria richiesta: 301 MB
+  Work per thread: 999956 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.343732 s
+  Run 2/3...
+    ✓ Tempo: 0.343108 s
+  Run 3/3...
+    ✓ Tempo: 0.343504 s
+  ✓ Tempo mediano: 0.343504 s (3 run validi)
+    Efficienza weak: 66.7%
+[80/128] Testing 80 threads, size: 8944x8944
+  Memoria richiesta: 305 MB
+  Work per thread: 999939 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.342544 s
+  Run 2/3...
+    ✓ Tempo: 0.342176 s
+  Run 3/3...
+    ✓ Tempo: 0.342201 s
+  ✓ Tempo mediano: 0.342201 s (3 run validi)
+    Efficienza weak: 66.9%
+[81/128] Testing 81 threads, size: 9000x9000
+  Memoria richiesta: 308 MB
+  Work per thread: 1000000 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.341944 s
+  Run 2/3...
+    ✓ Tempo: 0.341422 s
+  Run 3/3...
+    ✓ Tempo: 0.341214 s
+  ✓ Tempo mediano: 0.341422 s (3 run validi)
+    Efficienza weak: 67.1%
+[82/128] Testing 82 threads, size: 9056x9056
+  Memoria richiesta: 312 MB
+  Work per thread: 1000135 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.340563 s
+  Run 2/3...
+    ✓ Tempo: 0.340976 s
+  Run 3/3...
+    ✓ Tempo: 0.339995 s
+  ✓ Tempo mediano: 0.340563 s (3 run validi)
+    Efficienza weak: 67.2%
+[83/128] Testing 83 threads, size: 9112x9112
+  Memoria richiesta: 316 MB
+  Work per thread: 1000343 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.339712 s
+  Run 2/3...
+    ✓ Tempo: 0.341757 s
+  Run 3/3...
+    ✓ Tempo: 0.340748 s
+  ✓ Tempo mediano: 0.340748 s (3 run validi)
+    Efficienza weak: 67.2%
+[84/128] Testing 84 threads, size: 9168x9168
+  Memoria richiesta: 320 MB
+  Work per thread: 1000621 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.344113 s
+  Run 2/3...
+    ✓ Tempo: 0.345128 s
+  Run 3/3...
+    ✓ Tempo: 0.344144 s
+  ✓ Tempo mediano: 0.344144 s (3 run validi)
+    Efficienza weak: 66.6%
+[85/128] Testing 85 threads, size: 9224x9224
+  Memoria richiesta: 324 MB
+  Work per thread: 1000966 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.342793 s
+  Run 2/3...
+    ✓ Tempo: 0.343468 s
+  Run 3/3...
+    ✓ Tempo: 0.343422 s
+  ✓ Tempo mediano: 0.343422 s (3 run validi)
+    Efficienza weak: 66.7%
+[86/128] Testing 86 threads, size: 9280x9280
+  Memoria richiesta: 328 MB
+  Work per thread: 1001376 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.340535 s
+  Run 2/3...
+    ✓ Tempo: 0.342873 s
+  Run 3/3...
+    ✓ Tempo: 0.345218 s
+  ✓ Tempo mediano: 0.342873 s (3 run validi)
+    Efficienza weak: 66.8%
+[87/128] Testing 87 threads, size: 9328x9328
+  Memoria richiesta: 331 MB
+  Work per thread: 1000133 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.340666 s
+  Run 2/3...
+    ✓ Tempo: 0.340795 s
+  Run 3/3...
+    ✓ Tempo: 0.342701 s
+  ✓ Tempo mediano: 0.340795 s (3 run validi)
+    Efficienza weak: 67.2%
+[88/128] Testing 88 threads, size: 9384x9384
+  Memoria richiesta: 335 MB
+  Work per thread: 1000675 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.344573 s
+  Run 2/3...
+    ✓ Tempo: 0.345418 s
+  Run 3/3...
+    ✓ Tempo: 0.344800 s
+  ✓ Tempo mediano: 0.344800 s (3 run validi)
+    Efficienza weak: 66.4%
+[89/128] Testing 89 threads, size: 9440x9440
+  Memoria richiesta: 339 MB
+  Work per thread: 1001276 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.343781 s
+  Run 2/3...
+    ✓ Tempo: 0.343908 s
+  Run 3/3...
+    ✓ Tempo: 0.355602 s
+  ✓ Tempo mediano: 0.343908 s (3 run validi)
+    Efficienza weak: 66.6%
+[90/128] Testing 90 threads, size: 9488x9488
+  Memoria richiesta: 343 MB
+  Work per thread: 1000246 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.342264 s
+  Run 2/3...
+    ✓ Tempo: 0.343287 s
+  Run 3/3...
+    ✓ Tempo: 0.342582 s
+  ✓ Tempo mediano: 0.342582 s (3 run validi)
+    Efficienza weak: 66.9%
+[91/128] Testing 91 threads, size: 9544x9544
+  Memoria richiesta: 347 MB
+  Work per thread: 1000966 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.340552 s
+  Run 2/3...
+    ✓ Tempo: 0.340926 s
+  Run 3/3...
+    ✓ Tempo: 0.341287 s
+  ✓ Tempo mediano: 0.340926 s (3 run validi)
+    Efficienza weak: 67.2%
+[92/128] Testing 92 threads, size: 9592x9592
+  Memoria richiesta: 350 MB
+  Work per thread: 1000070 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.341177 s
+  Run 2/3...
+    ✓ Tempo: 0.341066 s
+  Run 3/3...
+    ✓ Tempo: 0.343842 s
+  ✓ Tempo mediano: 0.341177 s (3 run validi)
+    Efficienza weak: 67.1%
+[93/128] Testing 93 threads, size: 9648x9648
+  Memoria richiesta: 355 MB
+  Work per thread: 1000902 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.346275 s
+  Run 2/3...
+    ✓ Tempo: 0.343854 s
+  Run 3/3...
+    ✓ Tempo: 0.351756 s
+  ✓ Tempo mediano: 0.346275 s (3 run validi)
+    Efficienza weak: 66.1%
+[94/128] Testing 94 threads, size: 9696x9696
+  Memoria richiesta: 358 MB
+  Work per thread: 1000132 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.343817 s
+  Run 2/3...
+    ✓ Tempo: 0.343742 s
+  Run 3/3...
+    ✓ Tempo: 0.343422 s
+  ✓ Tempo mediano: 0.343742 s (3 run validi)
+    Efficienza weak: 66.6%
+[95/128] Testing 95 threads, size: 9752x9752
+  Memoria richiesta: 362 MB
+  Work per thread: 1001068 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.341474 s
+  Run 2/3...
+    ✓ Tempo: 0.342182 s
+  Run 3/3...
+    ✓ Tempo: 0.342899 s
+  ✓ Tempo mediano: 0.342182 s (3 run validi)
+    Efficienza weak: 66.9%
+[96/128] Testing 96 threads, size: 9800x9800
+  Memoria richiesta: 366 MB
+  Work per thread: 1000416 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.430478 s
+  Run 2/3...
+    ✓ Tempo: 0.431907 s
+  Run 3/3...
+    ✓ Tempo: 0.431110 s
+  ✓ Tempo mediano: 0.431110 s (3 run validi)
+    Efficienza weak: 53.1%
+[97/128] Testing 97 threads, size: 9848x9848
+  Memoria richiesta: 369 MB
+  Work per thread: 999825 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.433656 s
+  Run 2/3...
+    ✓ Tempo: 0.431046 s
+  Run 3/3...
+    ✓ Tempo: 0.429047 s
+  ✓ Tempo mediano: 0.431046 s (3 run validi)
+    Efficienza weak: 53.1%
+[98/128] Testing 98 threads, size: 9904x9904
+  Memoria richiesta: 374 MB
+  Work per thread: 1000910 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.431829 s
+  Run 2/3...
+    ✓ Tempo: 0.430179 s
+  Run 3/3...
+    ✓ Tempo: 0.430244 s
+  ✓ Tempo mediano: 0.430244 s (3 run validi)
+    Efficienza weak: 53.2%
+[99/128] Testing 99 threads, size: 9952x9952
+  Memoria richiesta: 377 MB
+  Work per thread: 1000427 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.433193 s
+  Run 2/3...
+    ✓ Tempo: 0.434375 s
+  Run 3/3...
+    ✓ Tempo: 0.433696 s
+  ✓ Tempo mediano: 0.433696 s (3 run validi)
+    Efficienza weak: 52.8%
+[100/128] Testing 100 threads, size: 10000x10000
+  Memoria richiesta: 381 MB
+  Work per thread: 1000000 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.432003 s
+  Run 2/3...
+    ✓ Tempo: 0.432083 s
+  Run 3/3...
+    ✓ Tempo: 0.429676 s
+  ✓ Tempo mediano: 0.432003 s (3 run validi)
+    Efficienza weak: 53.0%
+[101/128] Testing 101 threads, size: 10056x10056
+  Memoria richiesta: 385 MB
+  Work per thread: 1001219 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.432028 s
+  Run 2/3...
+    ✓ Tempo: 0.431373 s
+  Run 3/3...
+    ✓ Tempo: 0.432179 s
+  ✓ Tempo mediano: 0.432028 s (3 run validi)
+    Efficienza weak: 53.0%
+[102/128] Testing 102 threads, size: 10104x10104
+  Memoria richiesta: 389 MB
+  Work per thread: 1000890 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.435737 s
+  Run 2/3...
+    ✓ Tempo: 0.434562 s
+  Run 3/3...
+    ✓ Tempo: 0.447713 s
+  ✓ Tempo mediano: 0.435737 s (3 run validi)
+    Efficienza weak: 52.6%
+[103/128] Testing 103 threads, size: 10152x10152
+  Memoria richiesta: 393 MB
+  Work per thread: 1000612 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.429565 s
+  Run 2/3...
+    ✓ Tempo: 0.428720 s
+  Run 3/3...
+    ✓ Tempo: 0.428990 s
+  ✓ Tempo mediano: 0.428990 s (3 run validi)
+    Efficienza weak: 53.4%
+[104/128] Testing 104 threads, size: 10200x10200
+  Memoria richiesta: 396 MB
+  Work per thread: 1000384 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.432142 s
+  Run 2/3...
+    ✓ Tempo: 0.432372 s
+  Run 3/3...
+    ✓ Tempo: 0.431963 s
+  ✓ Tempo mediano: 0.432142 s (3 run validi)
+    Efficienza weak: 53.0%
+[105/128] Testing 105 threads, size: 10248x10248
+  Memoria richiesta: 400 MB
+  Work per thread: 1000204 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.434898 s
+  Run 2/3...
+    ✓ Tempo: 0.433121 s
+  Run 3/3...
+    ✓ Tempo: 0.433905 s
+  ✓ Tempo mediano: 0.433905 s (3 run validi)
+    Efficienza weak: 52.8%
+[106/128] Testing 106 threads, size: 10296x10296
+  Memoria richiesta: 404 MB
+  Work per thread: 1000071 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.431113 s
+  Run 2/3...
+    ✓ Tempo: 0.429424 s
+  Run 3/3...
+    ✓ Tempo: 0.430145 s
+  ✓ Tempo mediano: 0.430145 s (3 run validi)
+    Efficienza weak: 53.2%
+[107/128] Testing 107 threads, size: 10344x10344
+  Memoria richiesta: 408 MB
+  Work per thread: 999984 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.431585 s
+  Run 2/3...
+    ✓ Tempo: 0.432472 s
+  Run 3/3...
+    ✓ Tempo: 0.427848 s
+  ✓ Tempo mediano: 0.431585 s (3 run validi)
+    Efficienza weak: 53.1%
+[108/128] Testing 108 threads, size: 10392x10392
+  Memoria richiesta: 411 MB
+  Work per thread: 999941 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.433703 s
+  Run 2/3...
+    ✓ Tempo: 0.432874 s
+  Run 3/3...
+    ✓ Tempo: 0.428279 s
+  ✓ Tempo mediano: 0.432874 s (3 run validi)
+    Efficienza weak: 52.9%
+[109/128] Testing 109 threads, size: 10440x10440
+  Memoria richiesta: 415 MB
+  Work per thread: 999941 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.429372 s
+  Run 2/3...
+    ✓ Tempo: 0.428469 s
+  Run 3/3...
+    ✓ Tempo: 0.427626 s
+  ✓ Tempo mediano: 0.428469 s (3 run validi)
+    Efficienza weak: 53.5%
+[110/128] Testing 110 threads, size: 10488x10488
+  Memoria richiesta: 419 MB
+  Work per thread: 999983 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.432551 s
+  Run 2/3...
+    ✓ Tempo: 0.431225 s
+  Run 3/3...
+    ✓ Tempo: 0.430884 s
+  ✓ Tempo mediano: 0.431225 s (3 run validi)
+    Efficienza weak: 53.1%
+[111/128] Testing 111 threads, size: 10536x10536
+  Memoria richiesta: 423 MB
+  Work per thread: 1000065 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.433312 s
+  Run 2/3...
+    ✓ Tempo: 0.433553 s
+  Run 3/3...
+    ✓ Tempo: 0.432253 s
+  ✓ Tempo mediano: 0.433312 s (3 run validi)
+    Efficienza weak: 52.9%
+[112/128] Testing 112 threads, size: 10584x10584
+  Memoria richiesta: 427 MB
+  Work per thread: 1000188 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.340244 s
+  Run 2/3...
+    ✓ Tempo: 0.333265 s
+  Run 3/3...
+    ✓ Tempo: 0.338091 s
+  ✓ Tempo mediano: 0.338091 s (3 run validi)
+    Efficienza weak: 67.7%
+[113/128] Testing 113 threads, size: 10632x10632
+  Memoria richiesta: 431 MB
+  Work per thread: 1000348 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.337760 s
+  Run 2/3...
+    ✓ Tempo: 0.337549 s
+  Run 3/3...
+    ✓ Tempo: 0.334684 s
+  ✓ Tempo mediano: 0.337549 s (3 run validi)
+    Efficienza weak: 67.9%
+[114/128] Testing 114 threads, size: 10680x10680
+  Memoria richiesta: 435 MB
+  Work per thread: 1000547 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.332830 s
+  Run 2/3...
+    ✓ Tempo: 0.332230 s
+  Run 3/3...
+    ✓ Tempo: 0.332681 s
+  ✓ Tempo mediano: 0.332681 s (3 run validi)
+    Efficienza weak: 68.8%
+[115/128] Testing 115 threads, size: 10728x10728
+  Memoria richiesta: 439 MB
+  Work per thread: 1000782 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.336036 s
+  Run 2/3...
+    ✓ Tempo: 0.335244 s
+  Run 3/3...
+    ✓ Tempo: 0.337645 s
+  ✓ Tempo mediano: 0.336036 s (3 run validi)
+    Efficienza weak: 68.2%
+[116/128] Testing 116 threads, size: 10776x10776
+  Memoria richiesta: 442 MB
+  Work per thread: 1001053 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.340094 s
+  Run 2/3...
+    ✓ Tempo: 0.335316 s
+  Run 3/3...
+    ✓ Tempo: 0.337615 s
+  ✓ Tempo mediano: 0.337615 s (3 run validi)
+    Efficienza weak: 67.8%
+[117/128] Testing 117 threads, size: 10816x10816
+  Memoria richiesta: 446 MB
+  Work per thread: 999879 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.346691 s
+  Run 2/3...
+    ✓ Tempo: 0.337229 s
+  Run 3/3...
+    ✓ Tempo: 0.337214 s
+  ✓ Tempo mediano: 0.337229 s (3 run validi)
+    Efficienza weak: 67.9%
+[118/128] Testing 118 threads, size: 10864x10864
+  Memoria richiesta: 450 MB
+  Work per thread: 1000224 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.339769 s
+  Run 2/3...
+    ✓ Tempo: 0.337436 s
+  Run 3/3...
+    ✓ Tempo: 0.339834 s
+  ✓ Tempo mediano: 0.339769 s (3 run validi)
+    Efficienza weak: 67.4%
+[119/128] Testing 119 threads, size: 10912x10912
+  Memoria richiesta: 454 MB
+  Work per thread: 1000602 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.336540 s
+  Run 2/3...
+    ✓ Tempo: 0.333155 s
+  Run 3/3...
+    ✓ Tempo: 0.334184 s
+  ✓ Tempo mediano: 0.334184 s (3 run validi)
+    Efficienza weak: 68.5%
+[120/128] Testing 120 threads, size: 10960x10960
+  Memoria richiesta: 458 MB
+  Work per thread: 1001013 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.337834 s
+  Run 2/3...
+    ✓ Tempo: 0.336966 s
+  Run 3/3...
+    ✓ Tempo: 0.334457 s
+  ✓ Tempo mediano: 0.336966 s (3 run validi)
+    Efficienza weak: 68.0%
+[121/128] Testing 121 threads, size: 11000x11000
+  Memoria richiesta: 461 MB
+  Work per thread: 1000000 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.337443 s
+  Run 2/3...
+    ✓ Tempo: 0.331463 s
+  Run 3/3...
+    ✓ Tempo: 0.337174 s
+  ✓ Tempo mediano: 0.337174 s (3 run validi)
+    Efficienza weak: 67.9%
+[122/128] Testing 122 threads, size: 11048x11048
+  Memoria richiesta: 465 MB
+  Work per thread: 1000477 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.337284 s
+  Run 2/3...
+    ✓ Tempo: 0.331191 s
+  Run 3/3...
+    ✓ Tempo: 0.337969 s
+  ✓ Tempo mediano: 0.337284 s (3 run validi)
+    Efficienza weak: 67.9%
+[123/128] Testing 123 threads, size: 11096x11096
+  Memoria richiesta: 469 MB
+  Work per thread: 1000985 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.333906 s
+  Run 2/3...
+    ✓ Tempo: 0.340578 s
+  Run 3/3...
+    ✓ Tempo: 0.332701 s
+  ✓ Tempo mediano: 0.333906 s (3 run validi)
+    Efficienza weak: 68.6%
+[124/128] Testing 124 threads, size: 11136x11136
+  Memoria richiesta: 473 MB
+  Work per thread: 1000084 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.333062 s
+  Run 2/3...
+    ✓ Tempo: 0.336176 s
+  Run 3/3...
+    ✓ Tempo: 0.339527 s
+  ✓ Tempo mediano: 0.336176 s (3 run validi)
+    Efficienza weak: 68.1%
+[125/128] Testing 125 threads, size: 11184x11184
+  Memoria richiesta: 477 MB
+  Work per thread: 1000654 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.336809 s
+  Run 2/3...
+    ✓ Tempo: 0.338045 s
+  Run 3/3...
+    ✓ Tempo: 0.328935 s
+  ✓ Tempo mediano: 0.336809 s (3 run validi)
+    Efficienza weak: 68.0%
+[126/128] Testing 126 threads, size: 11224x11224
+  Memoria richiesta: 480 MB
+  Work per thread: 999826 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.338209 s
+  Run 2/3...
+    ✓ Tempo: 0.337872 s
+  Run 3/3...
+    ✓ Tempo: 0.336993 s
+  ✓ Tempo mediano: 0.337872 s (3 run validi)
+    Efficienza weak: 67.8%
+[127/128] Testing 127 threads, size: 11272x11272
+  Memoria richiesta: 484 MB
+  Work per thread: 1000456 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.340240 s
+  Run 2/3...
+    ✓ Tempo: 0.337932 s
+  Run 3/3...
+    ✓ Tempo: 0.338293 s
+  ✓ Tempo mediano: 0.338293 s (3 run validi)
+    Efficienza weak: 67.7%
+[128/128] Testing 128 threads, size: 11320x11320
+  Memoria richiesta: 488 MB
+  Work per thread: 1001112 punti (baseline: 1000000)
+  Run 1/3...
+    ✓ Tempo: 0.333676 s
+  Run 2/3...
+    ✓ Tempo: 0.421691 s
+  Run 3/3...
+    ✓ Tempo: 0.339946 s
+  ✓ Tempo mediano: 0.339946 s (3 run validi)
+    Efficienza weak: 67.4%
+
+=== WEAK SCALING COMPLETATO ===
+File risultati: results/omp_weak_scaling.csv
+Righe generate: 129
+
+=== SUMMARY WEAK SCALING ===
+Tempo baseline (1 thread): 0.229028s
+Tempo finale (128 thread): 0.339946s
+Efficienza weak finale: 67.4%
+⚠ Weak scaling needs improvement
+
+=== VERIFICA FORMULA ===
+Thread 64: size=8000, expected=8000
+✅ Formula weak scaling corretta!
+
+Thu Jul 24 02:08:56 PM CEST 2025

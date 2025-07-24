@@ -1,0 +1,111 @@
+Running latency topology tests on AMD EPYC 9374F...
+Detected nodes: genoa008, genoa011
+============================================
+Running: Same CCX [cores 0,1]
+Intra-node test - Command: mpirun -np 2 --bind-to core --cpu-list 0,1 /u/dssc/rlamberti/HPC-project/osu-micro-benchmarks-7.5.1/c/mpi/pt2pt/standard/osu_latency
+✓ Test completed successfully
+Generated 25 data points
+Results written to CSV
+============================================
+============================================
+Running: Same NUMA (different CCD) [cores 0,4]
+Intra-node test - Command: mpirun -np 2 --bind-to core --cpu-list 0,4 /u/dssc/rlamberti/HPC-project/osu-micro-benchmarks-7.5.1/c/mpi/pt2pt/standard/osu_latency
+✓ Test completed successfully
+Generated 25 data points
+Results written to CSV
+============================================
+============================================
+Running: Same Socket (different NUMA) [cores 0,8]
+Intra-node test - Command: mpirun -np 2 --bind-to core --cpu-list 0,8 /u/dssc/rlamberti/HPC-project/osu-micro-benchmarks-7.5.1/c/mpi/pt2pt/standard/osu_latency
+✓ Test completed successfully
+Generated 25 data points
+Results written to CSV
+============================================
+============================================
+Running: Different Socket [cores 0,32]
+Testing Different Socket: core 0 vs core 32
+Core 0: Socket 0, NUMA 0
+Core 32: Socket 1, NUMA 4
+Expected: Inter-socket communication latency
+Using rankfile approach for cross-socket binding
+Creating rankfile for cross-socket test...
+Rankfile contents:
+rank 0=+n0 slot=0
+rank 1=+n0 slot=32
+---
+Different Socket test - Command: mpirun -np 2 --rankfile rankfile_cross_socket /u/dssc/rlamberti/HPC-project/osu-micro-benchmarks-7.5.1/c/mpi/pt2pt/standard/osu_latency
+--------------------------------------------------------------------------
+WARNING: A deprecated command line option was used.
+
+  Deprecated option:   rankfile
+  Corrected option:    --map-by rankfile:file=rankfile_cross_socket
+
+We have updated this for you and will proceed. However, this will be treated
+as an error in a future release. Please update your command line.
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+WARNING: A deprecated command line option was used.
+
+  Deprecated option:   rankfile
+  Corrected option:    --map-by rankfile:file=rankfile_cross_socket
+
+We have updated this for you and will proceed. However, this will be treated
+as an error in a future release. Please update your command line.
+--------------------------------------------------------------------------
+
+✓ Test completed successfully
+Generated 25 data points
+Results written to CSV
+============================================
+============================================
+Running: Different Node [cores 0,0]
+Inter-node test - Command: mpirun -np 2 --host genoa008,genoa011 /u/dssc/rlamberti/HPC-project/osu-micro-benchmarks-7.5.1/c/mpi/pt2pt/standard/osu_latency
+✓ Test completed successfully
+Generated 25 data points
+Results written to CSV
+============================================
+Cleaned up rankfile
+
+All topology tests completed. Results saved to latency_pt2pt.csv
+
+=== SUMMARY ===
+CSV file contents:
+Label,MessageSize,Latency_us
+Same CCX,1,0.10
+Same CCX,2,0.10
+Same CCX,4,0.10
+Same CCX,8,0.10
+Same CCX,16,0.10
+Same CCX,32,0.10
+Same CCX,64,0.11
+Same CCX,128,0.18
+Same CCX,256,0.18
+Same CCX,512,0.18
+Same CCX,1024,0.22
+Same CCX,2048,0.29
+Same CCX,4096,0.36
+Same CCX,8192,0.48
+Same CCX,16384,0.81
+Same CCX,32768,1.33
+Same CCX,65536,2.36
+Same CCX,131072,4.22
+Same CCX,262144,10.33
+
+=== VERIFICATION ===
+Tests found in CSV:
+Different Node
+Different Socket
+Same CCX
+Same NUMA (different CCD)
+Same Socket (different NUMA)
+✓ All 5 tests completed successfully
+
+🎉 PERFECT! You now have complete latency data for all hierarchy levels!
+You can proceed with confidence to calculate broadcast performance.
+
+=== NEXT STEPS ===
+1. Use the measured latencies for broadcast algorithm analysis
+2. The hierarchy pattern is clear: CCX < NUMA < Socket < Node
+3. 'Map by core' algorithms will outperform 'Map by socket' algorithms
+4. Binary Tree algorithms will outperform Pipeline algorithms

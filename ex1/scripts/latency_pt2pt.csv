@@ -1,7 +1,5 @@
 Label,MessageSize,Latency_us
-Same CCX,#,Datatype: MPI_CHAR.
-Same CCX,#,Size       Avg Latency(us)
-Same CCX,1,0.11
+Same CCX,1,0.10
 Same CCX,2,0.10
 Same CCX,4,0.10
 Same CCX,8,0.10
@@ -10,95 +8,109 @@ Same CCX,32,0.10
 Same CCX,64,0.11
 Same CCX,128,0.18
 Same CCX,256,0.18
-Same CCX,512,0.19
+Same CCX,512,0.18
 Same CCX,1024,0.22
 Same CCX,2048,0.29
-Same CCX,4096,0.38
+Same CCX,4096,0.36
 Same CCX,8192,0.48
 Same CCX,16384,0.81
-Same CCX,32768,1.32
-Same CCX,65536,2.35
-Same CCX,131072,4.19
-Same CCX,262144,10.66
-Same CCX,524288,20.27
-Same CCX,1048576,34.94
-Same CCX,2097152,69.10
-Same CCX,4194304,135.95
-Same NUMA (different CCD),#,Datatype: MPI_CHAR.
-Same NUMA (different CCD),#,Size       Avg Latency(us)
+Same CCX,32768,1.33
+Same CCX,65536,2.36
+Same CCX,131072,4.22
+Same CCX,262144,10.33
+Same CCX,524288,17.44
+Same CCX,1048576,34.81
+Same CCX,2097152,68.99
+Same CCX,4194304,135.15
 Same NUMA (different CCD),1,0.27
 Same NUMA (different CCD),2,0.26
 Same NUMA (different CCD),4,0.26
 Same NUMA (different CCD),8,0.26
 Same NUMA (different CCD),16,0.26
-Same NUMA (different CCD),32,0.32
-Same NUMA (different CCD),64,0.31
+Same NUMA (different CCD),32,0.33
+Same NUMA (different CCD),64,0.32
 Same NUMA (different CCD),128,0.43
-Same NUMA (different CCD),256,0.52
+Same NUMA (different CCD),256,0.53
 Same NUMA (different CCD),512,0.54
 Same NUMA (different CCD),1024,0.68
 Same NUMA (different CCD),2048,1.03
 Same NUMA (different CCD),4096,1.80
-Same NUMA (different CCD),8192,3.52
-Same NUMA (different CCD),16384,6.42
-Same NUMA (different CCD),32768,12.06
-Same NUMA (different CCD),65536,23.64
-Same NUMA (different CCD),131072,46.64
-Same NUMA (different CCD),262144,10.87
-Same NUMA (different CCD),524288,22.95
-Same NUMA (different CCD),1048576,35.38
-Same NUMA (different CCD),2097152,70.00
-Same NUMA (different CCD),4194304,136.96
-Same Socket (different NUMA),#,Datatype: MPI_CHAR.
-Same Socket (different NUMA),#,Size       Avg Latency(us)
-Same Socket (different NUMA),1,0.29
+Same NUMA (different CCD),8192,3.53
+Same NUMA (different CCD),16384,6.50
+Same NUMA (different CCD),32768,12.17
+Same NUMA (different CCD),65536,23.83
+Same NUMA (different CCD),131072,46.97
+Same NUMA (different CCD),262144,10.97
+Same NUMA (different CCD),524288,19.98
+Same NUMA (different CCD),1048576,35.54
+Same NUMA (different CCD),2097152,69.92
+Same NUMA (different CCD),4194304,138.01
+Same Socket (different NUMA),1,0.28
 Same Socket (different NUMA),2,0.28
 Same Socket (different NUMA),4,0.28
 Same Socket (different NUMA),8,0.28
 Same Socket (different NUMA),16,0.28
-Same Socket (different NUMA),32,0.34
-Same Socket (different NUMA),64,0.32
-Same Socket (different NUMA),128,0.45
+Same Socket (different NUMA),32,0.35
+Same Socket (different NUMA),64,0.33
+Same Socket (different NUMA),128,0.46
 Same Socket (different NUMA),256,0.56
 Same Socket (different NUMA),512,0.57
 Same Socket (different NUMA),1024,0.72
-Same Socket (different NUMA),2048,1.11
-Same Socket (different NUMA),4096,1.92
-Same Socket (different NUMA),8192,3.75
-Same Socket (different NUMA),16384,6.91
-Same Socket (different NUMA),32768,13.02
-Same Socket (different NUMA),65536,25.52
-Same Socket (different NUMA),131072,50.47
-Same Socket (different NUMA),262144,10.73
-Same Socket (different NUMA),524288,18.68
-Same Socket (different NUMA),1048576,35.34
-Same Socket (different NUMA),2097152,69.60
-Same Socket (different NUMA),4194304,136.31
-Different Node,#,Datatype: MPI_CHAR.
-Different Node,#,Size       Avg Latency(us)
+Same Socket (different NUMA),2048,1.09
+Same Socket (different NUMA),4096,1.93
+Same Socket (different NUMA),8192,3.78
+Same Socket (different NUMA),16384,6.99
+Same Socket (different NUMA),32768,13.11
+Same Socket (different NUMA),65536,25.65
+Same Socket (different NUMA),131072,50.68
+Same Socket (different NUMA),262144,10.90
+Same Socket (different NUMA),524288,20.39
+Same Socket (different NUMA),1048576,35.42
+Same Socket (different NUMA),2097152,69.74
+Same Socket (different NUMA),4194304,137.29
+Different Socket,1,0.51
+Different Socket,2,0.51
+Different Socket,4,0.51
+Different Socket,8,0.51
+Different Socket,16,0.51
+Different Socket,32,0.70
+Different Socket,64,0.64
+Different Socket,128,0.79
+Different Socket,256,0.97
+Different Socket,512,0.99
+Different Socket,1024,1.24
+Different Socket,2048,1.90
+Different Socket,4096,3.39
+Different Socket,8192,6.73
+Different Socket,16384,12.59
+Different Socket,32768,23.87
+Different Socket,65536,46.91
+Different Socket,131072,92.64
+Different Socket,262144,11.81
+Different Socket,524288,20.41
+Different Socket,1048576,36.40
+Different Socket,2097152,71.00
+Different Socket,4194304,137.04
 Different Node,1,1.35
 Different Node,2,1.34
-Different Node,4,1.34
+Different Node,4,1.35
 Different Node,8,1.35
-Different Node,16,1.35
+Different Node,16,1.36
 Different Node,32,1.45
-Different Node,64,1.48
+Different Node,64,1.49
 Different Node,128,1.52
-Different Node,256,1.78
-Different Node,512,1.77
-Different Node,1024,1.96
-Different Node,2048,2.26
-Different Node,4096,2.55
-Different Node,8192,3.07
-Different Node,16384,3.96
-Different Node,32768,5.33
-Different Node,65536,8.00
-Different Node,131072,13.15
-Different Node,262144,15.40
-Different Node,524288,25.94
-Different Node,1048576,47.22
-Different Node,2097152,90.43
-<<<<<<< HEAD
-Different Node,4194304,174.23
-=======
-Different Node,4194304,174.23
+Different Node,256,1.82
+Different Node,512,1.86
+Different Node,1024,2.04
+Different Node,2048,2.27
+Different Node,4096,2.54
+Different Node,8192,3.06
+Different Node,16384,3.99
+Different Node,32768,5.24
+Different Node,65536,8.04
+Different Node,131072,13.61
+Different Node,262144,15.57
+Different Node,524288,26.02
+Different Node,1048576,47.25
+Different Node,2097152,89.95
+Different Node,4194304,174.20

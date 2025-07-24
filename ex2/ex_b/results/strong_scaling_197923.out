@@ -1,0 +1,20 @@
+=== MANDELBROT STRONG SCALING FIXED ===
+Data: Thu Jul 24 01:45:52 PM CEST 2025
+Nodo: epyc005.hpc.rd.areasciencepark.it
+CPU disponibili: 128
+NUMA nodes: 8
+
+Parametri strong scaling ottimizzati:
+- Dimensioni fisse: 8000x8000
+- Max iterazioni: 500
+- Thread testati: 128 configurazioni
+- Soglie ottimizzate: 8/32/96 per minimizzare salti
+- Output: results/omp_strong_scaling.csv
+
+Inizio strong scaling con soglie ottimizzate...
+[1/128] Testing 1 threads (8000x8000)
+  Algoritmo: Static scheduling
+  Cache warm-up...
+  Run 1/3...
+    ✓ Tempo: 16.018346 s
+  Run 2/3...
