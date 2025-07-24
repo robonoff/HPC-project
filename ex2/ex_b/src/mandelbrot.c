@@ -1,6 +1,6 @@
 /* 
  * Mandelbrot Set Ultra-Ottimizzato per AMD EPYC 7H12 (128 cores, 8 NUMA nodes)
- * Ottimizzazioni: Soglie corrette, Multi-algorithm, Cache-aware, NUMA-optimized
+ * Ottimizzazioni: Soglie, Multi-algorithm, Cache-aware, NUMA-optimized
  */
 
 #include <stdio.h>
@@ -225,7 +225,7 @@ double compute_mandelbrot(mandel_params_t* params, int num_threads, const char* 
         // 96-128 thread: NUMA-aware tasks (overhead giustificato)
         compute_mandelbrot_numa_tasks(params, result);
     } else if (num_threads >= 32) {
-        // 32-95 thread: Guided scheduling (SWEET SPOT!)
+        // 32-95 thread: Guided scheduling
         compute_mandelbrot_guided_optimized(params, result);
     } else if (num_threads >= 8) {
         // 8-31 thread: Dynamic scheduling (load balancing)
