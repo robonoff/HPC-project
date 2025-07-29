@@ -25,6 +25,7 @@ core_pairs=(
     "0,1"     # Same CCX (cores 0-3 in CCX 0, CCD 0, NUMA 0)
     "0,4"     # Same NUMA, different CCX (cores 4-7 in CCX 1, CCD 1, NUMA 0)  
     "0,8"     # Different NUMA, same socket (core 8 in NUMA 1, socket 0)
+#    "0,16"    # Same Socket
     "0,32"    # Different socket (core 32 in socket 1, NUMA 4)
     "0,0"     # Different node
 )
