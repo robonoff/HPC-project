@@ -172,12 +172,12 @@ actual_count=$(echo "$unique_labels" | wc -l)
 if [ "$actual_count" -eq "$expected_count" ]; then
     echo "✓ All $expected_count tests completed successfully"
     echo ""
-    echo "🎉 PERFECT! You now have complete latency data for all hierarchy levels!"
+    echo "PERFECT! You now have complete latency data for all hierarchy levels!"
     echo "You can proceed with confidence to calculate broadcast performance."
 else
     echo "✗ Only $actual_count out of $expected_count tests completed"
     echo ""
-    echo "📊 ANALYSIS: Even with missing tests, your data is sufficient for broadcast analysis."
+    echo "ANALYSIS: Even with missing tests, your data is sufficient for broadcast analysis."
     echo "The existing measurements show clear hierarchy patterns that allow reliable estimation."
     
     # Mostra quali test mancano
@@ -186,16 +186,10 @@ else
     echo "Test status:"
     for test in "${expected_tests[@]}"; do
         if echo "$unique_labels" | grep -q "$test"; then
-            echo "  ✅ $test: MEASURED"
+            echo "  $test: MEASURED"
         else
-            echo "  ⚠️  $test: MISSING (can be estimated)"
+            echo "  ⚠$test: MISSING (can be estimated)"
         fi
     done
 fi
 
-echo ""
-echo "=== NEXT STEPS ==="
-echo "1. Use the measured latencies for broadcast algorithm analysis"
-echo "2. The hierarchy pattern is clear: CCX < NUMA < Socket < Node"  
-echo "3. 'Map by core' algorithms will outperform 'Map by socket' algorithms"
-echo "4. Binary Tree algorithms will outperform Pipeline algorithms"
